@@ -15,14 +15,15 @@ class HomeController extends Controller
         $app = $this->getYee();
         
         $data = array(
-            "title" => "Home",
-            "test" => "Hello, world",
-            "su" => "Hello from",
-            "tty" => array(
+            "title" => "HomeController",
+            "test"  => "Hello, world",
+            "su"    => "Hello from",
+            "tty"   => array(
+
                 "sider" => "Yee PHP Framework!",
-                "hey" => "How are you guys?",
-                ),
-            );
+                "hey"   => "How are you guys?",
+            ),
+        );
         
         $app->render('pages/index.tpl', $data);
     }

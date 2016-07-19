@@ -662,56 +662,53 @@ $( "#btnSubmitSignup" ).click(function() {
 
 });
 
+// $( "#loginSubmit" ).click(function() {
 
-$( "#loginSubmit" ).click(function() {
+// 	var email 	 = $("#loginEmail").val();
+// 	var pass  	 = $("#loginPass").val();
+// 	var isDataValid = true;
 
-	var email 	 = $("#loginEmail").val();
-	var pass  	 = $("#loginPass").val();
-	var isDataValid = true;
+// 	email = $.trim(email);
 
-	email = $.trim(email);
+// 	if(email == "") {
+// 	  	$("errorLoginEmail").html("Email is empty");
+// 		$("#errorLoginEmail").fadeTo(1500,1);
+// 		isDataValid = false;
+//   	}
 
-	if(email == "") {
-	  	$("errorLoginEmail").html("Email is empty");
-		$("#errorLoginEmail").fadeTo(1500,1);
-		isDataValid = false;
-  	}
+//   	if ( !isEmail(email) ) {
 
-  	if ( !isEmail(email) ) {
+//   		$("#errorLoginEmail").html("Email is not valid");
+//   		$("#errorLoginEmail").fadeTo(1500,1);
+//   		isDataValid = false;
+//   	}
 
-  		$("#errorLoginEmail").html("Email is not valid");
-  		$("#errorLoginEmail").fadeTo(1500,1);
-  		isDataValid = false;
-  	}
+//   	if ($.trim(pass) == "") {
+//   		$("#errorLoginPass").html("Password is empty");
+// 		$("#errorLoginPass").fadeTo(1500,1);
+// 		isDataValid = false;
+//   	}
 
-  	if ($.trim(pass) == "") {
-  		$("#errorLoginPass").html("Password is empty");
-		$("#errorLoginPass").fadeTo(1500,1);
-		isDataValid = false;
-  	}
+// 	setTimeout(disappear,3500);
 
-	setTimeout(disappear,3500);
+//   	if(isDataValid){
+//   		return true;
+//   	}
 
-  	if(isDataValid){
-  		return true;
-  	}
-  	return false;
-	function isEmail(email) {
+//   	return false;
+  	
+// 	function isEmail(email) {
 
-			//  "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" 	 --> email address
-			//  "/[a-zA-Z0-9]+@+[a-zA-Z0-9]+\.[a-zA-Z]+/g"			 --> email address
-			//  "[a-zA-Z/:]+[a-zA-Z0-9_@]+\.[a-z.]+[a-z]+/g" 		 --> url address
-	  		var emailRegex = /[a-zA-Z0-9_+.-]+\@[a-zA-Z0-9]+\.[a-zA-Z]+/g;
-	  		return emailRegex.test(email);
-	}
+// 	  		var emailRegex = /[a-zA-Z0-9_+.-]+\@[a-zA-Z0-9]+\.[a-zA-Z]+/g;
+// 	  		return emailRegex.test(email);
+// 	}
 
-	function disappear() {
+// 	function disappear() {
 
-		$("#errorLoginEmail").fadeTo(1500,0);
-		$("#errorLoginPass").fadeTo(1500,0);
-	}
-});
-		
+// 		$("#errorLoginEmail").fadeTo(1500,0);
+// 		$("#errorLoginPass").fadeTo(1500,0);
+// 	}
+// });	
 
 
 

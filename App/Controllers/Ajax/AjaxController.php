@@ -42,36 +42,38 @@ class AjaxController extends Controller
 
         if (!$ajax->validate()) {
 
-            // if ($ajax->isUserActive) {
-            //     # code...
-            // }
             $error = "Fail to join! Check your email/password.";
-        } 
+        }
+
+        if (!$ajax->isUserActive()) {
+            
+            $error = "Please activate your account! Check your email!";
+        }
 
 
         if(isset($error)) {
 
             $data = array(
                 "title"         => "AjaxControllerFail",
-                'errorMessage'  => $error,
+                'message'       => $error,
                 'error'         => false,
                 'homePageUrl'   => $baseUrl['baseHomePageUrl'], // $baseUrl['baseHomePageUrl'] => '/KinguinInternship/myProject/' home page
 
                 );
-            // $app->response()-headers()->set('Content-type', 'application/json');
+
             echo json_encode( $data );
 
         } else {
 
            $data = array(
                 "title"         => "AjaxControllerSucc",
-                'succ'          => "Hello, $loginEmail",
+                'message'       => "Hello, $loginEmail",
                 'success'       => true,
                 'error'         => true,
                 'homePageUrl'   => $baseUrl['baseHomePageUrl'], // $baseUrl['baseHomePageUrl'] => '/KinguinInternship/myProject/' home page
 
                 );
-            // $app->response()-headers()->set('Content-type', 'application/json');
+           
             echo json_encode( $data );
         }
     }

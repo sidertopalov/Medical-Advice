@@ -132,3 +132,243 @@ Stack trace:
 #10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
 #11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
 #12 {main}
+ERROR - 2016-07-19 17:32:00 - exception 'ErrorException' with message 'Undefined property: App\Models\Ajax\AjaxModel::$isUserActive' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:48
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(48): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 [internal function]: AjaxController->loginAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___loginAction', Array)
+#4 [internal function]: AjaxController::___loginAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 17:32:02 - exception 'ErrorException' with message 'Undefined property: App\Models\Ajax\AjaxModel::$isUserActive' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:48
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(48): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 [internal function]: AjaxController->loginAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___loginAction', Array)
+#4 [internal function]: AjaxController::___loginAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 17:32:19 - exception 'ErrorException' with message 'Undefined property: App\Models\Ajax\AjaxModel::$isUserActive' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:48
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(48): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 [internal function]: AjaxController->loginAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___loginAction', Array)
+#4 [internal function]: AjaxController::___loginAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 17:32:20 - exception 'ErrorException' with message 'Undefined property: App\Models\Ajax\AjaxModel::$isUserActive' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:48
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(48): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 [internal function]: AjaxController->loginAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___loginAction', Array)
+#4 [internal function]: AjaxController::___loginAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 17:32:22 - exception 'ErrorException' with message 'Undefined property: App\Models\Ajax\AjaxModel::$isUserActive' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:48
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(48): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 [internal function]: AjaxController->loginAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___loginAction', Array)
+#4 [internal function]: AjaxController::___loginAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 17:32:23 - exception 'ErrorException' with message 'Undefined property: App\Models\Ajax\AjaxModel::$isUserActive' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:48
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(48): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 [internal function]: AjaxController->loginAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___loginAction', Array)
+#4 [internal function]: AjaxController::___loginAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 17:32:23 - exception 'ErrorException' with message 'Undefined property: App\Models\Ajax\AjaxModel::$isUserActive' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:48
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(48): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 [internal function]: AjaxController->loginAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___loginAction', Array)
+#4 [internal function]: AjaxController::___loginAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 17:32:28 - exception 'ErrorException' with message 'Undefined property: App\Models\Ajax\AjaxModel::$isUserActive' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:48
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(48): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 [internal function]: AjaxController->loginAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___loginAction', Array)
+#4 [internal function]: AjaxController::___loginAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 17:32:28 - exception 'ErrorException' with message 'Undefined property: App\Models\Ajax\AjaxModel::$isUserActive' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:48
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(48): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 [internal function]: AjaxController->loginAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___loginAction', Array)
+#4 [internal function]: AjaxController::___loginAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 17:32:29 - exception 'ErrorException' with message 'Undefined property: App\Models\Ajax\AjaxModel::$isUserActive' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:48
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(48): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 [internal function]: AjaxController->loginAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___loginAction', Array)
+#4 [internal function]: AjaxController::___loginAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 17:32:36 - exception 'ErrorException' with message 'Undefined property: App\Models\Ajax\AjaxModel::$isUserActive' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:48
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(48): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 [internal function]: AjaxController->loginAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___loginAction', Array)
+#4 [internal function]: AjaxController::___loginAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 17:32:48 - exception 'ErrorException' with message 'Undefined property: App\Models\Ajax\AjaxModel::$isUserActive' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:48
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(48): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 [internal function]: AjaxController->loginAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___loginAction', Array)
+#4 [internal function]: AjaxController::___loginAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 17:33:45 - exception 'ErrorException' with message 'Undefined property: App\Models\Ajax\AjaxModel::$isUserActive' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:48
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(48): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 [internal function]: AjaxController->loginAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___loginAction', Array)
+#4 [internal function]: AjaxController::___loginAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 17:33:46 - exception 'ErrorException' with message 'Undefined property: App\Models\Ajax\AjaxModel::$isUserActive' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:48
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(48): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 [internal function]: AjaxController->loginAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___loginAction', Array)
+#4 [internal function]: AjaxController::___loginAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 17:33:53 - exception 'ErrorException' with message 'Undefined property: App\Models\Ajax\AjaxModel::$isUserActive' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:48
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(48): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 [internal function]: AjaxController->loginAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___loginAction', Array)
+#4 [internal function]: AjaxController::___loginAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 17:33:59 - exception 'ErrorException' with message 'Undefined property: App\Models\Ajax\AjaxModel::$isUserActive' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:48
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(48): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 [internal function]: AjaxController->loginAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___loginAction', Array)
+#4 [internal function]: AjaxController::___loginAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}

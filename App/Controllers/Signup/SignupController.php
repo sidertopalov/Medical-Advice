@@ -16,19 +16,8 @@ class SignupController extends Controller
         /** @var Yee\Yee $yee */
         $app = $this->getYee();
 
-        // Method get() is like => "SELECT * FROM users".
-        $dbResult = $app->db['default']->get('users');
-        // $dbResultWhere = $app->db['default']->where();
-        // var_dump($dbResult);
-
         $data = array(
             "title" => "Sing Up",
-            "test" => "Hello, world",
-            "su" => "Hello from",
-            "tty" => array(
-                "sider" => "Yee PHP Framework!",
-                "hey" => "How are you guys?",
-                ),
             );
         
         $app->render('pages/signup.tpl', $data);
@@ -45,21 +34,14 @@ class SignupController extends Controller
         /** @var Yee\Yee $yee */
         $app = $this->getYee();
 
-        // \Yee\Yee::getDefaultSettings() return array();   ----> Ask question kude e nai pravilno da definirash const s putq
-        //                                                  ----> za da moje da q izpolzvash ot vsqkade????
+        // \Yee\Yee::getDefaultSettings() return array(); 
 
         // в случай че триеш този ред е добре да изтриеш и 'baseMyPath' в \Yee\Yee::getDefaultSettings() метода!
         $baseUrl = \Yee\Yee::getDefaultSettings();
-        // $a = explode('htdocs', $app->root()); // use a[1] => "/KinguinInternship/myProject/";
 
-        // var_dump($app->request->getRootUri());
-        // var_dump($app->request->getUrl());
-        // die();
 
-        
         // --------------> POST variables <-------------
 
-        // $postVar        = $app->request->post();
         $emailSignup    = $app->request->post('emailSignup');
         $passSignup     = $app->request->post('passSignup');
         $passConfSignup = $app->request->post('passConfSignup');
@@ -69,17 +51,16 @@ class SignupController extends Controller
 
         if (!$signupModel->validate()) {
             
-            // echo "invalid <br>";
             $error = "Invalid Email/Password";
         } 
         else if (!$signupModel->checkUserDb()){
 
-            // echo "user exist <br>";
             $error = "Email is already exists";
         }
 
         if ( !isset($error) ) {
-            // echo "Execute query <br>";
+
+            // registration new account
             $signupModel->register();
 
             $dataMailer = array(
@@ -87,7 +68,7 @@ class SignupController extends Controller
                     'homePageUrl' => $baseUrl['baseHomePageUrl'],
                 );    
 
-
+            // Create instance of App\Libraries\Mailer\Mailer
             $mailer = new Mailer( "sidertopalov@gmail.com", $emailSignup, "signup", $dataMailer, "Activate Account" );
 
             // send email 
@@ -95,36 +76,6 @@ class SignupController extends Controller
            
 
         }
-
-        // if($signupModel->validate()) {
-
-        //     $signupModel->register();
-        // } else {
-
-        //     echo "Invalid Email/Password";
-        // }
-
-
-        // if($singupModel->isEmail()) {
-        //     echo "<b>$emailSignup</b> is a valid email address <br>";
-        // } else {
-        //     echo "<b>$emailSignup</b> is not a valid email address";
-        // }
-
-        // var_dump($singupModel->validate());
-        // echo "<br>";
-
-        // if ($singupModel->checkPass()) {
-            
-        //     echo "<b>Password</b> is a valid <br>";
-        // } else {
-        //     echo "<b>Password</b> is not a valid <br>";
-        // }
-
-        // die('test');
-
-        // var_dump($emailSignup);
-        // die();
 
         if(isset($error)) {
 

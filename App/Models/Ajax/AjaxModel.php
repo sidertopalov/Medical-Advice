@@ -3,9 +3,23 @@ namespace App\Models\Ajax;
 
 class AjaxModel {
 
-
+	/**
+	* Email from login form
+	*
+	* @var string
+	*/
 	private $loginEmail;
+	/**
+	* Password from login form
+	*
+	* @var string
+	*/
 	private $loginPass;
+	/**
+	* Yee instance
+	*
+	* @var Yee
+	*/
 	private $app;
 
 
@@ -19,7 +33,11 @@ class AjaxModel {
 	}
 
 
-
+	/**
+	* This method get all field from database for $loginEmail (email from database)
+	*
+	* @return array with all fields from database if user exist or null
+	*/
 
 	public function userProperty() {
 
@@ -29,7 +47,11 @@ class AjaxModel {
 
 
 
-
+	/**
+	* This method check if email exist in database.
+	*
+	* @return boolean true if email exist or false if is not found.
+	*/
 	public function isEmailExist() {
 
 		$app = $this->app;
@@ -42,8 +64,11 @@ class AjaxModel {
 	}
 
 
-
-
+	/**
+	* Check $loginPass is equal(==) to the 'password' from database field
+	*
+	* @return boolean true if passwords are equal
+	*/
 	public function checkPassword() {
 
 		$app = $this->app;
@@ -61,6 +86,11 @@ class AjaxModel {
 
 
 
+	/**
+	* Check account is active or not ( '1' = active and '0' = not active )
+	*
+	* @return boolean true if account is active
+	*/
 
 	public function isUserActive() {
 
@@ -76,10 +106,15 @@ class AjaxModel {
 
 
 
-
+	/**
+	* Call isEmailExist() and checkPassword() functions
+	*
+	* @return boolean true or false
+	*/
 	public function validate() {
 
 		if ($this->isEmailExist() && $this->checkPassword()) {
+
 			return true;
 		}
 		return false;

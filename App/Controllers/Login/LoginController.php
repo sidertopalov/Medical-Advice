@@ -22,8 +22,10 @@ class LoginController extends Controller
             );
 
         $data = array(
-            "title" => "LoginController",
-            "javascript" => $javascript,
+
+            "title"         => "LoginController",
+            "javascript"    => $javascript,
+
             );
         
         $app->render('pages/login.tpl', $data);

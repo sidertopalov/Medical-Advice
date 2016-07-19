@@ -4,10 +4,36 @@ namespace App\Models\Signup;
 
 class SignupModel {
 
+
+	/**
+	* Email from signup page
+	*
+	* @var string
+	*/
 	private $email;
+	/**
+	* Password from signup page
+	*
+	* @var mixed
+	*/
 	private $pass;
+	/**
+	* Confirm password from signup page
+	*
+	* @var mixed
+	*/
 	private $confPass;
+	/**
+	* Yee instance
+	*
+	* @var Yee
+	*/
 	private $app;
+	/**
+	* Auto-generate hash code for 'activationCode' field in database
+	*
+	* @var string
+	*/
 	public $activationCode;
 
 	public function __construct($username, $pass, $confPass) {
@@ -21,6 +47,12 @@ class SignupModel {
         $this->confPass  = $confPass;
 	}
 
+
+	/**
+	* Check for valid email format
+	*
+	* @return boolean true if email format is valid
+	*/
 	public function isEmail() {
 
 		if(filter_var(trim($this->email), FILTER_VALIDATE_EMAIL)) {
@@ -29,6 +61,11 @@ class SignupModel {
 		return false;
 	}
 
+	/**
+	* Check password format and $pass is equal(==) to $confPass example( 12345 == 12345 )
+	*
+	* @return boolean true if $pass == $confPass and format is correct
+	*/
 	public function checkPass() {
 
 		$pass = trim($this->pass);
@@ -47,6 +84,11 @@ class SignupModel {
 		return false;
 	}
 
+	/**
+	* Helper method call isEmail() and checkPass() 
+	*
+	* @var boolean true if email and password are correct
+	*/
 	public function validate() {
 		
 		if (!$this->isEmail()) {
@@ -61,12 +103,15 @@ class SignupModel {
 		return true;
 	}
 
+	/**
+	* Check database if there already exist this $email or not
+	*
+	* @return boolean true if email not exist in database
+	*/
 	public function checkUserDb() {
 
 		$app = $this->app;
 		$isUserExist = $app->db['default']->where('email',$this->email)->getOne('users');
-
-		// var_dump($isUserExist);
 
 		if (!is_null($isUserExist)) {
 			return false;
@@ -74,11 +119,17 @@ class SignupModel {
 		return true;
 	}
 
+	/**
+	* Registration new account. You need use validate() and checkUserDb() function before use register()
+	*
+	* @return void
+	*/
 	public function register() {
 
 		$app 		 = $this->app;
 		$db 		 = $app->db['default'];
 		$dateTimeNow = date("Y-m-d H:i:s");
+
         $this->activationCode = $this->hashEmail();
 
         $data = array(
@@ -94,23 +145,29 @@ class SignupModel {
 		$db->insert("users", $data );
 	}
 
+	/**
+	* Conver $email in md5 hash
+	*
+	* @return string
+	*/
 	public function hashEmail() {
 
 		return md5($this->email);
 	}
 
-	public function checkActivationCode() {
 
-		$app = $this->app;
+	// public function checkActivationCode() {
 
-		$data = array(
-			'active' => 1,
-			'activationCode' => $this->activationCode,
-			);
+	// 	$app = $this->app;
 
-		$app->db['default']->where("activationCode",$this->activetionCode);
-		$app->db['default']->update("users", $data);
+	// 	$data = array(
+	// 		'active' => 1,
+	// 		'activationCode' => $this->activationCode,
+	// 		);
 
-	}
+	// 	$app->db['default']->where("activationCode",$this->activetionCode);
+	// 	$app->db['default']->update("users", $data);
+
+	// }
 }
 

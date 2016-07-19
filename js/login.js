@@ -1,4 +1,3 @@
-
 $("#loginForm").submit(function(e){
 
 	var url = "/KinguinInternship/myProject/ajax/login";
@@ -9,64 +8,70 @@ $("#loginForm").submit(function(e){
 		dataType: "json",
 		success: function(data)
 		{
-			alert(data.error);
+			alert(data.message);
 		}
 	});
 	e.preventDefault();
 });
 
 
+// Validate Email format and check for empty password field
+
+$( "#loginSubmit" ).click(function() {
+
+	var email 	 = $("#loginEmail").val();
+	var pass  	 = $("#loginPass").val();
+	var isDataValid = true;
+
+	email = $.trim(email);
+
+	if(email == "") {
+
+	  	$("errorLoginEmail").html("Email is empty");
+		$("#errorLoginEmail").fadeTo(1500,1);
+		isDataValid = false;
+  	}
+
+  	if ( !isEmail(email) ) {
+
+  		$("#errorLoginEmail").html("Email is not valid");
+  		$("#errorLoginEmail").fadeTo(1500,1);
+  		isDataValid = false;
+  	}
+
+  	if ($.trim(pass) == "") {
+
+  		$("#errorLoginPass").html("Password is empty");
+		$("#errorLoginPass").fadeTo(1500,1);
+		isDataValid = false;
+  	}
+
+	setTimeout(disappear,3500);
+
+  	if(isDataValid){
+
+  		return true;
+  	}
+
+  	return false;
+  	
+	function isEmail(email) {
+
+	  		var emailRegex = /[a-zA-Z0-9_+.-]+\@[a-zA-Z0-9]+\.[a-zA-Z]+/g;
+	  		return emailRegex.test(email);
+	}
+
+	function disappear() {
+
+		$("#errorLoginEmail").fadeTo(1500,0);
+		$("#errorLoginPass").fadeTo(1500,0);
+	}
+
+});
 
 
-// $( "#loginSubmit" ).click(function() {
 
-// 	var email 	 = $("#loginEmail").val();
-// 	var pass  	 = $("#loginPass").val();
-// 	var isDataValid = true;
 
-// 	email = $.trim(email);
-
-// 	if(email == "") {
-// 	  	$("error").html("Email is empty");
-// 		// $("#emailError").css("display","block");
-// 		$("#emailError").fadeTo(1500,1);
-// 		isDataValid = false;
-//   	}
-
-//   	if ( !isEmail(email) ) {
-
-//   		$("#error").html("Email is not valid");
-//   		$("#emailError2").fadeTo(1500,1);
-//   		isDataValid = false;
-//   	}
-
-//   	if ($.trim(pass) == "") {
-//   		$("#error").html("Password is empty");
-// 		// $("#passError").css("display","block");
-// 		$("#error").fadeTo(1500,1);
-// 		isDataValid = false;
-//   	}
-
-// 	setTimeout(disappear,3500);
-
-//   	// if(isDataValid){
-//   	// 	return true;
-//   	// }
-//   	return false;
-// 	function isEmail(email) {
-
-// 			//  "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" 	 --> email address
-// 			//  "/[a-zA-Z0-9]+@+[a-zA-Z0-9]+\.[a-zA-Z]+/g"			 --> email address
-// 			//  "[a-zA-Z/:]+[a-zA-Z0-9_@]+\.[a-z.]+[a-z]+/g" 		 --> url address
-// 	  		var emailRegex = /[a-zA-Z0-9_+.-]+\@[a-zA-Z0-9]+\.[a-zA-Z]+/g;
-// 	  		return emailRegex.test(email);
-// 	}
-
-// 	function disappear() {
-
-// 		$("#error").fadeTo(1500,0);
-// 	}
-// });
 
 
 
