@@ -1,0 +1,38 @@
+ERROR - 2016-07-07 09:36:55 - exception 'Twig_Error_Loader' with message 'Unable to find template "pages/signup.tpl" (looked into: ./templates).' in /var/www/html/Twig/Loader/Filesystem.php:191
+Stack trace:
+#0 /var/www/html/Twig/Loader/Filesystem.php(138): Twig_Loader_Filesystem->findTemplate('pages/signup.tp...')
+#1 /var/www/html/Twig/Environment.php(265): Twig_Loader_Filesystem->getCacheKey('pages/signup.tp...')
+#2 /var/www/html/Twig/Environment.php(323): Twig_Environment->getTemplateClass('pages/signup.tp...', NULL)
+#3 /var/www/html/Yee/Views/Twig.php(87): Twig_Environment->loadTemplate('pages/signup.tp...')
+#4 /var/www/html/Yee/View.php(255): Yee\Views\Twig->render('pages/signup.tp...', NULL)
+#5 /var/www/html/Yee/View.php(243): Yee\View->fetch('pages/signup.tp...', NULL)
+#6 /var/www/html/Yee/Yee.php(764): Yee\View->display('pages/signup.tp...')
+#7 /var/www/html/App/Controllers/Signup/SignupController.php(19): Yee\Yee->render('pages/signup.tp...', Array)
+#8 [internal function]: SignupController->indexAction('en')
+#9 /var/www/html/Yee/Managers/Controller/Controller.php(22): call_user_func_array(Array, Array)
+#10 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#11 [internal function]: SignupController::___indexAction('en')
+#12 /var/www/html/Yee/Route.php(462): call_user_func_array('SignupControlle...', Array)
+#13 /var/www/html/Yee/Yee.php(1333): Yee\Route->dispatch()
+#14 /var/www/html/Yee/Middleware/Flash.php(85): Yee\Yee->call()
+#15 /var/www/html/Yee/Middleware/MethodOverride.php(92): Yee\Middleware\Flash->call()
+#16 /var/www/html/Yee/Middleware/PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#17 /var/www/html/Yee/Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#18 /var/www/html/index.php(48): Yee\Yee->execute()
+#19 {main}
+ERROR - 2016-07-07 10:21:44 - exception 'InvalidArgumentException' with message 'Cannot append view data. Expected array argument.' in C:\xampp\htdocs\KinguinInternship\myProject\Yee\View.php:191
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(763): Yee\View->appendData('Hello world')
+#1 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php(21): Yee\Yee->render('pages/signup.tp...', 'Hello world')
+#2 [internal function]: SignupController->indexAction()
+#3 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#5 [internal function]: SignupController::___indexAction()
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1333): Yee\Route->dispatch()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#12 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#13 {main}

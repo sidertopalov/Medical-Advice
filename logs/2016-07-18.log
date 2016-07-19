@@ -1,0 +1,62 @@
+ERROR - 2016-07-18 08:19:01 - exception 'ErrorException' with message 'Undefined variable: isExist' in C:\xampp\htdocs\KinguinInternship\myProject\App\Models\Ajax\AjaxModel.php:24
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Models\Ajax\AjaxModel.php(24): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\KinguinInternship\myProject\App\Models\Ajax\AjaxModel.php(69): App\Models\Ajax\AjaxModel->isEmailExist()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(43): App\Models\Ajax\AjaxModel->validate()
+#3 [internal function]: AjaxController->loginAction()
+#4 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#5 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___loginAction', Array)
+#6 [internal function]: AjaxController::___loginAction()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#12 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#13 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#14 {main}
+ERROR - 2016-07-18 10:45:47 - exception 'ErrorException' with message 'Undefined variable: activateUser' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Activation\ActivationController.php:23
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Activation\ActivationController.php(23): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 [internal function]: ActivationController->activationAction('qwedashjafqwesa')
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___activationAc...', Array)
+#4 [internal function]: ActivationController::___activationAction('qwedashjafqwesa')
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('ActivationContr...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-18 10:46:09 - exception 'ErrorException' with message 'Undefined variable: userExist' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Activation\ActivationController.php:23
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Activation\ActivationController.php(23): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 [internal function]: ActivationController->activationAction('qwedashjafqwesa')
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___activationAc...', Array)
+#4 [internal function]: ActivationController::___activationAction('qwedashjafqwesa')
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('ActivationContr...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-18 10:46:11 - exception 'ErrorException' with message 'Undefined variable: userExist' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Activation\ActivationController.php:23
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Activation\ActivationController.php(23): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 [internal function]: ActivationController->activationAction('qwedashjafqwesa')
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___activationAc...', Array)
+#4 [internal function]: ActivationController::___activationAction('qwedashjafqwesa')
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('ActivationContr...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}

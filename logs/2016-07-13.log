@@ -1,0 +1,274 @@
+ERROR - 2016-07-13 08:46:12 - exception 'ErrorException' with message 'Missing argument 1 for Yee\Libraries\Database\MysqliDB::where(), called in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php on line 20 and defined' in C:\xampp\htdocs\KinguinInternship\myProject\Yee\Libraries\Database\MysqliDB.php:395
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Libraries\Database\MysqliDB.php(395): Yee\Yee::handleErrors(2, 'Missing argumen...', 'C:\\xampp\\htdocs...', 395, Array)
+#1 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php(20): Yee\Libraries\Database\MysqliDB->where()
+#2 [internal function]: SignupController->indexAction()
+#3 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#5 [internal function]: SignupController::___indexAction()
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1333): Yee\Route->dispatch()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#12 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-13 09:21:42 - exception 'ErrorException' with message 'Undefined variable: isEmail' in C:\xampp\htdocs\KinguinInternship\myProject\App\Models\Signup\SignupModel.php:51
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Models\Signup\SignupModel.php(51): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 51, Array)
+#1 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php(67): App\Models\Signup\SignupModel->validate()
+#2 [internal function]: SignupController->signUpAction()
+#3 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___signUpAction', Array)
+#5 [internal function]: SignupController::___signUpAction()
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1333): Yee\Route->dispatch()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#12 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-13 09:24:38 - exception 'ErrorException' with message 'Undefined property: App\Models\Signup\SignupModel::$password' in C:\xampp\htdocs\KinguinInternship\myProject\App\Models\Signup\SignupModel.php:77
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Models\Signup\SignupModel.php(77): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 77, Array)
+#1 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php(79): App\Models\Signup\SignupModel->register()
+#2 [internal function]: SignupController->signUpAction()
+#3 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___signUpAction', Array)
+#5 [internal function]: SignupController::___signUpAction()
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1333): Yee\Route->dispatch()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#12 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-13 09:30:22 - exception 'ErrorException' with message 'Undefined variable: signupModel' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php:79
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php(79): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79, Array)
+#1 [internal function]: SignupController->signUpAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___signUpAction', Array)
+#4 [internal function]: SignupController::___signUpAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1333): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-13 09:31:35 - exception 'ErrorException' with message 'Undefined variable: signupModel' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php:79
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php(79): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79, Array)
+#1 [internal function]: SignupController->signUpAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___signUpAction', Array)
+#4 [internal function]: SignupController::___signUpAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1333): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-13 09:31:57 - exception 'ErrorException' with message 'Undefined variable: signupModel' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php:79
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php(79): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79, Array)
+#1 [internal function]: SignupController->signUpAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___signUpAction', Array)
+#4 [internal function]: SignupController::___signUpAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1333): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-13 09:47:34 - exception 'ErrorException' with message 'Undefined variable: singupModel' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php:61
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php(61): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 61, Array)
+#1 [internal function]: SignupController->signUpAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___signUpAction', Array)
+#4 [internal function]: SignupController::___signUpAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1333): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-13 11:35:08 - exception 'ErrorException' with message 'Undefined offset: 1' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php:69
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php(69): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 69, Array)
+#1 [internal function]: SignupController->signUpAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___signUpAction', Array)
+#4 [internal function]: SignupController::___signUpAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1333): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-13 11:57:07 - exception 'ErrorException' with message 'define() expects at least 2 parameters, 1 given' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php:71
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(2, 'define() expect...', 'C:\\xampp\\htdocs...', 71, Array)
+#1 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php(71): define('Invalid Email/P...')
+#2 [internal function]: SignupController->signUpAction()
+#3 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___signUpAction', Array)
+#5 [internal function]: SignupController::___signUpAction()
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1333): Yee\Route->dispatch()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#12 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-13 11:57:42 - exception 'ErrorException' with message 'Undefined variable: error' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php:71
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php(71): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 71, Array)
+#1 [internal function]: SignupController->signUpAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___signUpAction', Array)
+#4 [internal function]: SignupController::___signUpAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1333): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-13 11:58:48 - exception 'ErrorException' with message 'Undefined variable: error' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php:71
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php(71): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 71, Array)
+#1 [internal function]: SignupController->signUpAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___signUpAction', Array)
+#4 [internal function]: SignupController::___signUpAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1333): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-13 11:58:51 - exception 'ErrorException' with message 'Undefined variable: error' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php:71
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php(71): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 71, Array)
+#1 [internal function]: SignupController->signUpAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___signUpAction', Array)
+#4 [internal function]: SignupController::___signUpAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1333): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-13 17:48:05 - exception 'ErrorException' with message 'Undefined variable: basePath' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php:115
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php(115): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 115, Array)
+#1 [internal function]: SignupController->signUpAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___signUpAction', Array)
+#4 [internal function]: SignupController::___signUpAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-13 17:48:45 - exception 'ErrorException' with message 'Undefined variable: myPath' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php:116
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php(116): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 116, Array)
+#1 [internal function]: SignupController->signUpAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___signUpAction', Array)
+#4 [internal function]: SignupController::___signUpAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-13 17:56:02 - exception 'ErrorException' with message 'Undefined index: basePageHomeUrl' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php:120
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php(120): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 120, Array)
+#1 [internal function]: SignupController->signUpAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___signUpAction', Array)
+#4 [internal function]: SignupController::___signUpAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-13 17:56:14 - exception 'ErrorException' with message 'Undefined index: basePageHomeUrl' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php:120
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php(120): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 120, Array)
+#1 [internal function]: SignupController->signUpAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___signUpAction', Array)
+#4 [internal function]: SignupController::___signUpAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-13 18:15:10 - exception 'ErrorException' with message 'Undefined variable: _PUT' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php:19
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php(19): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 [internal function]: SignupController->indexAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#4 [internal function]: SignupController::___indexAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-13 18:15:14 - exception 'ErrorException' with message 'Undefined variable: _SET' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php:19
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Signup\SignupController.php(19): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 [internal function]: SignupController->indexAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#4 [internal function]: SignupController::___indexAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(48): Yee\Yee->execute()
+#12 {main}
