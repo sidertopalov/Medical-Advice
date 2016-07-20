@@ -15,12 +15,16 @@ class SignupController extends Controller
     {
         /** @var Yee\Yee $yee */
         $app = $this->getYee();
+        if (isset($_SESSION['isLogged']) === false) {
+            $data = array(
+                "title" => "Sing Up",
+                );
+            
+            $app->render('pages/signup.tpl', $data);
+        } else {
 
-        $data = array(
-            "title" => "Sing Up",
-            );
-        
-        $app->render('pages/signup.tpl', $data);
+            $app->redirect('/KinguinInternship/myProject/');
+        }
     }
 
      /**
@@ -38,7 +42,6 @@ class SignupController extends Controller
 
         // в случай че триеш този ред е добре да изтриеш и 'baseMyPath' в \Yee\Yee::getDefaultSettings() метода!
         $baseUrl = \Yee\Yee::getDefaultSettings();
-
 
         // --------------> POST variables <-------------
 

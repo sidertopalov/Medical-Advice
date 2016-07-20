@@ -14,21 +14,26 @@ class LoginController extends Controller
         /** @var Yee\Yee $yee */
         $app = $this->getYee();
         
-
-        $javascript = array(
-
-            '/KinguinInternship/myProject/js/login.js',
-            
-            );
-
-        $data = array(
-
-            "title"         => "LoginController",
-            "javascript"    => $javascript,
-
-            );
+        if (isset($_SESSION['isLogged']) === false) {
         
-        $app->render('pages/login.tpl', $data);
+            $javascript = array(
+
+                '/KinguinInternship/myProject/js/login.js',
+                
+                );
+
+            $data = array(
+
+                "title"         => "LoginController",
+                "javascript"    => $javascript,
+
+                );
+            
+            $app->render('pages/login.tpl', $data);
+        } else {
+
+            $app->redirect('/KinguinInternship/myProject/');
+        }
     }
 
     public function testAction() {
