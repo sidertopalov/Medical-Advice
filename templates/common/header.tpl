@@ -39,7 +39,7 @@
 						<div class="col-sm-12">
 							<div class="utility-inner clearfix">
 								<span class="alt-font"><i class="icon icon_pin"></i> 300 Collins St Melbourne</span>
-								<span class="alt-font"><i class="icon icon_mail"></i> hello@pivot.net</span>
+								<span class="alt-font"><i class="icon icon_mail"></i> example@gmail.com</span>
 							
 								
 								<ul class="social-icons text-right">
@@ -79,9 +79,19 @@
 						<div class="col-sm-12 columns text-center">
 							<ul class="menu">
 								<li> <a href="/KinguinInternship/myProject/">Home</a></li>
-								<li> <a href="/KinguinInternship/myProject/signup">Sign Up</a></li>
-								<li> <a href="/KinguinInternship/myProject/login">Login</a></li>
-								<li><a href="#">Single Link</a></li>
+								
+
+								{% if session.isLogged %}
+						        	<li><a href="/KinguinInternship/myProject/account">Profile</a></li>
+						        	<li><a href="/KinguinInternship/myProject/account?logout=1">Logout</a></li>
+					        	{% else %}
+						        	<li> <a href="/KinguinInternship/myProject/signup">Sign Up</a></li>
+									<li> <a href="/KinguinInternship/myProject/login">Login</a></li>
+						        {% endif %}
+								
+
+								<!-- Comment top nav-menu
+
 								<li class="has-dropdown"><a href="#">Dropdown</a>
 									<ul class="subnav">
 										<li><a href="#">Example</a></li>
@@ -155,7 +165,8 @@
 											</ul>	
 										</div>
 									</div>
-								</li>
+								</li> 
+								End of comment top nav menu-->
 								
 							</ul>
 		

@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 
     error_reporting( E_ALL );
 
@@ -29,7 +30,7 @@
 
      /* we need the session variable exposed within templates */
      $twig = $app->view()->getEnvironment();
-     //$twig->addGlobal( 'session', $_SESSION );
+     $twig->addGlobal( 'session', $_SESSION );
 
      new Yee\Managers\DatabaseManager();
 

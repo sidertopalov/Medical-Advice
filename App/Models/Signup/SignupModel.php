@@ -36,6 +36,8 @@ class SignupModel {
 	*/
 	public $activationCode;
 
+
+
 	public function __construct($username, $pass, $confPass) {
 
 		$this->app 		 = \Yee\Yee::getInstance();
@@ -104,9 +106,9 @@ class SignupModel {
 	}
 
 	/**
-	* Check database if there already exist this $email or not
+	* Check database if this $email has already existed or hasn't
 	*
-	* @return boolean true if email not exist in database
+	* @return boolean true if $email doesn't exist in the database
 	*/
 	public function checkUserDb() {
 
@@ -120,7 +122,7 @@ class SignupModel {
 	}
 
 	/**
-	* Registration new account. You need use validate() and checkUserDb() function before use register()
+	* Registration new account. You need to use validate() and checkUserDb() functions before use register()
 	*
 	* @return void
 	*/
@@ -146,7 +148,7 @@ class SignupModel {
 	}
 
 	/**
-	* Conver $email in md5 hash
+	* Converts $email in md5 hash
 	*
 	* @return string
 	*/
@@ -155,7 +157,7 @@ class SignupModel {
 		return md5($this->email);
 	}
 
-
+	
 	// public function checkActivationCode() {
 
 	// 	$app = $this->app;

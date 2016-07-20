@@ -14,6 +14,11 @@ class HomeController extends Controller
         /** @var Yee\Yee $yee */
         $app = $this->getYee();
         
+        // if (isset($_GET['logout'])) {
+        //     // session_start();
+        //     session_destroy();
+        // }
+
         $data = array(
             "title" => "HomeController",
             "test"  => "Hello, world",

@@ -9,5 +9,5 @@
 
 $app = Yee\Yee::getInstance();
 
-$app->map("/login", "LoginController::___indexAction")->via("GET")->name("login.index");
+$app->map("/account", "MyAccountController::___indexAction")->via("GET")->name("account.index");
 

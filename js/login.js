@@ -8,7 +8,11 @@ $("#loginForm").submit(function(e){
 		dataType: "json",
 		success: function(data)
 		{
-			alert(data.message);
+			if (data.error === true) {
+				window.location.replace(data.redirectTo);
+			} else {
+				alert(data.message);
+			}
 		}
 	});
 	e.preventDefault();

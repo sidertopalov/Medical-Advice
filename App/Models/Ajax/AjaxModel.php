@@ -34,11 +34,10 @@ class AjaxModel {
 
 
 	/**
-	* This method get all field from database for $loginEmail (email from database)
+	* This method gets all fields from database for $loginEmail (email from database)
 	*
-	* @return array with all fields from database if user exist or null
+	* @return array with all fields from database if user exists or null
 	*/
-
 	public function userProperty() {
 
 		$app = $this->app;
@@ -48,7 +47,7 @@ class AjaxModel {
 
 
 	/**
-	* This method check if email exist in database.
+	* This method checks if email exists in database.
 	*
 	* @return boolean true if email exist or false if is not found.
 	*/
@@ -65,9 +64,9 @@ class AjaxModel {
 
 
 	/**
-	* Check $loginPass is equal(==) to the 'password' from database field
+	* Checks if $loginPass is equal(==) to the 'password' from database field
 	*
-	* @return boolean true if passwords are equal
+	* @return boolean true if passwords are equals
 	*/
 	public function checkPassword() {
 
@@ -87,11 +86,10 @@ class AjaxModel {
 
 
 	/**
-	* Check account is active or not ( '1' = active and '0' = not active )
+	* Check account is active or not ( '1' = active and '0' = not active ) in database
 	*
 	* @return boolean true if account is active
 	*/
-
 	public function isUserActive() {
 
 		$app = $this->app;
@@ -107,20 +105,17 @@ class AjaxModel {
 
 
 	/**
-	* Call isEmailExist() and checkPassword() functions
+	* Call isEmailExist(), isUserActive() and checkPassword() functions
 	*
 	* @return boolean true or false
 	*/
-	public function validate() {
+	public function validateLogin() {
 
-		if ($this->isEmailExist() && $this->checkPassword()) {
+		if ($this->isEmailExist() && $this->checkPassword() && $this->isUserActive()) {
 
 			return true;
 		}
 		return false;
 	}
-
-
-
 
 }

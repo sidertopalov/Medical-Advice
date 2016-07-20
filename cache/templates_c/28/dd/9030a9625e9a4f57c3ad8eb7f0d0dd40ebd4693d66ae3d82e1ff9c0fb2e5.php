@@ -60,7 +60,7 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 \t\t\t\t\t\t<div class=\"col-sm-12\">
 \t\t\t\t\t\t\t<div class=\"utility-inner clearfix\">
 \t\t\t\t\t\t\t\t<span class=\"alt-font\"><i class=\"icon icon_pin\"></i> 300 Collins St Melbourne</span>
-\t\t\t\t\t\t\t\t<span class=\"alt-font\"><i class=\"icon icon_mail\"></i> hello@pivot.net</span>
+\t\t\t\t\t\t\t\t<span class=\"alt-font\"><i class=\"icon icon_mail\"></i> example@gmail.com</span>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t<ul class=\"social-icons text-right\">
@@ -100,9 +100,26 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 \t\t\t\t\t\t<div class=\"col-sm-12 columns text-center\">
 \t\t\t\t\t\t\t<ul class=\"menu\">
 \t\t\t\t\t\t\t\t<li> <a href=\"/KinguinInternship/myProject/\">Home</a></li>
-\t\t\t\t\t\t\t\t<li> <a href=\"/KinguinInternship/myProject/signup\">Sign Up</a></li>
-\t\t\t\t\t\t\t\t<li> <a href=\"/KinguinInternship/myProject/login\">Login</a></li>
-\t\t\t\t\t\t\t\t<li><a href=\"#\">Single Link</a></li>
+\t\t\t\t\t\t\t\t
+
+\t\t\t\t\t\t\t\t";
+        // line 84
+        if ($this->getAttribute((isset($context["session"]) ? $context["session"] : null), "isLogged")) {
+            // line 85
+            echo "\t\t\t\t\t\t        \t<li><a href=\"/KinguinInternship/myProject/account\">Profile</a></li>
+\t\t\t\t\t\t        \t<li><a href=\"/KinguinInternship/myProject/account?logout=1\">Logout</a></li>
+\t\t\t\t\t        \t";
+        } else {
+            // line 88
+            echo "\t\t\t\t\t\t        \t<li> <a href=\"/KinguinInternship/myProject/signup\">Sign Up</a></li>
+\t\t\t\t\t\t\t\t\t<li> <a href=\"/KinguinInternship/myProject/login\">Login</a></li>
+\t\t\t\t\t\t        ";
+        }
+        // line 91
+        echo "\t\t\t\t\t\t\t\t
+
+\t\t\t\t\t\t\t\t<!-- Comment top nav-menu
+
 \t\t\t\t\t\t\t\t<li class=\"has-dropdown\"><a href=\"#\">Dropdown</a>
 \t\t\t\t\t\t\t\t\t<ul class=\"subnav\">
 \t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Example</a></li>
@@ -176,7 +193,8 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 \t\t\t\t\t\t\t\t\t\t\t</ul>\t
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t\t</li> 
+\t\t\t\t\t\t\t\tEnd of comment top nav menu-->
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t</ul>
 \t\t
@@ -210,6 +228,6 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 
     public function getDebugInfo()
     {
-        return array (  29 => 9,  19 => 1,);
+        return array (  119 => 91,  114 => 88,  109 => 85,  107 => 84,  29 => 9,  19 => 1,);
     }
 }

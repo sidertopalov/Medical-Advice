@@ -40,21 +40,23 @@ class AjaxController extends Controller
         // Create instance of App\Models\Ajax\AjaxModel;
         $ajax = new AjaxModel($loginEmail, $loginPass);
 
-        if (!$ajax->validate()) {
+        
+        if (!$ajax->validateLogin()) {
 
             $error = "Fail to join! Check your email/password.";
         }
 
-        if (!$ajax->isUserActive()) {
+        // if (!$ajax->isUserActive()) {
             
-            $error = "Please activate your account! Check your email!";
-        }
+        //     $error = "Please activate your account! Check your email!";
+        // }
 
 
         if(isset($error)) {
 
             $data = array(
                 "title"         => "AjaxControllerFail",
+                'redirectTo'    => "/KinguinInternship/myProject/account",
                 'message'       => $error,
                 'error'         => false,
                 'homePageUrl'   => $baseUrl['baseHomePageUrl'], // $baseUrl['baseHomePageUrl'] => '/KinguinInternship/myProject/' home page
@@ -64,16 +66,18 @@ class AjaxController extends Controller
             echo json_encode( $data );
 
         } else {
-
-           $data = array(
+            $_SESSION['isLogged'] = true;
+            $_SESSION['username'] = $loginEmail;
+            $data = array(
                 "title"         => "AjaxControllerSucc",
+                'redirectTo'    => "/KinguinInternship/myProject/account",
                 'message'       => "Hello, $loginEmail",
                 'success'       => true,
                 'error'         => true,
                 'homePageUrl'   => $baseUrl['baseHomePageUrl'], // $baseUrl['baseHomePageUrl'] => '/KinguinInternship/myProject/' home page
 
                 );
-           
+
             echo json_encode( $data );
         }
     }

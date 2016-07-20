@@ -5,7 +5,7 @@
 class activationModel {
 
 	/**
-	* Activation Code from database field
+	* Activation Code from the database field
 	*
 	* @var string
 	*/	
@@ -19,9 +19,9 @@ class activationModel {
 
 
 	/**
-	* This method check if activation code exist in database
+	* This method checks if activation code exists in the database
 	*
-	* @return array if activation code exist. Or false
+	* @return array if activation code exists. Or boolean false
 	*/
 	public function checkIfAcCodeExists()
 	{
@@ -42,9 +42,10 @@ class activationModel {
 	}
 
 	/**
-	* This method update 'activationCode' and 'active' field in database
+	* This method updates 'activationCode' and 'active' fields in the database
 	*
-	* @param array => activateUser( $userData ) where $userData is array and have email address 
+	* @param array => activateUser( $userData ) where $userData is an array and has an email address.. 
+	* 		 example: array with (key => 'email' and value = valid email)
 	*
 	* @return void
 	*/
@@ -61,8 +62,5 @@ class activationModel {
 
 		$app->db['default']->update( 'users', $data );
 	}
-
-
-
 
 }
