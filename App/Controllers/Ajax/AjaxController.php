@@ -47,11 +47,6 @@ class AjaxController extends Controller
             $error = "Fail to join! Check your email/password.";
         }
 
-        // if (!$ajax->isUserActive()) {
-            
-        //     $error = "Please activate your account! Check your email!";
-        // }
-
 
         if(isset($error)) {
 
@@ -64,7 +59,6 @@ class AjaxController extends Controller
 
                 );
 
-            echo json_encode( $data );
 
         } else {
 
@@ -80,9 +74,9 @@ class AjaxController extends Controller
                 'homePageUrl'   => $baseUrl['baseHomePageUrl'], // $baseUrl['baseHomePageUrl'] => '/KinguinInternship/myProject/' home page
 
                 );
-
-            echo json_encode( $data );
         }
+
+        echo json_encode( $data );
     }
 
     /**
@@ -103,22 +97,25 @@ class AjaxController extends Controller
 
 
         $model = new MyAccountModel($firstName,$lastName,$pass,$passConf);
+        $userProperty = $model->getAccountDetails();
+
+        if ( ( $userProperty['first_name'] === $firstName && $userProperty['last_name'] === $lastName ) && ( empty($pass) > 0 ) ) {
+            
+            $error = "There is no new date for update.";   
+        }
 
 
-
-        if ( trim($pass) != "" ) {
+        if ( strlen(trim($pass)) > 0 ) {
             
             if ( !$model->validatePassword() ) {
             
-                $error = "Please check your password.";
+                $error = "Password do not match.";
 
-            } 
-            else {
+            } else {
 
                 $model->updateAccount();
             }
-        } 
-        else {
+        } else {
 
             if (!$model->updateAccount()) {
 
@@ -135,18 +132,16 @@ class AjaxController extends Controller
                 'error'         => false,
                 );
 
-            echo json_encode( $data );
 
         } else {
 
             $data = array(
-                'message'       => "Succesful update!",
+                'message'       => "Succesfully updated!",
                 'success'       => true,
                 'error'         => true,
                 );
-
-            echo json_encode( $data );
         }
-        // $app->redirect('/KinguinInternship/myProject/account');
+        
+        echo json_encode( $data );
     }
 }

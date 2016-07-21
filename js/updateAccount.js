@@ -8,7 +8,7 @@ $("#updateAccount").submit(function(e){
 		dataType: "json",
 		success: function(data){
 			
-			alert(data.message);
+			$('#error').html( data.message ).fadeTo(1,1000);
 		}
 	});
 

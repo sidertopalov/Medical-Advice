@@ -42,7 +42,7 @@ class SignupController extends Controller
 
         // \Yee\Yee::getDefaultSettings() return array(); 
 
-        // в случай че триеш този ред е добре да изтриеш и 'baseMyPath' в \Yee\Yee::getDefaultSettings() метода!
+        // В случай че искаш да ползваш $baseUrl отиди в \Yee\Yee::getDefaultSettings() метода и задай "baseHomePage" => "your_path".
         $baseUrl = \Yee\Yee::getDefaultSettings();
 
         // --------------> POST variables <-------------

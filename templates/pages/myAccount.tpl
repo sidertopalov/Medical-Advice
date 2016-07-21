@@ -14,8 +14,8 @@
 				<!-- <div class="col-sm-12 text-center"> -->
 					<div class="photo-form-wrapper clearfix">
 						<div class="row">
-							<form method="post" id="updateAccount"> 
 
+							<form method="post" id="updateAccount"> 
 								<div class="col-md-4 col-sm-4">
 									<h3 style="text-decoration: underline;"> Bar </h3>
 									<hr style="border-color: #e74c3c;">
@@ -26,6 +26,7 @@
 
 									<h3 style="text-decoration: underline;"> Details </h3>
 									<hr style="border-color: #e74c3c;">
+									<div style="display:none" class="alert alert-success" role="alert" id="error"></div>
 
 									<input id="userEmail" name="userEmail" type="text" placeholder="First name" disabled value="{{userDetail.email}}">
 
