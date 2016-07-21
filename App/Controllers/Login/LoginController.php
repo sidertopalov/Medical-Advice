@@ -36,8 +36,16 @@ class LoginController extends Controller
         }
     }
 
-    public function testAction() {
+    /**
+     * @Route('/logout')
+     * @Name('logout.index')
+     */
+    public function logoutAction() {
 
-        echo "test";
+        $app = $this->getYee();
+
+        session_destroy();
+
+        $app->redirect('http://localhost/KinguinInternship/myProject/');
     }
 }

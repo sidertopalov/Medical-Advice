@@ -78,12 +78,11 @@
 					
 						<div class="col-sm-12 columns text-center">
 							<ul class="menu">
-								<li> <a href="/KinguinInternship/myProject/">Home</a></li>
-								
+								<li> <a href="/KinguinInternship/myProject/">Home</a></li>								
 
-								{% if session.isLogged %}
+								{% if session.isLogged == true %}
 						        	<li><a href="/KinguinInternship/myProject/account">Profile</a></li>
-						        	<li><a href="/KinguinInternship/myProject/account?logout=1">Logout</a></li>
+						        	<li><a href="/KinguinInternship/myProject/logout">Logout</a></li>
 					        	{% else %}
 						        	<li> <a href="/KinguinInternship/myProject/signup">Sign Up</a></li>
 									<li> <a href="/KinguinInternship/myProject/login">Login</a></li>

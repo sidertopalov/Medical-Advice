@@ -45,7 +45,6 @@ class AjaxModel {
 	}
 
 
-
 	/**
 	* This method checks if email exists in database.
 	*

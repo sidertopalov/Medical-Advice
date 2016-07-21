@@ -99,23 +99,22 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 \t\t\t\t\t
 \t\t\t\t\t\t<div class=\"col-sm-12 columns text-center\">
 \t\t\t\t\t\t\t<ul class=\"menu\">
-\t\t\t\t\t\t\t\t<li> <a href=\"/KinguinInternship/myProject/\">Home</a></li>
-\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<li> <a href=\"/KinguinInternship/myProject/\">Home</a></li>\t\t\t\t\t\t\t\t
 
 \t\t\t\t\t\t\t\t";
-        // line 84
-        if ($this->getAttribute((isset($context["session"]) ? $context["session"] : null), "isLogged")) {
-            // line 85
+        // line 83
+        if (($this->getAttribute((isset($context["session"]) ? $context["session"] : null), "isLogged") == true)) {
+            // line 84
             echo "\t\t\t\t\t\t        \t<li><a href=\"/KinguinInternship/myProject/account\">Profile</a></li>
-\t\t\t\t\t\t        \t<li><a href=\"/KinguinInternship/myProject/account?logout=1\">Logout</a></li>
+\t\t\t\t\t\t        \t<li><a href=\"/KinguinInternship/myProject/logout\">Logout</a></li>
 \t\t\t\t\t        \t";
         } else {
-            // line 88
+            // line 87
             echo "\t\t\t\t\t\t        \t<li> <a href=\"/KinguinInternship/myProject/signup\">Sign Up</a></li>
 \t\t\t\t\t\t\t\t\t<li> <a href=\"/KinguinInternship/myProject/login\">Login</a></li>
 \t\t\t\t\t\t        ";
         }
-        // line 91
+        // line 90
         echo "\t\t\t\t\t\t\t\t
 
 \t\t\t\t\t\t\t\t<!-- Comment top nav-menu
@@ -228,6 +227,6 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 
     public function getDebugInfo()
     {
-        return array (  119 => 91,  114 => 88,  109 => 85,  107 => 84,  29 => 9,  19 => 1,);
+        return array (  118 => 90,  113 => 87,  108 => 84,  106 => 83,  29 => 9,  19 => 1,);
     }
 }

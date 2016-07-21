@@ -3,6 +3,7 @@
 use Yee\Managers\Controller\Controller;
 use Yee\Managers\CacheManager;
 use App\Models\Ajax\AjaxModel;
+use App\Models\MyAccount\MyAccountModel;
 
 class AjaxController extends Controller
 {
@@ -80,5 +81,28 @@ class AjaxController extends Controller
 
             echo json_encode( $data );
         }
+    }
+
+    /**
+     * @Route('/ajax/updateMyAccount')
+     * @Name('post.index')
+     * @Method('post') 
+     */
+    public function postUpdateMyAccount() {
+
+        $app = $this->getYee();
+
+
+        // POST Variables
+        $email = $app->request()->post('email');
+        $firstName = $app->request()->post('firstName');
+        $lastName = $app->request()->post('lastName');
+        $pass = $app->request()->post('pass');
+        $passConf = $app->request()->post('passConf');
+
+        $model = new MyAccountModel($email,$firstName,$lastName,$pass,$passConf);
+
+        $model->updateDetails();
+        $app->redirect('/KinguinInternship/myProject/account');
     }
 }
