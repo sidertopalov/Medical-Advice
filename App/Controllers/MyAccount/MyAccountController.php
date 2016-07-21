@@ -2,6 +2,7 @@
 
 use Yee\Managers\Controller\Controller;
 use Yee\Managers\CacheManager;
+use App\Models\MyAccount\MyAccountModel;
 
 
 class MyAccountController extends Controller {
@@ -15,16 +16,20 @@ class MyAccountController extends Controller {
         /** @var Yee\Yee $yee */
         $app = $this->getYee();
 
-        if (isset($_GET['logout'])) {
-            session_destroy();
-            $app->redirect('http://localhost/KinguinInternship/myProject/');
-        }
+
+        $myAccount = new MyAccountModel();
+        $accDetail = $myAccount->getAccountDetails();
+        // var_dump($accDetail);
+        // die();
 
         if (isset($_SESSION['isLogged']) === true) {
            
 
             $data = array(
                 'title' => 'My Account Settings',
+                'userDetail' => $accDetail,
+                // 'userEmail' => $accDetail['email'],
+                // 'userName' => $accDetail['username'],
                 );
 
             $app->render('pages/myAccount.tpl', $data);
@@ -33,6 +38,5 @@ class MyAccountController extends Controller {
 
             $app->redirect('http://localhost/KinguinInternship/myProject/');
         }
-
     }
 }
