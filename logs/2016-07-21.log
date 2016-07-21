@@ -178,3 +178,267 @@ Stack trace:
 #15 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
 #16 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
 #17 {main}
+ERROR - 2016-07-21 10:24:04 - exception 'ErrorException' with message 'Undefined index: userEmail' in C:\xampp\htdocs\KinguinInternship\myProject\App\Models\MyAccount\MyAccountModel.php:27
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Models\MyAccount\MyAccountModel.php(27): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\MyAccount\MyAccountController.php(21): App\Models\MyAccount\MyAccountModel->getAccountDetails()
+#2 [internal function]: MyAccountController->indexAction()
+#3 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#5 [internal function]: MyAccountController::___indexAction()
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('MyAccountContro...', Array)
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#12 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-21 10:24:24 - exception 'ErrorException' with message 'Undefined index: userEmail' in C:\xampp\htdocs\KinguinInternship\myProject\App\Models\MyAccount\MyAccountModel.php:27
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Models\MyAccount\MyAccountModel.php(27): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\MyAccount\MyAccountController.php(21): App\Models\MyAccount\MyAccountModel->getAccountDetails()
+#2 [internal function]: MyAccountController->indexAction()
+#3 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#5 [internal function]: MyAccountController::___indexAction()
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('MyAccountContro...', Array)
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#12 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-21 10:24:55 - exception 'ErrorException' with message 'Undefined index: userEmail' in C:\xampp\htdocs\KinguinInternship\myProject\App\Models\MyAccount\MyAccountModel.php:27
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Models\MyAccount\MyAccountModel.php(27): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\MyAccount\MyAccountController.php(21): App\Models\MyAccount\MyAccountModel->getAccountDetails()
+#2 [internal function]: MyAccountController->indexAction()
+#3 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#5 [internal function]: MyAccountController::___indexAction()
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('MyAccountContro...', Array)
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#12 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-21 12:30:03 - exception 'ErrorException' with message 'Undefined variable: accDetail' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\MyAccount\MyAccountController.php:29
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\MyAccount\MyAccountController.php(29): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 29, Array)
+#1 [internal function]: MyAccountController->indexAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#4 [internal function]: MyAccountController::___indexAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('MyAccountContro...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-21 12:32:22 - exception 'ErrorException' with message 'Undefined property: App\Models\MyAccount\MyAccountModel::$passConf' in C:\xampp\htdocs\KinguinInternship\myProject\App\Models\MyAccount\MyAccountModel.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Models\MyAccount\MyAccountModel.php(58): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 58, Array)
+#1 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(110): App\Models\MyAccount\MyAccountModel->validatePassword()
+#2 [internal function]: AjaxController->postUpdateMyAccount()
+#3 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#5 [internal function]: AjaxController::___postUpdateMyAccount()
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#12 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-21 12:32:28 - exception 'ErrorException' with message 'Undefined property: App\Models\MyAccount\MyAccountModel::$passConf' in C:\xampp\htdocs\KinguinInternship\myProject\App\Models\MyAccount\MyAccountModel.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Models\MyAccount\MyAccountModel.php(58): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 58, Array)
+#1 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(110): App\Models\MyAccount\MyAccountModel->validatePassword()
+#2 [internal function]: AjaxController->postUpdateMyAccount()
+#3 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#5 [internal function]: AjaxController::___postUpdateMyAccount()
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#12 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-21 12:32:31 - exception 'ErrorException' with message 'Undefined property: App\Models\MyAccount\MyAccountModel::$passConf' in C:\xampp\htdocs\KinguinInternship\myProject\App\Models\MyAccount\MyAccountModel.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Models\MyAccount\MyAccountModel.php(58): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 58, Array)
+#1 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(110): App\Models\MyAccount\MyAccountModel->validatePassword()
+#2 [internal function]: AjaxController->postUpdateMyAccount()
+#3 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#5 [internal function]: AjaxController::___postUpdateMyAccount()
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#12 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-21 12:33:45 - exception 'ErrorException' with message 'Undefined property: App\Models\MyAccount\MyAccountModel::$passConf' in C:\xampp\htdocs\KinguinInternship\myProject\App\Models\MyAccount\MyAccountModel.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Models\MyAccount\MyAccountModel.php(58): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 58, Array)
+#1 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(110): App\Models\MyAccount\MyAccountModel->validatePassword()
+#2 [internal function]: AjaxController->postUpdateMyAccount()
+#3 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#5 [internal function]: AjaxController::___postUpdateMyAccount()
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#12 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-21 12:33:53 - exception 'ErrorException' with message 'Undefined property: App\Models\MyAccount\MyAccountModel::$passConf' in C:\xampp\htdocs\KinguinInternship\myProject\App\Models\MyAccount\MyAccountModel.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Models\MyAccount\MyAccountModel.php(58): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 58, Array)
+#1 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(110): App\Models\MyAccount\MyAccountModel->validatePassword()
+#2 [internal function]: AjaxController->postUpdateMyAccount()
+#3 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#5 [internal function]: AjaxController::___postUpdateMyAccount()
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#12 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-21 12:34:39 - exception 'ErrorException' with message 'Undefined variable: myAccount' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:107
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(107): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 107, Array)
+#1 [internal function]: AjaxController->postUpdateMyAccount()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#4 [internal function]: AjaxController::___postUpdateMyAccount()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-21 12:34:41 - exception 'ErrorException' with message 'Undefined variable: myAccount' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:107
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(107): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 107, Array)
+#1 [internal function]: AjaxController->postUpdateMyAccount()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#4 [internal function]: AjaxController::___postUpdateMyAccount()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-21 12:34:42 - exception 'ErrorException' with message 'Undefined variable: myAccount' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:107
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(107): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 107, Array)
+#1 [internal function]: AjaxController->postUpdateMyAccount()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#4 [internal function]: AjaxController::___postUpdateMyAccount()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-21 12:34:46 - exception 'ErrorException' with message 'Undefined variable: myAccount' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:107
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(107): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 107, Array)
+#1 [internal function]: AjaxController->postUpdateMyAccount()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#4 [internal function]: AjaxController::___postUpdateMyAccount()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-21 12:39:29 - exception 'ErrorException' with message 'Undefined property: App\Models\MyAccount\MyAccountModel::$passConf' in C:\xampp\htdocs\KinguinInternship\myProject\App\Models\MyAccount\MyAccountModel.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Models\MyAccount\MyAccountModel.php(58): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 58, Array)
+#1 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(108): App\Models\MyAccount\MyAccountModel->validatePassword()
+#2 [internal function]: AjaxController->postUpdateMyAccount()
+#3 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#5 [internal function]: AjaxController::___postUpdateMyAccount()
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#12 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-21 12:43:22 - exception 'ErrorException' with message 'Undefined variable: loginEmail' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:132
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(132): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 132, Array)
+#1 [internal function]: AjaxController->postUpdateMyAccount()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#4 [internal function]: AjaxController::___postUpdateMyAccount()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-21 12:43:25 - exception 'ErrorException' with message 'Undefined variable: loginEmail' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:132
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(132): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 132, Array)
+#1 [internal function]: AjaxController->postUpdateMyAccount()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#4 [internal function]: AjaxController::___postUpdateMyAccount()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-21 12:43:29 - exception 'ErrorException' with message 'Undefined variable: loginEmail' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php:132
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Ajax\AjaxController.php(132): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 132, Array)
+#1 [internal function]: AjaxController->postUpdateMyAccount()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#4 [internal function]: AjaxController::___postUpdateMyAccount()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
+#12 {main}

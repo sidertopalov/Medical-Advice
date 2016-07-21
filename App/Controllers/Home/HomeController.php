@@ -13,21 +13,10 @@ class HomeController extends Controller
     {
         /** @var Yee\Yee $yee */
         $app = $this->getYee();
-        
-        // if (isset($_GET['logout'])) {
-        //     // session_start();
-        //     session_destroy();
-        // }
+
 
         $data = array(
-            "title" => "HomeController",
-            "test"  => "Hello, world",
-            "su"    => "Hello from",
-            "tty"   => array(
-
-                "sider" => "Yee PHP Framework!",
-                "hey"   => "How are you guys?",
-            ),
+            "title" => "Home Controller",
         );
         
         $app->render('pages/index.tpl', $data);

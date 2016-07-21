@@ -67,8 +67,10 @@ class AjaxController extends Controller
             echo json_encode( $data );
 
         } else {
+
             $_SESSION['isLogged'] = true;
-            $_SESSION['username'] = $loginEmail;
+            $_SESSION['userEmail'] = $loginEmail;
+
             $data = array(
                 "title"         => "AjaxControllerSucc",
                 'redirectTo'    => "/KinguinInternship/myProject/account",
@@ -94,15 +96,57 @@ class AjaxController extends Controller
 
 
         // POST Variables
-        $email = $app->request()->post('email');
         $firstName = $app->request()->post('firstName');
         $lastName = $app->request()->post('lastName');
         $pass = $app->request()->post('pass');
         $passConf = $app->request()->post('passConf');
 
-        $model = new MyAccountModel($email,$firstName,$lastName,$pass,$passConf);
 
-        $model->updateDetails();
-        $app->redirect('/KinguinInternship/myProject/account');
+        $model = new MyAccountModel($firstName,$lastName,$pass,$passConf);
+
+
+
+        if ( trim($pass) != "" ) {
+            
+            if ( !$model->validatePassword() ) {
+            
+                $error = "Please check your password.";
+
+            } 
+            else {
+
+                $model->updateAccount();
+            }
+        } 
+        else {
+
+            if (!$model->updateAccount()) {
+
+                $error = "Update account fail. Try again!";
+            }
+        }
+
+
+
+        if(isset($error)) {
+
+            $data = array(
+                'message'       => $error,
+                'error'         => false,
+                );
+
+            echo json_encode( $data );
+
+        } else {
+
+            $data = array(
+                'message'       => "Succesful update!",
+                'success'       => true,
+                'error'         => true,
+                );
+
+            echo json_encode( $data );
+        }
+        // $app->redirect('/KinguinInternship/myProject/account');
     }
 }

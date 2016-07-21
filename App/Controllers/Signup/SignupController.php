@@ -17,11 +17,13 @@ class SignupController extends Controller
         $app = $this->getYee();
         if (isset($_SESSION['isLogged']) === false) {
             $data = array(
-                "title" => "Sing Up",
+                "title" => "Singup Controller",
                 );
             
             $app->render('pages/signup.tpl', $data);
-        } else {
+
+        } 
+        else {
 
             $app->redirect('/KinguinInternship/myProject/');
         }

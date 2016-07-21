@@ -11,37 +11,45 @@
 
 			<div class="row text-center">
 						
-				<div class="col-sm-12 text-center">
+				<!-- <div class="col-sm-12 text-center"> -->
 					<div class="photo-form-wrapper clearfix">
 						<div class="row">
-							<form method="post" action="/KinguinInternship/myProject/ajax/updateMyAccount">
-								<div class="col-md-3 col-sm-4">
-									<input id="userEmail" name="email" disabled class="form-email" type="text" placeholder="Email Address" value="{{userDetail.email}}">
+							<form method="post" id="updateAccount"> 
+
+								<div class="col-md-4 col-sm-4">
+									<h3 style="text-decoration: underline;"> Bar </h3>
+									<hr style="border-color: #e74c3c;">
+
 								</div>
 
-								<div class="col-md-3 col-sm-4">
-									<input id="userEmail" name="firstName" class="form-email" type="text" placeholder="First name" value="{{userDetail.first_name}}">
-								</div>
+								<div class="col-md-4 col-sm-4">
 
-								<div class="col-md-3 col-sm-4">
-									<input id="userEmail" name="lastName" class="form-email" type="text" placeholder="Last name" value="{{userDetail.last_name}}">
-								</div>
-					
-								<div class="col-md-3 col-sm-4">
-									<input id="userPass" name="pass" class="form-password" type="password" placeholder="Password" value="">
-								</div>
+									<h3 style="text-decoration: underline;"> Details </h3>
+									<hr style="border-color: #e74c3c;">
+
+									<input id="userEmail" name="userEmail" type="text" placeholder="First name" disabled value="{{userDetail.email}}">
+
+									<input id="firstName" name="firstName" type="text" placeholder="First name" value="{{userDetail.first_name}}">
+
+									<input id="lastName" name="lastName" type="text" placeholder="Last name" value="{{userDetail.last_name}}">
+
+									<input id="userPass" name="pass" type="password" placeholder="Password" value="">
 								
-								<div class="col-md-3 col-sm-4">
-									<input id="userPassConf" name="passConf" class="form-password2" type="password" placeholder="Confirm Password" value="">
-								</div>
-								
-								<div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-4 text-center">
+									<input id="userPassConf" name="passConf" type="password" placeholder="Confirm Password" value="">
+
 									<input id="btnSaveChanges" type="submit" class="btn btn-primary btn-filled"  value="Save Changes">
 								</div>
+
+								<div class="col-md-4 col-sm-4">
+									<h3 style="text-decoration: underline;"> News </h3>
+									<hr style="border-color: #e74c3c;">
+
+								</div>
+
 							</form>
 						</div>
 					</div>
-				</div>
+				<!-- </div> -->
 			
 			</div>
 

@@ -16,20 +16,22 @@ class MyAccountController extends Controller {
         /** @var Yee\Yee $yee */
         $app = $this->getYee();
 
-
-        $myAccount = new MyAccountModel();
-        $accDetail = $myAccount->getAccountDetails();
-        // var_dump($accDetail);
-        // die();
-
         if (isset($_SESSION['isLogged']) === true) {
-           
+
+            $myAccount = new MyAccountModel();
+            $accDetail = $myAccount->getAccountDetails();
+            // var_dump($accDetail);
+            // die();
+            $javascript = array(
+
+                '/KinguinInternship/myProject/js/updateAccount.js',
+                
+                );
 
             $data = array(
-                'title' => 'My Account Settings',
+                'title' => 'My Account Controller',
                 'userDetail' => $accDetail,
-                // 'userEmail' => $accDetail['email'],
-                // 'userName' => $accDetail['username'],
+                'javascript' => $javascript,
                 );
 
             $app->render('pages/myAccount.tpl', $data);
