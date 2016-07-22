@@ -68,8 +68,8 @@
 					
 					<div class="row">
 						<div class="col-sm-12 text-center">
-							<img class="logo logo-light" alt="Logo" src="/KinguinInternship/myProject/img/logo-light.png">
-							<img class="logo logo-dark" alt="Logo" src="/KinguinInternship/myProject/img/logo-dark.png">
+							<br>
+							<h1> Medical Advice </h1>
 						</div>
 					</div>
 				
@@ -81,11 +81,20 @@
 								<li> <a href="/KinguinInternship/myProject/">Home</a></li>								
 
 								{% if session.isLogged == true %}
-						        	<li><a href="/KinguinInternship/myProject/account">Profile</a></li>
-						        	<li><a href="/KinguinInternship/myProject/logout">Logout</a></li>
+									<li><a href="/KinguinInternship/myProject/account">Profile</a></li>
+						        	<li class="has-dropdown"><a href="#">Settings</a>
+						        		<ul class="subnav">
+						        			<a href="/KinguinInternship/myProject/editAccount">Edit Profile</a>
+						        			<a href="/KinguinInternship/myProject/logout">Logout</a>
+					        			</ul>
+					        		</li>
+						        	<li></li>
+
 					        	{% else %}
+
 						        	<li> <a href="/KinguinInternship/myProject/signup">Sign Up</a></li>
 									<li> <a href="/KinguinInternship/myProject/login">Login</a></li>
+
 						        {% endif %}
 								
 

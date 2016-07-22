@@ -65,7 +65,7 @@ class SignupController extends Controller
 
         if ( !isset($error) ) {
 
-            // registration new account
+            // Registration new account
             $signupModel->register();
 
             $dataMailer = array(
@@ -76,7 +76,7 @@ class SignupController extends Controller
             // Create instance of App\Libraries\Mailer\Mailer
             $mailer = new Mailer( "sidertopalov@gmail.com", $emailSignup, "signup", $dataMailer, "Activate Account" );
 
-            // send email 
+            // Send email 
             $mailer->buildEmail()->sendEmail();
            
 

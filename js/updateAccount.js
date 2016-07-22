@@ -7,8 +7,14 @@ $("#updateAccount").submit(function(e){
 		data: $("#updateAccount").serialize(),
 		dataType: "json",
 		success: function(data){
-			
-			$('#error').html( data.message ).fadeTo(1,1000);
+			if (data.error == false ) {
+				
+				$('#successMessage').hide();
+				$('#errorMessage').html( data.message ).fadeTo(1,1000);
+			} else {
+				$('#errorMessage').hide();
+				$('#successMessage').html( data.message ).fadeTo(1,1000);
+			}
 		}
 	});
 

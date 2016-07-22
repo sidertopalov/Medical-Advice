@@ -89,8 +89,8 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 \t\t\t\t\t
 \t\t\t\t\t<div class=\"row\">
 \t\t\t\t\t\t<div class=\"col-sm-12 text-center\">
-\t\t\t\t\t\t\t<img class=\"logo logo-light\" alt=\"Logo\" src=\"/KinguinInternship/myProject/img/logo-light.png\">
-\t\t\t\t\t\t\t<img class=\"logo logo-dark\" alt=\"Logo\" src=\"/KinguinInternship/myProject/img/logo-dark.png\">
+\t\t\t\t\t\t\t<br>
+\t\t\t\t\t\t\t<h1> Medical Advice </h1>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
 \t\t\t\t
@@ -105,16 +105,25 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
         // line 83
         if (($this->getAttribute((isset($context["session"]) ? $context["session"] : null), "isLogged") == true)) {
             // line 84
-            echo "\t\t\t\t\t\t        \t<li><a href=\"/KinguinInternship/myProject/account\">Profile</a></li>
-\t\t\t\t\t\t        \t<li><a href=\"/KinguinInternship/myProject/logout\">Logout</a></li>
+            echo "\t\t\t\t\t\t\t\t\t<li><a href=\"/KinguinInternship/myProject/account\">Profile</a></li>
+\t\t\t\t\t\t        \t<li class=\"has-dropdown\"><a href=\"#\">Settings</a>
+\t\t\t\t\t\t        \t\t<ul class=\"subnav\">
+\t\t\t\t\t\t        \t\t\t<a href=\"/KinguinInternship/myProject/editAccount\">Edit Profile</a>
+\t\t\t\t\t\t        \t\t\t<a href=\"/KinguinInternship/myProject/logout\">Logout</a>
+\t\t\t\t\t        \t\t\t</ul>
+\t\t\t\t\t        \t\t</li>
+\t\t\t\t\t\t        \t<li></li>
+
 \t\t\t\t\t        \t";
         } else {
-            // line 87
-            echo "\t\t\t\t\t\t        \t<li> <a href=\"/KinguinInternship/myProject/signup\">Sign Up</a></li>
+            // line 94
+            echo "
+\t\t\t\t\t\t        \t<li> <a href=\"/KinguinInternship/myProject/signup\">Sign Up</a></li>
 \t\t\t\t\t\t\t\t\t<li> <a href=\"/KinguinInternship/myProject/login\">Login</a></li>
+
 \t\t\t\t\t\t        ";
         }
-        // line 90
+        // line 99
         echo "\t\t\t\t\t\t\t\t
 
 \t\t\t\t\t\t\t\t<!-- Comment top nav-menu
@@ -227,6 +236,6 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 
     public function getDebugInfo()
     {
-        return array (  118 => 90,  113 => 87,  108 => 84,  106 => 83,  29 => 9,  88 => 58,  54 => 27,  47 => 23,  40 => 19,  21 => 2,  19 => 1,);
+        return array (  127 => 99,  120 => 94,  108 => 84,  106 => 83,  29 => 9,  19 => 1,);
     }
 }

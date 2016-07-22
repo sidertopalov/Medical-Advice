@@ -5,7 +5,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 text-center">
-				<h1>My Account</h1>	
+				{% if userDetail.first_name %}
+					<h1>{{userDetail.first_name}}, Account!</h1>	
+				{% else %}
+					<h1>My Account!</h1>	
+				{% endif%}
 			</div>
 		</div>
 
@@ -15,30 +19,78 @@
 					<div class="photo-form-wrapper clearfix">
 						<div class="row">
 
-							<form method="post" id="updateAccount"> 
 								<div class="col-md-4 col-sm-4">
-									<h3 style="text-decoration: underline;"> Bar </h3>
+									<h3 style="text-decoration: underline;"> Form </h3>
 									<hr style="border-color: #e74c3c;">
 
+									<!-- <div class="table-responsive">
+
+										<table class="table">
+
+											<tr>
+												<td>Email: 
+													<td>
+														<input id="userEmail" name="userEmail" type="text" placeholder="First name" disabled value="{{userDetail.email}}">
+													</td>
+												</td>
+											</tr>
+
+											<tr>
+												<div>
+													<td>First Name: 
+														<td>
+															<input id="firstName" name="userEmail" type="text" placeholder="First name" disabled value="{{userDetail.first_name}}">
+														</td>
+													</td>
+												</div>
+											</tr>
+
+											<tr>
+												<div>
+													<td>Last Name: 
+														<td>
+															<input id="lastName" name="userEmail" type="text" placeholder="First name" disabled value="{{userDetail.last_name}}">
+														</td>
+													</td>
+												</div>
+											</tr>
+
+											<tr>
+												<div>
+													<td>Password: 
+														<td>
+															<input id="userPass" name="pass" type="password" placeholder="Password" value="">
+														</td>
+													</td>
+												</div>	
+											</tr>
+
+											<tr>
+												<div>
+													<td>Confirm Password: 
+														<td>
+															<input id="userPassConf" name="passConf" type="password" placeholder="Confirm Password" value="">
+														</td>
+													</td>
+												</div>
+											</tr>
+
+										</table>
+									</div> -->
 								</div>
 
 								<div class="col-md-4 col-sm-4">
 
 									<h3 style="text-decoration: underline;"> Details </h3>
 									<hr style="border-color: #e74c3c;">
-									<div style="display:none" class="alert alert-success" role="alert" id="error"></div>
 
-									<input id="userEmail" name="userEmail" type="text" placeholder="First name" disabled value="{{userDetail.email}}">
+									<div style="display:none" class="alert alert-success" role="alert" id="detailError"></div>
 
-									<input id="firstName" name="firstName" type="text" placeholder="First name" value="{{userDetail.first_name}}">
+									<input disabled id="userEmail" name="userEmail" type="text" placeholder="First name" value="{{userDetail.email}}">
 
-									<input id="lastName" name="lastName" type="text" placeholder="Last name" value="{{userDetail.last_name}}">
+									<input disabled id="firstName" name="firstName" type="text" placeholder="First name" value="{{userDetail.first_name}}">
 
-									<input id="userPass" name="pass" type="password" placeholder="Password" value="">
-								
-									<input id="userPassConf" name="passConf" type="password" placeholder="Confirm Password" value="">
-
-									<input id="btnSaveChanges" type="submit" class="btn btn-primary btn-filled"  value="Save Changes">
+									<input disabled id="lastName" name="lastName" type="text" placeholder="Last name" value="{{userDetail.last_name}}">
 								</div>
 
 								<div class="col-md-4 col-sm-4">
@@ -46,10 +98,8 @@
 									<hr style="border-color: #e74c3c;">
 
 								</div>
-
-							</form>
 						</div>
-					</div>
+					<!-- </div> -->
 				<!-- </div> -->
 			
 			</div>

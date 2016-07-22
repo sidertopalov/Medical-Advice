@@ -92,11 +92,12 @@ class AjaxController extends Controller
         // POST Variables
         $firstName = $app->request()->post('firstName');
         $lastName = $app->request()->post('lastName');
-        $pass = $app->request()->post('pass');
+        $oldPass = $app->request()->post('pass');
+        $newPass = $app->request()->post('newPass');
         $passConf = $app->request()->post('passConf');
 
 
-        $model = new MyAccountModel($firstName,$lastName,$pass,$passConf);
+        $model = new MyAccountModel($firstName,$lastName,$newPass,$passConf);
         $userProperty = $model->getAccountDetails();
 
         if ( ( $userProperty['first_name'] === $firstName && $userProperty['last_name'] === $lastName ) && ( empty($pass) > 0 ) ) {
@@ -105,13 +106,22 @@ class AjaxController extends Controller
         }
 
 
-        if ( strlen(trim($pass)) > 0 ) {
+        if ( strlen(trim($oldPass)) > 0 || strlen(trim($newPass)) > 0 || strlen(trim($passConf)) > 0 ) {
             
+            $oldPassMatch = $userProperty['password'] == $oldPass;
+
+            if (!$oldPassMatch) {
+                
+                $error = "Old password is wrong.";
+            }
+
             if ( !$model->validatePassword() ) {
             
                 $error = "Password do not match.";
 
-            } else {
+            } 
+
+            if (isset($error)) {
 
                 $model->updateAccount();
             }

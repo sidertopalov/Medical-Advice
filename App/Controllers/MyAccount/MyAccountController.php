@@ -20,6 +20,33 @@ class MyAccountController extends Controller {
 
             $myAccount = new MyAccountModel();
             $accDetail = $myAccount->getAccountDetails();
+
+            $data = array(
+                'title' => 'My Account Controller',
+                'userDetail' => $accDetail,
+                );
+
+            $app->render('pages/myAccount.tpl', $data);
+
+        } else {
+
+            $app->redirect('http://localhost/KinguinInternship/myProject/');
+        }
+    }
+
+    /**
+     * @Route('/editAccount')
+     * @Name('account.index')
+     */
+    public function editAccountAction() {
+
+        /** @var Yee\Yee $yee */
+        $app = $this->getYee();
+
+        if (isset($_SESSION['isLogged']) === true) {
+            
+            $myAccount = new MyAccountModel();
+            $accDetail = $myAccount->getAccountDetails();
             // var_dump($accDetail);
             // die();
             $javascript = array(
@@ -29,12 +56,12 @@ class MyAccountController extends Controller {
                 );
 
             $data = array(
-                'title' => 'My Account Controller',
+                'title' => 'Edit Account',
                 'userDetail' => $accDetail,
                 'javascript' => $javascript,
                 );
 
-            $app->render('pages/myAccount.tpl', $data);
+            $app->render('pages/editAccount.tpl', $data);
 
         } else {
 

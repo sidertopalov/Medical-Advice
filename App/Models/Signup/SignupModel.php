@@ -137,7 +137,7 @@ class SignupModel {
         $data = array(
 				"email" 			=> $this->email,
 				"password" 			=> $this->pass,
-				"username" 			=> $this->email,
+				"first_name" 		=> $this->email,
 				"active" 			=> 0,
 				"signupDate" 		=> $dateTimeNow,
 				"ip" 				=> "1.1.1.1",
