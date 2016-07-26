@@ -4,6 +4,7 @@ use Yee\Managers\Controller\Controller;
 use Yee\Managers\CacheManager;
 use App\Models\Ajax\AjaxModel;
 use App\Models\MyAccount\MyAccountModel;
+use App\Models\Article\ArticleModel;
 
 class AjaxController extends Controller
 {
@@ -142,10 +143,9 @@ class AjaxController extends Controller
      */
     public function postChangePassword() {
 
-          $app = $this->getYee();
+        $app = $this->getYee();
 
-          //------> POST Variables <-------
-
+        //------> POST Variables <-------
         $oldPass = $app->request()->post('pass');
         $newPass = $app->request()->post('newPass');
         $passConf = $app->request()->post('passConf'); 
@@ -192,7 +192,51 @@ class AjaxController extends Controller
         }
         
         echo json_encode( $data );
+    }
+
+    /**
+     * @Route('/ajax/article')
+     * @Name('article.index')
+     * @Method('post')
+     */
+    public function postAddArticleAction() {
+
+        /** @var Yee\Yee $yee */
+        $app = $this->app;
+
+        //------> POST Variables <-------
+
+        $articleTitle = $app->request()->post('titleArticle');
+        $articleContent = $app->request()->post('contentArticle');
 
 
+        $article = new ArticleModel();
+
+        // implement fake category just for DB
+        $categoryId = rand(1,10);
+
+        if($article->addComment($articleTitle, $articleContent, $categoryId) == false) {
+
+            $error = "Something is wrong with query";
+        }
+
+        if(isset($error)) {
+
+            $data = array(
+                'message'       => $error,
+                'error'         => false,
+                );
+
+
+        } else {
+
+            $data = array(
+                'message'       => "Succesfully updated!",
+                'success'       => true,
+                'error'         => true,
+                );
+        }
+        
+        echo json_encode( $data );
     }
 }

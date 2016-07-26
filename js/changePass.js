@@ -28,12 +28,8 @@ $("#newPass").passwordStrength({
     text:{
         year:'year|years',          
     },
-}, 	
-	
-	// function() {
-	// 	$("#pStrinput").val($("#percentage").text());
-	// }
-);
+    minimumChars: 4,
+});
 
 // pStrength.js
 // $('#userPass').pStrength({

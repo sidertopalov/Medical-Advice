@@ -1,5 +1,5 @@
 				
-				</div>
+				</div><!--end main-->
 		
 		<div class="footer-container">
 		
@@ -56,7 +56,7 @@
         <script src="/KinguinInternship/myProject/js/pStrength.jquery.js"></script>
 
         {% if javascript is empty %}
-    		<p>Our website is in maintenance mode. Please, come back later.</p>
+    		<!-- <p>Our website is in maintenance mode. Please, come back later.</p> -->
 		{% else %}
 	        {% for js in javascript  %}
 	        	<script src="{{js}}"></script>

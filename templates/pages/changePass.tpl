@@ -34,9 +34,10 @@
 									<input id="userPass" name="pass" type="password" placeholder="Password" value="">
 									
 									<!-- <input type="hidden" name="pStrinput" id="pStrinput" value="" /> -->
-									<div name="pStr" id="passwordStrength"></div>
-
+									<div class="group">
+									<div style="border-color: #e74c3c; width: 368px" id="passwordStrength"></div>
 									<input id="newPass" name="newPass" type="password" placeholder="New Password" value="">
+									</div>
 								
 									<input id="userPassConf" name="passConf" type="password" placeholder="Confirm Password" value="">
 

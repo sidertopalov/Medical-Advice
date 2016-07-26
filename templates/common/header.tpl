@@ -84,6 +84,8 @@
 
 								{% if session.isLogged == true %}
 									<li><a href="/KinguinInternship/myProject/account">Profile</a></li>
+									<li><a href="/KinguinInternship/myProject/article">New Question</a></li>
+									<li><a href="/KinguinInternship/myProject/articleList">Articles</a></li>
 						        	<li class="has-dropdown"><a href="#">Settings</a>
 						        		<ul class="subnav">
 						        			<a href="/KinguinInternship/myProject/changePass">Change Password</a>

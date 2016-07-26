@@ -54,8 +54,6 @@ class MyAccountController extends Controller {
             
             $myAccount = new MyAccountModel();
             $accDetail = $myAccount->getAccountDetails();
-            // var_dump($accDetail);
-            // die();
 
             $javascript = array(
 
@@ -76,39 +74,4 @@ class MyAccountController extends Controller {
             $app->redirect('http://localhost/KinguinInternship/myProject/');
         }
     }
-
-
-    // /**
-    //  * @Route('/changePass')
-    //  * @Name('account.index')
-    //  */
-    // public function changePassword() {
-
-    //     /** @var Yee\Yee $yee */
-    //     $app = $this->getYee();
-
-    //     if (isset($_SESSION['isLogged']) === true) {
-
-
-    //         $myAccount = new MyAccountModel();
-    //         $accDetail = $myAccount->getAccountDetails();
-
-    //         $javascript = array(
-
-    //             '/KinguinInternship/myProject/js/updateAccount.js',
-                
-    //             );
-
-    //         $data = array(
-    //             'title' => 'Change Password',
-    //             'userDetail' => $accDetail,
-    //             );
-
-    //         $app->render('pages/changePass.tpl', $data);
-     
-    //     } else {
-
-    //         $app->redirect('http://localhost/KinguinInternship/myProject/');
-    //     }
-    // }
 }

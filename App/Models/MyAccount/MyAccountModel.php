@@ -1,4 +1,6 @@
-<?php namespace App\Models\MyAccount;
+<?php 
+
+namespace App\Models\MyAccount;
 
 
 class MyAccountModel {

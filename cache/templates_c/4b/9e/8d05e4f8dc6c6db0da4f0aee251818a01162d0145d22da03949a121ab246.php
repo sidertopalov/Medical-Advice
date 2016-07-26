@@ -56,9 +56,10 @@ class __TwigTemplate_4b9e8d05e4f8dc6c6db0da4f0aee251818a01162d0145d22da03949a121
 \t\t\t\t\t\t\t\t\t<input id=\"userPass\" name=\"pass\" type=\"password\" placeholder=\"Password\" value=\"\">
 \t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t\t<!-- <input type=\"hidden\" name=\"pStrinput\" id=\"pStrinput\" value=\"\" /> -->
-\t\t\t\t\t\t\t\t\t<div name=\"pStr\" id=\"passwordStrength\"></div>
-
+\t\t\t\t\t\t\t\t\t<div class=\"group\">
+\t\t\t\t\t\t\t\t\t<div style=\"border-color: #e74c3c; width: 368px\" id=\"passwordStrength\"></div>
 \t\t\t\t\t\t\t\t\t<input id=\"newPass\" name=\"newPass\" type=\"password\" placeholder=\"New Password\" value=\"\">
+\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t\t<input id=\"userPassConf\" name=\"passConf\" type=\"password\" placeholder=\"Confirm Password\" value=\"\">
 
@@ -88,7 +89,7 @@ class __TwigTemplate_4b9e8d05e4f8dc6c6db0da4f0aee251818a01162d0145d22da03949a121
 </section>
 
 ";
-        // line 68
+        // line 69
         $this->env->loadTemplate("./common/footer.tpl")->display($context);
     }
 
@@ -104,6 +105,6 @@ class __TwigTemplate_4b9e8d05e4f8dc6c6db0da4f0aee251818a01162d0145d22da03949a121
 
     public function getDebugInfo()
     {
-        return array (  92 => 68,  53 => 32,  21 => 2,  19 => 1,);
+        return array (  93 => 69,  53 => 32,  21 => 2,  19 => 1,);
     }
 }

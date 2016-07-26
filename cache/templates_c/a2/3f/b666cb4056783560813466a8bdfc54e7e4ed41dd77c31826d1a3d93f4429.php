@@ -17,7 +17,7 @@ class __TwigTemplate_a23fb666cb4056783560813466a8bdfc54e7e4ed41dd77c31826d1a3d93
     {
         // line 1
         echo "\t\t\t\t
-\t\t\t\t</div>
+\t\t\t\t</div><!--end main-->
 \t\t
 \t\t<div class=\"footer-container\">
 \t\t
@@ -77,7 +77,7 @@ class __TwigTemplate_a23fb666cb4056783560813466a8bdfc54e7e4ed41dd77c31826d1a3d93
         // line 58
         if (twig_test_empty((isset($context["javascript"]) ? $context["javascript"] : null))) {
             // line 59
-            echo "    \t\t<p>Our website is in maintenance mode. Please, come back later.</p>
+            echo "    \t\t<!-- <p>Our website is in maintenance mode. Please, come back later.</p> -->
 \t\t";
         } else {
             // line 61
@@ -114,6 +114,6 @@ class __TwigTemplate_a23fb666cb4056783560813466a8bdfc54e7e4ed41dd77c31826d1a3d93
 
     public function getDebugInfo()
     {
-        return array (  101 => 65,  98 => 64,  89 => 62,  84 => 61,  80 => 59,  78 => 58,  19 => 1,);
+        return array (  101 => 65,  98 => 64,  89 => 62,  84 => 61,  80 => 59,  78 => 58,  81 => 38,  69 => 28,  60 => 25,  56 => 24,  52 => 23,  48 => 22,  45 => 21,  41 => 20,  21 => 2,  19 => 1,);
     }
 }

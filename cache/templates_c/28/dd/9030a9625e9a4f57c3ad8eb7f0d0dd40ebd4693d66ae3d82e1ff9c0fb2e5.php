@@ -108,6 +108,8 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
         if (($this->getAttribute((isset($context["session"]) ? $context["session"] : null), "isLogged") == true)) {
             // line 86
             echo "\t\t\t\t\t\t\t\t\t<li><a href=\"/KinguinInternship/myProject/account\">Profile</a></li>
+\t\t\t\t\t\t\t\t\t<li><a href=\"/KinguinInternship/myProject/article\">New Question</a></li>
+\t\t\t\t\t\t\t\t\t<li><a href=\"/KinguinInternship/myProject/articleList\">Articles</a></li>
 \t\t\t\t\t\t        \t<li class=\"has-dropdown\"><a href=\"#\">Settings</a>
 \t\t\t\t\t\t        \t\t<ul class=\"subnav\">
 \t\t\t\t\t\t        \t\t\t<a href=\"/KinguinInternship/myProject/changePass\">Change Password</a>
@@ -118,14 +120,14 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 
 \t\t\t\t\t        \t";
         } else {
-            // line 96
+            // line 98
             echo "
 \t\t\t\t\t\t        \t<li> <a href=\"/KinguinInternship/myProject/signup\">Sign Up</a></li>
 \t\t\t\t\t\t\t\t\t<li> <a href=\"/KinguinInternship/myProject/login\">Login</a></li>
 
 \t\t\t\t\t\t        ";
         }
-        // line 101
+        // line 103
         echo "\t\t\t\t\t\t\t\t
 
 \t\t\t\t\t\t\t\t<!-- Comment top nav-menu
@@ -238,6 +240,6 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 
     public function getDebugInfo()
     {
-        return array (  129 => 101,  122 => 96,  110 => 86,  108 => 85,  29 => 9,  90 => 66,  53 => 32,  21 => 2,  19 => 1,);
+        return array (  131 => 103,  124 => 98,  110 => 86,  108 => 85,  29 => 9,  19 => 1,);
     }
 }
