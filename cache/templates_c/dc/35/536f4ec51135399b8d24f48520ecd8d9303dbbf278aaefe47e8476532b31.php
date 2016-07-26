@@ -118,25 +118,38 @@ class __TwigTemplate_dc35536f4ec51135399b8d24f48520ecd8d9303dbbf278aaefe47e84765
 
 \t\t\t\t\t\t\t\t<div class=\"col-md-4 col-sm-4\">
 
-\t\t\t\t\t\t\t\t\t<h3 style=\"text-decoration: underline;\"> Details </h3>
-\t\t\t\t\t\t\t\t\t<hr style=\"border-color: #e74c3c;\">
+\t\t\t\t\t\t\t\t<form method=\"post\" id=\"updateAccount\">
 
-\t\t\t\t\t\t\t\t\t<div style=\"display:none\" class=\"alert alert-success\" role=\"alert\" id=\"detailError\"></div>
+\t\t\t\t\t\t\t\t\t\t<h3 style=\"text-decoration: underline;\"> Details </h3>
+\t\t\t\t\t\t\t\t\t\t<hr style=\"border-color: #e74c3c;\">
 
-\t\t\t\t\t\t\t\t\t<input disabled id=\"userEmail\" name=\"userEmail\" type=\"text\" placeholder=\"First name\" value=\"";
-        // line 89
+\t\t\t\t\t\t\t\t\t\t<div style=\"display:none\" class=\"alert alert-danger\" role=\"alert\" id=\"errorMessage\"></div>
+\t\t\t\t\t\t\t\t\t\t<div style=\"display:none\" class=\"alert alert-success\" role=\"alert\" id=\"successMessage\"></div>
+
+\t\t\t\t\t\t\t\t\t\t<input disabled id=\"userEmail\" name=\"userEmail\" type=\"text\" placeholder=\"First name\" value=\"";
+        // line 92
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["userDetail"]) ? $context["userDetail"] : null), "email"), "html", null, true);
         echo "\">
 
-\t\t\t\t\t\t\t\t\t<input disabled id=\"firstName\" name=\"firstName\" type=\"text\" placeholder=\"First name\" value=\"";
-        // line 91
+\t\t\t\t\t\t\t\t\t\t<input disabled id=\"firstName\" name=\"firstName\" type=\"text\" placeholder=\"First name\" value=\"";
+        // line 94
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["userDetail"]) ? $context["userDetail"] : null), "first_name"), "html", null, true);
         echo "\">
 
-\t\t\t\t\t\t\t\t\t<input disabled id=\"lastName\" name=\"lastName\" type=\"text\" placeholder=\"Last name\" value=\"";
-        // line 93
+\t\t\t\t\t\t\t\t\t\t<input disabled id=\"lastName\" name=\"lastName\" type=\"text\" placeholder=\"Last name\" value=\"";
+        // line 96
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["userDetail"]) ? $context["userDetail"] : null), "last_name"), "html", null, true);
         echo "\">
+
+\t\t\t\t\t\t\t\t\t\t<input id=\"btnEdit\" type=\"submit\" class=\"btn btn-primary btn-filled\"  value=\"Edit\">
+
+\t\t\t\t\t\t\t\t\t\t<a href=\"/KinguinInternship/myProject/changePass\" id=\"changePass\" class=\"btn btn-primary btn-filled\" style=\"margin-bottom: 30px;\" >Change Password</a>
+
+\t\t\t\t\t\t\t\t\t\t<input style=\"display:none;\" id=\"btnDone\" type=\"submit\" class=\"btn btn-primary btn-filled\"  value=\"Done\">
+
+\t\t\t\t\t\t\t\t\t\t<input style=\"display:none;\" id=\"btnSaveChanges\" type=\"submit\" class=\"btn btn-primary btn-filled\"  value=\"Save Changes\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t</form>
 \t\t\t\t\t\t\t\t</div>
 
 \t\t\t\t\t\t\t\t<div class=\"col-md-4 col-sm-4\">
@@ -161,7 +174,7 @@ class __TwigTemplate_dc35536f4ec51135399b8d24f48520ecd8d9303dbbf278aaefe47e84765
 </section>
 
 ";
-        // line 117
+        // line 130
         $this->env->loadTemplate("./common/footer.tpl")->display($context);
     }
 
@@ -177,6 +190,6 @@ class __TwigTemplate_dc35536f4ec51135399b8d24f48520ecd8d9303dbbf278aaefe47e84765
 
     public function getDebugInfo()
     {
-        return array (  165 => 117,  138 => 93,  133 => 91,  128 => 89,  88 => 52,  75 => 42,  63 => 33,  41 => 13,  37 => 11,  31 => 9,  29 => 8,  21 => 2,  19 => 1,);
+        return array (  178 => 130,  141 => 96,  136 => 94,  131 => 92,  88 => 52,  75 => 42,  63 => 33,  41 => 13,  37 => 11,  31 => 9,  29 => 8,  21 => 2,  19 => 1,);
     }
 }

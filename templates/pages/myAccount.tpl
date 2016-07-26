@@ -81,16 +81,29 @@
 
 								<div class="col-md-4 col-sm-4">
 
-									<h3 style="text-decoration: underline;"> Details </h3>
-									<hr style="border-color: #e74c3c;">
+								<form method="post" id="updateAccount">
 
-									<div style="display:none" class="alert alert-success" role="alert" id="detailError"></div>
+										<h3 style="text-decoration: underline;"> Details </h3>
+										<hr style="border-color: #e74c3c;">
 
-									<input disabled id="userEmail" name="userEmail" type="text" placeholder="First name" value="{{userDetail.email}}">
+										<div style="display:none" class="alert alert-danger" role="alert" id="errorMessage"></div>
+										<div style="display:none" class="alert alert-success" role="alert" id="successMessage"></div>
 
-									<input disabled id="firstName" name="firstName" type="text" placeholder="First name" value="{{userDetail.first_name}}">
+										<input disabled id="userEmail" name="userEmail" type="text" placeholder="First name" value="{{userDetail.email}}">
 
-									<input disabled id="lastName" name="lastName" type="text" placeholder="Last name" value="{{userDetail.last_name}}">
+										<input disabled id="firstName" name="firstName" type="text" placeholder="First name" value="{{userDetail.first_name}}">
+
+										<input disabled id="lastName" name="lastName" type="text" placeholder="Last name" value="{{userDetail.last_name}}">
+
+										<input id="btnEdit" type="submit" class="btn btn-primary btn-filled"  value="Edit">
+
+										<a href="/KinguinInternship/myProject/changePass" id="changePass" class="btn btn-primary btn-filled" style="margin-bottom: 30px;" >Change Password</a>
+
+										<input style="display:none;" id="btnDone" type="submit" class="btn btn-primary btn-filled"  value="Done">
+
+										<input style="display:none;" id="btnSaveChanges" type="submit" class="btn btn-primary btn-filled"  value="Save Changes">
+								
+									</form>
 								</div>
 
 								<div class="col-md-4 col-sm-4">

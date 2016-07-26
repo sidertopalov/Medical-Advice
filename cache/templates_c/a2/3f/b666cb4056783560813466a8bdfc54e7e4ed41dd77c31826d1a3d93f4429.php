@@ -68,20 +68,24 @@ class __TwigTemplate_a23fb666cb4056783560813466a8bdfc54e7e4ed41dd77c31826d1a3d93
         <script src=\"/KinguinInternship/myProject/js/lightbox.min.js\"></script>
         <script src=\"/KinguinInternship/myProject/js/jquery.countdown.min.js\"></script>
         <script src=\"/KinguinInternship/myProject/js/scripts.js\"></script>
+        <script src=\"/KinguinInternship/myProject/js/bootstrap-editable.js\"></script>
+        <script src=\"/KinguinInternship/myProject/js/passwordStrength.jquery.js\"></script>
+        <script src=\"/KinguinInternship/myProject/js/passwordStrength.jquery.min.js\"></script>
+        <script src=\"/KinguinInternship/myProject/js/pStrength.jquery.js\"></script>
 
         ";
-        // line 54
+        // line 58
         if (twig_test_empty((isset($context["javascript"]) ? $context["javascript"] : null))) {
-            // line 55
+            // line 59
             echo "    \t\t<p>Our website is in maintenance mode. Please, come back later.</p>
 \t\t";
         } else {
-            // line 57
+            // line 61
             echo "\t        ";
             $context['_parent'] = (array) $context;
             $context['_seq'] = twig_ensure_traversable((isset($context["javascript"]) ? $context["javascript"] : null));
             foreach ($context['_seq'] as $context["_key"] => $context["js"]) {
-                // line 58
+                // line 62
                 echo "\t        \t<script src=\"";
                 echo twig_escape_filter($this->env, (isset($context["js"]) ? $context["js"] : null), "html", null, true);
                 echo "\"></script>
@@ -90,10 +94,10 @@ class __TwigTemplate_a23fb666cb4056783560813466a8bdfc54e7e4ed41dd77c31826d1a3d93
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['js'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 60
+            // line 64
             echo "        ";
         }
-        // line 61
+        // line 65
         echo "    </body>
 </html>";
     }
@@ -110,6 +114,6 @@ class __TwigTemplate_a23fb666cb4056783560813466a8bdfc54e7e4ed41dd77c31826d1a3d93
 
     public function getDebugInfo()
     {
-        return array (  97 => 61,  94 => 60,  85 => 58,  80 => 57,  76 => 55,  74 => 54,  19 => 1,);
+        return array (  101 => 65,  98 => 64,  89 => 62,  84 => 61,  80 => 59,  78 => 58,  19 => 1,);
     }
 }

@@ -50,6 +50,10 @@
         <script src="/KinguinInternship/myProject/js/lightbox.min.js"></script>
         <script src="/KinguinInternship/myProject/js/jquery.countdown.min.js"></script>
         <script src="/KinguinInternship/myProject/js/scripts.js"></script>
+        <script src="/KinguinInternship/myProject/js/bootstrap-editable.js"></script>
+        <script src="/KinguinInternship/myProject/js/passwordStrength.jquery.js"></script>
+        <script src="/KinguinInternship/myProject/js/passwordStrength.jquery.min.js"></script>
+        <script src="/KinguinInternship/myProject/js/pStrength.jquery.js"></script>
 
         {% if javascript is empty %}
     		<p>Our website is in maintenance mode. Please, come back later.</p>

@@ -38,6 +38,9 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
         <link href=\"/KinguinInternship/myProject/css/bootstrap.min.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\"/>
         <link href=\"/KinguinInternship/myProject/css/theme.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\"/>
         <link href=\"/KinguinInternship/myProject/css/custom.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\"/>
+        <link href=\"/KinguinInternship/myProject/css/bootstrap-editable.css\" type=\"text/css\" rel=\"stylesheet\" media=\"all\"/>
+        <link href=\"/KinguinInternship/myProject/css/passwordStrength.css\" type=\"text/css\" rel=\"stylesheet\" media=\"all\"/>
+
         <!--[if gte IE 9]>
         \t<link rel=\"stylesheet\" type=\"text/css\" href=\"css/ie9.css\" />
 \t\t<![endif]-->
@@ -89,7 +92,6 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 \t\t\t\t\t
 \t\t\t\t\t<div class=\"row\">
 \t\t\t\t\t\t<div class=\"col-sm-12 text-center\">
-\t\t\t\t\t\t\t<br>
 \t\t\t\t\t\t\t<h1> Medical Advice </h1>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
@@ -102,13 +104,13 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 \t\t\t\t\t\t\t\t<li> <a href=\"/KinguinInternship/myProject/\">Home</a></li>\t\t\t\t\t\t\t\t
 
 \t\t\t\t\t\t\t\t";
-        // line 83
+        // line 85
         if (($this->getAttribute((isset($context["session"]) ? $context["session"] : null), "isLogged") == true)) {
-            // line 84
+            // line 86
             echo "\t\t\t\t\t\t\t\t\t<li><a href=\"/KinguinInternship/myProject/account\">Profile</a></li>
 \t\t\t\t\t\t        \t<li class=\"has-dropdown\"><a href=\"#\">Settings</a>
 \t\t\t\t\t\t        \t\t<ul class=\"subnav\">
-\t\t\t\t\t\t        \t\t\t<a href=\"/KinguinInternship/myProject/editAccount\">Edit Profile</a>
+\t\t\t\t\t\t        \t\t\t<a href=\"/KinguinInternship/myProject/changePass\">Change Password</a>
 \t\t\t\t\t\t        \t\t\t<a href=\"/KinguinInternship/myProject/logout\">Logout</a>
 \t\t\t\t\t        \t\t\t</ul>
 \t\t\t\t\t        \t\t</li>
@@ -116,14 +118,14 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 
 \t\t\t\t\t        \t";
         } else {
-            // line 94
+            // line 96
             echo "
 \t\t\t\t\t\t        \t<li> <a href=\"/KinguinInternship/myProject/signup\">Sign Up</a></li>
 \t\t\t\t\t\t\t\t\t<li> <a href=\"/KinguinInternship/myProject/login\">Login</a></li>
 
 \t\t\t\t\t\t        ";
         }
-        // line 99
+        // line 101
         echo "\t\t\t\t\t\t\t\t
 
 \t\t\t\t\t\t\t\t<!-- Comment top nav-menu
@@ -236,6 +238,6 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 
     public function getDebugInfo()
     {
-        return array (  127 => 99,  120 => 94,  108 => 84,  106 => 83,  29 => 9,  19 => 1,);
+        return array (  129 => 101,  122 => 96,  110 => 86,  108 => 85,  29 => 9,  90 => 66,  53 => 32,  21 => 2,  19 => 1,);
     }
 }

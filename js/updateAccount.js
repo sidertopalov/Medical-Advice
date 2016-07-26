@@ -20,3 +20,36 @@ $("#updateAccount").submit(function(e){
 
 	e.preventDefault();
 });
+
+
+
+$("#btnEdit").click(function(e){
+
+	$("#firstName").attr("disabled", false);
+	$("#lastName").attr("disabled", false);
+
+	$("#btnSaveChanges").show();
+	$("#btnDone").show();
+	
+	$("#changePass").hide();
+	$(this).hide();
+
+	e.preventDefault();
+});
+
+$("#btnDone").click(function(e){
+
+	$("#firstName").attr("disabled", true);
+	$("#lastName").attr("disabled", true);
+
+	$("#btnSaveChanges").hide();
+	$("#successMessage").hide();
+	$("#errorMessage").hide();
+
+	$("#changePass").show();
+	$("#btnEdit").show();
+	
+	$(this).hide();
+
+	e.preventDefault();
+});

@@ -19,7 +19,7 @@
 
 							</div>
 
-							<form method="post" id="updateAccount"> 
+							<form method="post" id="changePass"> 
 
 								<div class="col-md-4 col-sm-4">
 
@@ -31,13 +31,12 @@
 
 									<input id="userEmail" name="userEmail" type="text" placeholder="First name" disabled value="{{userDetail.email}}">
 
-									<!-- <input id="firstName" name="firstName" type="text" placeholder="First name" value="{{userDetail.first_name}}">
-
-									<input id="lastName" name="lastName" type="text" placeholder="Last name" value="{{userDetail.last_name}}"> -->
-
 									<input id="userPass" name="pass" type="password" placeholder="Password" value="">
+									
+									<!-- <input type="hidden" name="pStrinput" id="pStrinput" value="" /> -->
+									<div name="pStr" id="passwordStrength"></div>
 
-									<input id="userPass" name="newPass" type="password" placeholder="New Password" value="">
+									<input id="newPass" name="newPass" type="password" placeholder="New Password" value="">
 								
 									<input id="userPassConf" name="passConf" type="password" placeholder="Confirm Password" value="">
 

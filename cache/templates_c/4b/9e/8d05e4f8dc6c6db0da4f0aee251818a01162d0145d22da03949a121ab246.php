@@ -1,7 +1,7 @@
 <?php
 
-/* pages/editAccount.tpl */
-class __TwigTemplate_99362064300f444e564ee1fdbbc29ee7b2973d97bd81a2c0462eb509bd56819a extends Twig_Template
+/* pages/changePass.tpl */
+class __TwigTemplate_4b9e8d05e4f8dc6c6db0da4f0aee251818a01162d0145d22da03949a121ab246 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -38,7 +38,7 @@ class __TwigTemplate_99362064300f444e564ee1fdbbc29ee7b2973d97bd81a2c0462eb509bd5
 
 \t\t\t\t\t\t\t</div>
 
-\t\t\t\t\t\t\t<form method=\"post\" id=\"updateAccount\"> 
+\t\t\t\t\t\t\t<form method=\"post\" id=\"changePass\"> 
 
 \t\t\t\t\t\t\t\t<div class=\"col-md-4 col-sm-4\">
 
@@ -53,19 +53,12 @@ class __TwigTemplate_99362064300f444e564ee1fdbbc29ee7b2973d97bd81a2c0462eb509bd5
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["userDetail"]) ? $context["userDetail"] : null), "email"), "html", null, true);
         echo "\">
 
-\t\t\t\t\t\t\t\t\t<!-- <input id=\"firstName\" name=\"firstName\" type=\"text\" placeholder=\"First name\" value=\"";
-        // line 34
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["userDetail"]) ? $context["userDetail"] : null), "first_name"), "html", null, true);
-        echo "\">
-
-\t\t\t\t\t\t\t\t\t<input id=\"lastName\" name=\"lastName\" type=\"text\" placeholder=\"Last name\" value=\"";
-        // line 36
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["userDetail"]) ? $context["userDetail"] : null), "last_name"), "html", null, true);
-        echo "\"> -->
-
 \t\t\t\t\t\t\t\t\t<input id=\"userPass\" name=\"pass\" type=\"password\" placeholder=\"Password\" value=\"\">
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t<!-- <input type=\"hidden\" name=\"pStrinput\" id=\"pStrinput\" value=\"\" /> -->
+\t\t\t\t\t\t\t\t\t<div name=\"pStr\" id=\"passwordStrength\"></div>
 
-\t\t\t\t\t\t\t\t\t<input id=\"userPass\" name=\"newPass\" type=\"password\" placeholder=\"New Password\" value=\"\">
+\t\t\t\t\t\t\t\t\t<input id=\"newPass\" name=\"newPass\" type=\"password\" placeholder=\"New Password\" value=\"\">
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t\t<input id=\"userPassConf\" name=\"passConf\" type=\"password\" placeholder=\"Confirm Password\" value=\"\">
 
@@ -95,13 +88,13 @@ class __TwigTemplate_99362064300f444e564ee1fdbbc29ee7b2973d97bd81a2c0462eb509bd5
 </section>
 
 ";
-        // line 69
+        // line 68
         $this->env->loadTemplate("./common/footer.tpl")->display($context);
     }
 
     public function getTemplateName()
     {
-        return "pages/editAccount.tpl";
+        return "pages/changePass.tpl";
     }
 
     public function isTraitable()
@@ -111,6 +104,6 @@ class __TwigTemplate_99362064300f444e564ee1fdbbc29ee7b2973d97bd81a2c0462eb509bd5
 
     public function getDebugInfo()
     {
-        return array (  99 => 69,  63 => 36,  58 => 34,  53 => 32,  21 => 2,  19 => 1,);
+        return array (  92 => 68,  53 => 32,  21 => 2,  19 => 1,);
     }
 }

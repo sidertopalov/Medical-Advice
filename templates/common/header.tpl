@@ -17,6 +17,9 @@
         <link href="/KinguinInternship/myProject/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="/KinguinInternship/myProject/css/theme.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="/KinguinInternship/myProject/css/custom.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/KinguinInternship/myProject/css/bootstrap-editable.css" type="text/css" rel="stylesheet" media="all"/>
+        <link href="/KinguinInternship/myProject/css/passwordStrength.css" type="text/css" rel="stylesheet" media="all"/>
+
         <!--[if gte IE 9]>
         	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
 		<![endif]-->
@@ -68,7 +71,6 @@
 					
 					<div class="row">
 						<div class="col-sm-12 text-center">
-							<br>
 							<h1> Medical Advice </h1>
 						</div>
 					</div>
@@ -84,7 +86,7 @@
 									<li><a href="/KinguinInternship/myProject/account">Profile</a></li>
 						        	<li class="has-dropdown"><a href="#">Settings</a>
 						        		<ul class="subnav">
-						        			<a href="/KinguinInternship/myProject/editAccount">Edit Profile</a>
+						        			<a href="/KinguinInternship/myProject/changePass">Change Password</a>
 						        			<a href="/KinguinInternship/myProject/logout">Logout</a>
 					        			</ul>
 					        		</li>

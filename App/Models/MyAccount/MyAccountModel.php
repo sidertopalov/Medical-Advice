@@ -6,17 +6,13 @@ class MyAccountModel {
 
 	private $firstName;
 	private $lastName;
-	private $pass;
-	private $confPass;
 	private $app;
 
-	public function __construct($firstName="",$lastName="",$pass="",$confPass="") {
+	public function __construct($firstName="",$lastName="") {
 
 		$this->app = \Yee\Yee::getInstance();
 		$this->firstName = $firstName;
 		$this->lastName = $lastName;
-		$this->pass = $pass;
-		$this->confPass = $confPass;
 	}
 
 	public function getAccountDetails() {
@@ -31,9 +27,6 @@ class MyAccountModel {
 
 		$app = $this->app;
 
-		$pass = trim($this->pass);
-		$confPass = trim($this->confPass);
-
 		// $accDetails = $this->getAccountDetails();
 
 		$data = array(
@@ -41,24 +34,14 @@ class MyAccountModel {
 			'last_name'=> $this->lastName,
 			);
 
-		if ($pass != "") {
-
-			$data['password'] = $pass;
-		}
-
-		if ($app->db['default']->where('email',$_SESSION['userEmail'])->update('users',$data)) {
-
-			return true;
-		}
-
-		return false;
+		$app->db['default']->where('email',$_SESSION['userEmail'])->update('users',$data);
 
 	}
 
-	public function validatePassword() {
+	public function validatePassword($pass,$passConf) {
 
-		$pass = trim($this->pass);
-		$passConf = trim($this->confPass);
+		$pass = trim($pass);
+		$passConf = trim($passConf);
 		$regex = "/[a-zA-Z0-9]/";
 
 		if (strlen($pass) > 5 && strlen($pass) <= 20) {
@@ -70,8 +53,17 @@ class MyAccountModel {
 			}
 		}
 		return false;
+	}
 
+	public function updatePassword($newPass) {
 
+		$app = $this->app;
+
+		$data = array(
+			'password' => $newPass,
+			);
+
+		$app->db['default']->where('email',$_SESSION['userEmail'])->update('users',$data);
 	}
 }
 

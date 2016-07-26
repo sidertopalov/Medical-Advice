@@ -21,9 +21,16 @@ class MyAccountController extends Controller {
             $myAccount = new MyAccountModel();
             $accDetail = $myAccount->getAccountDetails();
 
+            $javascript = array(
+
+                '/KinguinInternship/myProject/js/updateAccount.js',
+                
+                );
+
             $data = array(
                 'title' => 'My Account Controller',
                 'userDetail' => $accDetail,
+                'javascript' => $javascript,
                 );
 
             $app->render('pages/myAccount.tpl', $data);
@@ -35,10 +42,10 @@ class MyAccountController extends Controller {
     }
 
     /**
-     * @Route('/editAccount')
+     * @Route('/changePass')
      * @Name('account.index')
      */
-    public function editAccountAction() {
+    public function changePassAction() {
 
         /** @var Yee\Yee $yee */
         $app = $this->getYee();
@@ -49,23 +56,59 @@ class MyAccountController extends Controller {
             $accDetail = $myAccount->getAccountDetails();
             // var_dump($accDetail);
             // die();
+
             $javascript = array(
 
-                '/KinguinInternship/myProject/js/updateAccount.js',
+                '/KinguinInternship/myProject/js/changePass.js',
                 
                 );
 
             $data = array(
-                'title' => 'Edit Account',
+                'title' => 'Change Password',
                 'userDetail' => $accDetail,
                 'javascript' => $javascript,
                 );
 
-            $app->render('pages/editAccount.tpl', $data);
+            $app->render('pages/changePass.tpl', $data);
 
         } else {
 
             $app->redirect('http://localhost/KinguinInternship/myProject/');
         }
     }
+
+
+    // /**
+    //  * @Route('/changePass')
+    //  * @Name('account.index')
+    //  */
+    // public function changePassword() {
+
+    //     /** @var Yee\Yee $yee */
+    //     $app = $this->getYee();
+
+    //     if (isset($_SESSION['isLogged']) === true) {
+
+
+    //         $myAccount = new MyAccountModel();
+    //         $accDetail = $myAccount->getAccountDetails();
+
+    //         $javascript = array(
+
+    //             '/KinguinInternship/myProject/js/updateAccount.js',
+                
+    //             );
+
+    //         $data = array(
+    //             'title' => 'Change Password',
+    //             'userDetail' => $accDetail,
+    //             );
+
+    //         $app->render('pages/changePass.tpl', $data);
+     
+    //     } else {
+
+    //         $app->redirect('http://localhost/KinguinInternship/myProject/');
+    //     }
+    // }
 }

@@ -92,12 +92,8 @@ class AjaxController extends Controller
         // POST Variables
         $firstName = $app->request()->post('firstName');
         $lastName = $app->request()->post('lastName');
-        $oldPass = $app->request()->post('pass');
-        $newPass = $app->request()->post('newPass');
-        $passConf = $app->request()->post('passConf');
 
-
-        $model = new MyAccountModel($firstName,$lastName,$newPass,$passConf);
+        $model = new MyAccountModel($firstName,$lastName);
         $userProperty = $model->getAccountDetails();
 
         if ( ( $userProperty['first_name'] === $firstName && $userProperty['last_name'] === $lastName ) && ( empty($pass) > 0 ) ) {
@@ -105,34 +101,77 @@ class AjaxController extends Controller
             $error = "There is no new date for update.";   
         }
 
+        if(strlen($firstName) < 4 ) {
 
-        if ( strlen(trim($oldPass)) > 0 || strlen(trim($newPass)) > 0 || strlen(trim($passConf)) > 0 ) {
-            
-            $oldPassMatch = $userProperty['password'] == $oldPass;
-
-            if (!$oldPassMatch) {
-                
-                $error = "Old password is wrong.";
-            }
-
-            if ( !$model->validatePassword() ) {
-            
-                $error = "Password do not match.";
-
-            } 
-
-            if (isset($error)) {
-
-                $model->updateAccount();
-            }
-        } else {
-
-            if (!$model->updateAccount()) {
-
-                $error = "Update account fail. Try again!";
-            }
+            $error = "First name must contain atleast 4 characters";
         }
 
+        if(strlen($lastName) < 4 ) {
+
+            $error = "Last name must contain atleast 4 characters";
+        }   
+
+        if (isset($error) == false) {
+
+            $model->updateAccount();
+        }
+
+        if(isset($error)) {
+
+            $data = array(
+                'message'       => $error,
+                'error'         => false,
+                );
+
+        } else {
+
+            $data = array(
+                'message'       => "Succesfully updated!",
+                'success'       => true,
+                'error'         => true,
+                );
+        }
+        
+        echo json_encode( $data );
+    }
+
+    /**
+     * @Route('/ajax/changePassword')
+     * @Name('post.index')
+     * @Method('post') 
+     */
+    public function postChangePassword() {
+
+          $app = $this->getYee();
+
+          //------> POST Variables <-------
+
+        $oldPass = $app->request()->post('pass');
+        $newPass = $app->request()->post('newPass');
+        $passConf = $app->request()->post('passConf'); 
+        // $pStr = $app->request()->post('pStr');
+
+        $model = new MyAccountModel();
+        $userProperty = $model->getAccountDetails();
+
+
+        $oldPassMatch = $userProperty['password'] == $oldPass;
+
+        if (!$oldPassMatch) {
+            
+            $error = "Old password is wrong.";
+        }
+
+        if ( !$model->validatePassword($newPass,$passConf) ) {
+        
+            $error = "Password do not match.";
+
+        }
+
+        if (isset($error) == false) {
+
+            $model->updatePassword($newPass);
+        }
 
 
         if(isset($error)) {
@@ -153,5 +192,7 @@ class AjaxController extends Controller
         }
         
         echo json_encode( $data );
+
+
     }
 }
