@@ -30,9 +30,10 @@ class ArticleController extends Controller {
      
         } else {
 
-            $app->redirect('http://localhost/KinguinInternship/myProject/');
+            $app->redirect('http://localhost/KinguinInternship/myProject/login');
         }
     }
+
 
 
     /**
@@ -52,10 +53,6 @@ class ArticleController extends Controller {
                 'title' => 'List of Articles',
                 'commentDetails' => $commentsList,
                 );
-
-        // echo "<pre>". print_r($commentsList,true) . "</pre>";
-
-        // die;
 
         $app->render('pages/articleList.tpl',$data);
     }

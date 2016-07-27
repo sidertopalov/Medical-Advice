@@ -7,6 +7,7 @@ use App\Models\MyAccount\MyAccountModel;
 
 class MyAccountController extends Controller {
 
+
 	 /**
      * @Route('/account')
      * @Name('account.index')
@@ -37,9 +38,10 @@ class MyAccountController extends Controller {
 
         } else {
 
-            $app->redirect('http://localhost/KinguinInternship/myProject/');
+            $app->redirect('http://localhost/KinguinInternship/myProject/login');
         }
     }
+
 
     /**
      * @Route('/changePass')
@@ -71,7 +73,7 @@ class MyAccountController extends Controller {
 
         } else {
 
-            $app->redirect('http://localhost/KinguinInternship/myProject/');
+            $app->redirect('http://localhost/KinguinInternship/myProject/login');
         }
     }
 }

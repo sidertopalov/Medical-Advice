@@ -17,7 +17,9 @@ class TestController extends Controller {
         $app = $this->getYee();
 
         $data = array(
+            'title' => "Test Controller",
             );
 
+        $app->render('/pages/test.tpl',$data);
     }
 }

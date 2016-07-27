@@ -17,6 +17,6 @@ $("#addArticle").submit(function(e){
 			}
 		}
 	});
-
+	
 	e.preventDefault();
 });

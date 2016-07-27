@@ -194,6 +194,7 @@ class AjaxController extends Controller
         echo json_encode( $data );
     }
 
+
     /**
      * @Route('/ajax/article')
      * @Name('article.index')
@@ -204,8 +205,8 @@ class AjaxController extends Controller
         /** @var Yee\Yee $yee */
         $app = $this->app;
 
-        //------> POST Variables <-------
 
+        //------> POST Variables <-------
         $articleTitle = $app->request()->post('titleArticle');
         $articleContent = $app->request()->post('contentArticle');
 
@@ -215,9 +216,19 @@ class AjaxController extends Controller
         // implement fake category just for DB
         $categoryId = rand(1,10);
 
-        if($article->addComment($articleTitle, $articleContent, $categoryId) == false) {
+        if( 3 > strlen($articleTitle) && strlen($articleTitle) < 64) {
 
-            $error = "Something is wrong with query";
+            $error = "Title must be atleast 3 characters.";
+        }
+
+        if ( 5 > strlen($articleContent)) {
+            
+            $error = "Content text must be atleast 5 characters.";
+        }
+
+        if (isset($error) == false) {
+
+            $article->addComment($articleTitle, $articleContent, $categoryId);
         }
 
         if(isset($error)) {
