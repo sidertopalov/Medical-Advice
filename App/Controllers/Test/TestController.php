@@ -17,7 +17,6 @@ class TestController extends Controller {
         $app = $this->getYee();
 
 
-        // Git shell checked
         $data = array(
             'title' => "Test Controller",
             );
