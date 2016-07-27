@@ -16,7 +16,6 @@ class TestController extends Controller {
         /** @var Yee\Yee $yee */
         $app = $this->getYee();
 
-
         $data = array(
             'title' => "Test Controller",
             );

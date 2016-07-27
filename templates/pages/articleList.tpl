@@ -11,7 +11,9 @@
 		<hr style="border-color: #e74c3c;">
 		<br>
 		<div class="table-responsive">
-			<table class="table table-striped">
+
+
+			<!-- <table class="table table-striped">
 				<thead>
 			      <tr>
 			      	<th>ID</th>
@@ -36,8 +38,36 @@
 			      
 		      	</tbody>
 
-			</table>
+			</table> -->
+
 		</div>
+
+		{% for comments in commentDetails  %}
+
+			<section>
+				<div class="container" >
+
+					<div class="form-table text-center">
+						<div>
+				        	<h4>
+					        	Title:<b>{{comments.title}}</b>
+				        	</h4>
+				        </div>
+						<div class="row">
+					        Author:<b style="color: #e74c3c">{{comments.author_id}}</b>
+				        </div>
+				        <br>
+				        <div>
+					        <textarea disabled style="width: 60%; height: 200px; resize: none;">{{comments.content}}</textarea>
+					       	<div class="pull-right col-sm-7">Date: {{comments.date}}</div>
+				       	</div>
+			        </div>
+
+		        </div>
+	        </section>
+
+        {% endfor %}
+
 	</div>
 
 

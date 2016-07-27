@@ -47,11 +47,16 @@ class ArticleController extends Controller {
 
 
         $article = new ArticleModel();
+
+        // order by date ASC
         $commentsList = $article->getComments();
+
+        // order by date DESC
+        $commList = array_reverse($commentsList);
 
         $data = array(
                 'title' => 'List of Articles',
-                'commentDetails' => $commentsList,
+                'commentDetails' => $commList,
                 );
 
         $app->render('pages/articleList.tpl',$data);
