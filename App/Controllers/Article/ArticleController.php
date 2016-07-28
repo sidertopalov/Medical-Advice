@@ -3,6 +3,7 @@
 use Yee\Managers\Controller\Controller;
 use Yee\Managers\CacheManager;
 use App\Models\Article\ArticleModel;
+use App\Models\Category\CategoryModel;
 
 class ArticleController extends Controller {
 
@@ -17,13 +18,21 @@ class ArticleController extends Controller {
 
         if (isset($_SESSION['isLogged']) === true) {
 
+            
+            $categoryModel = new CategoryModel();
+
+            $categorys = $categoryModel->getCategory();
+
             $javascript = array(
                 '/KinguinInternship/myProject/js/addArticle.js',
                 );
 
+
+
             $data = array(
-                'title'         => 'Add Article',
-                'javascript'    => $javascript,
+                'title'             => 'Add Article',
+                'javascript'        => $javascript,
+                'categoryDetails'   => $categorys,
                 );
 
             $app->render('pages/articleAdd.tpl', $data);

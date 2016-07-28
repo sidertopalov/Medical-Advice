@@ -22,7 +22,7 @@ class __TwigTemplate_744ec7b5e8213e5142b520b1986ef5bd19e4b3c98bb0ffdd294d3db2d81
 <section>
 \t<div class=\"container\">
 \t\t<div class=\"row\">
-\t\t\t<div class=\"col-sm-12 text-center\">
+\t\t\t<!-- <div class=\"col-sm-12 text-center\">
 \t\t\t\t";
         // line 7
         if ($this->getAttribute((isset($context["userDetail"]) ? $context["userDetail"] : null), "first_name")) {
@@ -37,7 +37,7 @@ class __TwigTemplate_744ec7b5e8213e5142b520b1986ef5bd19e4b3c98bb0ffdd294d3db2d81
 \t\t\t\t";
         }
         // line 12
-        echo "\t\t\t</div>
+        echo "\t\t\t</div> -->
 \t\t</div>
 
 \t\t\t<div class=\"row text-center\">
@@ -46,12 +46,12 @@ class __TwigTemplate_744ec7b5e8213e5142b520b1986ef5bd19e4b3c98bb0ffdd294d3db2d81
 \t\t\t\t\t<div class=\"photo-form-wrapper clearfix\">
 \t\t\t\t\t\t<div class=\"row\">
 
-\t\t\t\t\t\t\t\t<div class=\"col-md-4 col-sm-4\">
+\t\t\t\t\t\t\t\t<div class=\"col-md-3 col-sm-3\">
 \t\t\t\t\t\t\t\t\t<h3 style=\"text-decoration: underline;\"> Side-bar </h3>
 \t\t\t\t\t\t\t\t\t<hr style=\"border-color: #e74c3c;\">
 \t\t\t\t\t\t\t\t</div>
 
-\t\t\t\t\t\t\t\t<div class=\"col-md-4 col-sm-4\">
+\t\t\t\t\t\t\t\t<div class=\"col-md-8 col-sm-8\">
 
 \t\t\t\t\t\t\t\t\t<form method=\"post\" id=\"addArticle\">
 
@@ -65,18 +65,39 @@ class __TwigTemplate_744ec7b5e8213e5142b520b1986ef5bd19e4b3c98bb0ffdd294d3db2d81
 
 \t\t\t\t\t\t\t\t\t\t\t<!-- <input id=\"firstName\" name=\"firstName\" type=\"text\" placeholder=\"First name\" value=\"\"> -->
 
-\t\t\t\t\t\t\t\t\t\t\t<textarea class=\"form-control\" id=\"contentArticle\" name=\"contentArticle\" placeholder=\"Add comment here...\" style=\"width: 384px; height: 150px; resize: none; \"></textarea><br>
+\t\t\t\t\t\t\t\t\t\t\t <textarea class=\"form-control\" id=\"contentArticle\" name=\"contentArticle\"></textarea><br>
+\t\t\t\t\t\t\t\t\t\t\t  <!-- <textarea id=\"myTextarea\"></textarea> -->
+\t\t\t\t\t\t  \t\t\t\t\t
+\t\t\t\t\t\t  \t\t\t\t\t<select class=\"form-control\">
+\t\t\t\t\t\t\t\t\t\t\t  \t";
+        // line 44
+        $context['_parent'] = (array) $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["categoryDetails"]) ? $context["categoryDetails"] : null));
+        foreach ($context['_seq'] as $context["_key"] => $context["category"]) {
+            // line 45
+            echo "\t\t\t\t\t\t\t\t\t\t\t  \t\tCategory: <option value=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["category"]) ? $context["category"] : null), "id"), "html", null, true);
+            echo "\">";
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["category"]) ? $context["category"] : null), "name"), "html", null, true);
+            echo "</option>
+\t\t\t\t\t\t\t\t\t\t\t  \t";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['category'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 47
+        echo "\t\t\t\t\t\t\t\t\t\t\t</select> 
 
 \t\t\t\t\t\t\t\t\t\t\t<input id=\"btnEdit\" type=\"submit\" class=\"btn btn-primary btn-filled\"  value=\"Add Comment\">
 \t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t\t</form>
 \t\t\t\t\t\t\t\t</div>
 
-\t\t\t\t\t\t\t\t<div class=\"col-md-4 col-sm-4\">
+\t\t\t\t\t\t\t\t<!-- <div class=\"col-md-4 col-sm-4\">
 \t\t\t\t\t\t\t\t\t<h3 style=\"text-decoration: underline;\"> News </h3>
 \t\t\t\t\t\t\t\t\t<hr style=\"border-color: #e74c3c;\">
 
-\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t</div> -->
 \t\t\t\t\t\t</div>
 \t\t\t\t\t<!-- </div> -->
 \t\t\t\t</div>
@@ -112,7 +133,7 @@ class __TwigTemplate_744ec7b5e8213e5142b520b1986ef5bd19e4b3c98bb0ffdd294d3db2d81
 
 
 ";
-        // line 86
+        // line 93
         $this->env->loadTemplate("./common/footer.tpl")->display($context);
     }
 
@@ -128,6 +149,6 @@ class __TwigTemplate_744ec7b5e8213e5142b520b1986ef5bd19e4b3c98bb0ffdd294d3db2d81
 
     public function getDebugInfo()
     {
-        return array (  116 => 86,  40 => 12,  36 => 10,  30 => 8,  28 => 7,  21 => 2,  19 => 1,);
+        return array (  137 => 93,  89 => 47,  78 => 45,  74 => 44,  40 => 12,  36 => 10,  30 => 8,  28 => 7,  21 => 2,  19 => 1,);
     }
 }

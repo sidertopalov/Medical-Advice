@@ -54,6 +54,8 @@
         <script src="/KinguinInternship/myProject/js/passwordStrength.jquery.js"></script>
         <script src="/KinguinInternship/myProject/js/passwordStrength.jquery.min.js"></script>
         <script src="/KinguinInternship/myProject/js/pStrength.jquery.js"></script>
+        <script src="/KinguinInternship/myProject/js/jquery.tinymce.min.js"></script>
+        <script type="text/javascript" src='//cdn.tinymce.com/4/tinymce.min.js'></script>
 
         {% if javascript is empty %}
     		<!-- <p>Our website is in maintenance mode. Please, come back later.</p> -->

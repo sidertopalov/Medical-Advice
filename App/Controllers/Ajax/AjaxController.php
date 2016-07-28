@@ -5,6 +5,7 @@ use Yee\Managers\CacheManager;
 use App\Models\Ajax\AjaxModel;
 use App\Models\MyAccount\MyAccountModel;
 use App\Models\Article\ArticleModel;
+use App\Models\Category\CategoryModel;
 
 class AjaxController extends Controller
 {
@@ -40,10 +41,10 @@ class AjaxController extends Controller
 
 
         // Create instance of App\Models\Ajax\AjaxModel;
-        $ajax = new AjaxModel($loginEmail, $loginPass);
+        $ajaxModel = new AjaxModel($loginEmail, $loginPass);
 
         
-        if (!$ajax->validateLogin()) {
+        if (!$ajaxModel->validateLogin()) {
 
             $error = "Fail to join! Check your email/password.";
         }
@@ -62,9 +63,10 @@ class AjaxController extends Controller
 
 
         } else {
-
+            $userProperty = $ajaxModel->userProperty();
             $_SESSION['isLogged'] = true;
             $_SESSION['userEmail'] = $loginEmail;
+            $_SESSION['isAdmin'] = $userProperty['admin'];
 
             $data = array(
                 "title"         => "AjaxControllerSucc",
@@ -210,7 +212,6 @@ class AjaxController extends Controller
         $articleTitle = $app->request()->post('titleArticle');
         $articleContent = $app->request()->post('contentArticle');
 
-
         $article = new ArticleModel();
 
         // implement fake category just for DB
@@ -221,15 +222,135 @@ class AjaxController extends Controller
             $error = "Title must be atleast 3 characters.";
         }
 
-        if ( 5 > strlen($articleContent)) {
+        if ( empty($articleContent) == true ) {
             
-            $error = "Content text must be atleast 5 characters.";
+            $error = "Content text cant be empty.";
         }
 
         if (isset($error) == false) {
 
             $article->addComment($articleTitle, $articleContent, $categoryId);
         }
+
+        if(isset($error)) {
+
+            $data = array(
+                'message'       => $error,
+                'error'         => false,
+                );
+
+
+        } else {
+
+            $data = array(
+                'message'       => "Succesfully updated!",
+                'success'       => true,
+                'error'         => true,
+                );
+        }
+        
+        echo json_encode( $data );
+    }
+
+    /**
+     * @Route('/ajax/category')
+     * @Name('category.index')
+     * @Method('post')
+     */
+    public function postAddCategoryAction() {
+
+        /** @var Yee\Yee $yee */
+        $app = $this->app;
+
+
+        //------> POST Variables <-------
+        $newCategory = $app->request()->post('newCategory');
+
+        $categoryModel = new CategoryModel();
+
+        $categoryModel->addCategory($newCategory);
+
+
+        if(isset($error)) {
+
+            $data = array(
+                'message'       => $error,
+                'error'         => false,
+                );
+
+
+        } else {
+
+            $data = array(
+                'message'       => "Succesfully updated!",
+                'success'       => true,
+                'error'         => true,
+                );
+        }
+        
+        echo json_encode( $data );
+    }
+
+    /**
+     * @Route('/ajax/categoryUpdate')
+     * @Name('category.index')
+     * @Method('post')
+     */
+    public function postUpdateCategoryAction() {
+
+        /** @var Yee\Yee $yee */
+        $app = $this->app;
+
+
+        //------> POST Variables <-------
+        $categoryId = $app->request()->post('categoryId');
+        $categoryName = $app->request()->post('categoryName');
+
+        $categoryModel = new CategoryModel();
+
+        $categoryModel->updateCategoryById($categoryId,$categoryName);
+
+        if(isset($error)) {
+
+            $data = array(
+                'message'       => $error,
+                'error'         => false,
+                );
+
+
+        } else {
+
+            $data = array(
+                'message'       => "Succesfully updated!",
+                'success'       => true,
+                'error'         => true,
+                );
+        }
+        
+        echo json_encode( $data );
+    }
+
+
+    /**
+     * @Route('/ajax/categoryDelete')
+     * @Name('category.index')
+     * @Method('post')
+     */
+    public function postDeleteCategoryAction() {
+
+        /** @var Yee\Yee $yee */
+        $app = $this->app;
+
+
+        //------> POST Variables <-------
+        $categoryId = $app->request()->post('categoryId');
+
+        $categoryModel = new CategoryModel();
+
+        $categoryModel->deleteCategory($categoryId);
+
+        // var_dump($_POST);
+        // die;
 
         if(isset($error)) {
 

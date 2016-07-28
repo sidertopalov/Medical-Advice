@@ -3,13 +3,13 @@
 <section>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12 text-center">
+			<!-- <div class="col-sm-12 text-center">
 				{% if userDetail.first_name %}
 					<h1>{{userDetail.first_name}}, Account!</h1>	
 				{% else %}
 					<h1>My Account!</h1>	
 				{% endif%}
-			</div>
+			</div> -->
 		</div>
 
 			<div class="row text-center">
@@ -18,12 +18,12 @@
 					<div class="photo-form-wrapper clearfix">
 						<div class="row">
 
-								<div class="col-md-4 col-sm-4">
+								<div class="col-md-3 col-sm-3">
 									<h3 style="text-decoration: underline;"> Side-bar </h3>
 									<hr style="border-color: #e74c3c;">
 								</div>
 
-								<div class="col-md-4 col-sm-4">
+								<div class="col-md-8 col-sm-8">
 
 									<form method="post" id="addArticle">
 
@@ -37,18 +37,25 @@
 
 											<!-- <input id="firstName" name="firstName" type="text" placeholder="First name" value=""> -->
 
-											<textarea class="form-control" id="contentArticle" name="contentArticle" placeholder="Add comment here..." style="width: 384px; height: 150px; resize: none; "></textarea><br>
+											 <textarea class="form-control" id="contentArticle" name="contentArticle"></textarea><br>
+											  <!-- <textarea id="myTextarea"></textarea> -->
+						  					
+						  					<select class="form-control">
+											  	{% for category in categoryDetails %}
+											  		Category: <option value="{{category.id}}">{{ category.name }}</option>
+											  	{% endfor %}
+											</select> 
 
 											<input id="btnEdit" type="submit" class="btn btn-primary btn-filled"  value="Add Comment">
 									
 									</form>
 								</div>
 
-								<div class="col-md-4 col-sm-4">
+								<!-- <div class="col-md-4 col-sm-4">
 									<h3 style="text-decoration: underline;"> News </h3>
 									<hr style="border-color: #e74c3c;">
 
-								</div>
+								</div> -->
 						</div>
 					<!-- </div> -->
 				</div>

@@ -45,25 +45,33 @@
 		{% for comments in commentDetails  %}
 
 			<section>
-				<div class="container" >
+				<div class="container table col-md-12 col-sm-12 text-center" >
 
-					<div class="form-table text-center">
+				<div class="col-md-2 col-sm-2">
+					
+				</div>
+					<div class="col-md-8 col-sm-8 text-center">
 						<div>
 				        	<h4>
 					        	Title:<b>{{comments.title}}</b>
 				        	</h4>
 				        </div>
 						<div class="row">
-					        Author:<b style="color: #e74c3c">{{comments.author_id}}</b>
+					        <b>Author:</b><b style="color: #e74c3c">{{comments.author_id}}</b>
 				        </div>
 				        <br>
 				        <div>
-					        <textarea disabled style="width: 60%; height: 200px; resize: none;">{{comments.content}}</textarea>
-					       	<div class="pull-right col-sm-7">Date: {{comments.date}}</div>
+				        	<hr style="border-color: #000">
+					        	<div >{{ comments.content | raw }}</div>
+					       	<hr style="border-color: #000">
+					       	<div><b>Date: {{comments.date}}</b></div>
 				       	</div>
 			        </div>
-
 		        </div>
+
+		        <div class="col-md-2 col-sm-2">
+					
+				</div>
 	        </section>
 
         {% endfor %}

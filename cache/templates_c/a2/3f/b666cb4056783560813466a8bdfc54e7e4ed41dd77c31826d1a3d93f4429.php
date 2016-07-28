@@ -72,20 +72,22 @@ class __TwigTemplate_a23fb666cb4056783560813466a8bdfc54e7e4ed41dd77c31826d1a3d93
         <script src=\"/KinguinInternship/myProject/js/passwordStrength.jquery.js\"></script>
         <script src=\"/KinguinInternship/myProject/js/passwordStrength.jquery.min.js\"></script>
         <script src=\"/KinguinInternship/myProject/js/pStrength.jquery.js\"></script>
+        <script src=\"/KinguinInternship/myProject/js/jquery.tinymce.min.js\"></script>
+        <script type=\"text/javascript\" src='//cdn.tinymce.com/4/tinymce.min.js'></script>
 
         ";
-        // line 58
+        // line 60
         if (twig_test_empty((isset($context["javascript"]) ? $context["javascript"] : null))) {
-            // line 59
+            // line 61
             echo "    \t\t<!-- <p>Our website is in maintenance mode. Please, come back later.</p> -->
 \t\t";
         } else {
-            // line 61
+            // line 63
             echo "\t        ";
             $context['_parent'] = (array) $context;
             $context['_seq'] = twig_ensure_traversable((isset($context["javascript"]) ? $context["javascript"] : null));
             foreach ($context['_seq'] as $context["_key"] => $context["js"]) {
-                // line 62
+                // line 64
                 echo "\t        \t<script src=\"";
                 echo twig_escape_filter($this->env, (isset($context["js"]) ? $context["js"] : null), "html", null, true);
                 echo "\"></script>
@@ -94,10 +96,10 @@ class __TwigTemplate_a23fb666cb4056783560813466a8bdfc54e7e4ed41dd77c31826d1a3d93
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['js'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 64
+            // line 66
             echo "        ";
         }
-        // line 65
+        // line 67
         echo "    </body>
 </html>";
     }
@@ -114,6 +116,6 @@ class __TwigTemplate_a23fb666cb4056783560813466a8bdfc54e7e4ed41dd77c31826d1a3d93
 
     public function getDebugInfo()
     {
-        return array (  101 => 65,  98 => 64,  89 => 62,  84 => 61,  80 => 59,  78 => 58,  81 => 38,  69 => 28,  60 => 25,  56 => 24,  52 => 23,  48 => 22,  45 => 21,  41 => 20,  21 => 2,  19 => 1,);
+        return array (  103 => 67,  100 => 66,  91 => 64,  86 => 63,  82 => 61,  80 => 60,  19 => 1,);
     }
 }

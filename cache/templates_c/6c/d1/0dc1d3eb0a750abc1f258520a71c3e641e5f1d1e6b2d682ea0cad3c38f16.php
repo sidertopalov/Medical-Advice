@@ -94,37 +94,45 @@ class __TwigTemplate_6cd10dc1d3eb0a750abc1f258520a71c3e641e5f1d1e6b2d682ea0cad3c
             // line 46
             echo "
 \t\t\t<section>
-\t\t\t\t<div class=\"container\" >
+\t\t\t\t<div class=\"container table col-md-12 col-sm-12 text-center\" >
 
-\t\t\t\t\t<div class=\"form-table text-center\">
+\t\t\t\t<div class=\"col-md-2 col-sm-2\">
+\t\t\t\t\t
+\t\t\t\t</div>
+\t\t\t\t\t<div class=\"col-md-8 col-sm-8 text-center\">
 \t\t\t\t\t\t<div>
 \t\t\t\t        \t<h4>
 \t\t\t\t\t        \tTitle:<b>";
-            // line 53
+            // line 56
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["comments"]) ? $context["comments"] : null), "title"), "html", null, true);
             echo "</b>
 \t\t\t\t        \t</h4>
 \t\t\t\t        </div>
 \t\t\t\t\t\t<div class=\"row\">
-\t\t\t\t\t        Author:<b style=\"color: #e74c3c\">";
-            // line 57
+\t\t\t\t\t        <b>Author:</b><b style=\"color: #e74c3c\">";
+            // line 60
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["comments"]) ? $context["comments"] : null), "author_id"), "html", null, true);
             echo "</b>
 \t\t\t\t        </div>
 \t\t\t\t        <br>
 \t\t\t\t        <div>
-\t\t\t\t\t        <textarea disabled style=\"width: 60%; height: 200px; resize: none;\">";
-            // line 61
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["comments"]) ? $context["comments"] : null), "content"), "html", null, true);
-            echo "</textarea>
-\t\t\t\t\t       \t<div class=\"pull-right col-sm-7\">Date: ";
-            // line 62
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["comments"]) ? $context["comments"] : null), "date"), "html", null, true);
+\t\t\t\t        \t<hr style=\"border-color: #000\">
+\t\t\t\t\t        \t<div >";
+            // line 65
+            echo $this->getAttribute((isset($context["comments"]) ? $context["comments"] : null), "content");
             echo "</div>
+\t\t\t\t\t       \t<hr style=\"border-color: #000\">
+\t\t\t\t\t       \t<div><b>Date: ";
+            // line 67
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["comments"]) ? $context["comments"] : null), "date"), "html", null, true);
+            echo "</b></div>
 \t\t\t\t       \t</div>
 \t\t\t        </div>
-
 \t\t        </div>
+
+\t\t        <div class=\"col-md-2 col-sm-2\">
+\t\t\t\t\t
+\t\t\t\t</div>
 \t        </section>
 
         ";
@@ -132,7 +140,7 @@ class __TwigTemplate_6cd10dc1d3eb0a750abc1f258520a71c3e641e5f1d1e6b2d682ea0cad3c
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['comments'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 70
+        // line 78
         echo "
 \t</div>
 
@@ -141,7 +149,7 @@ class __TwigTemplate_6cd10dc1d3eb0a750abc1f258520a71c3e641e5f1d1e6b2d682ea0cad3c
 
 
 ";
-        // line 77
+        // line 85
         $this->env->loadTemplate("./common/footer.tpl")->display($context);
     }
 
@@ -157,6 +165,6 @@ class __TwigTemplate_6cd10dc1d3eb0a750abc1f258520a71c3e641e5f1d1e6b2d682ea0cad3c
 
     public function getDebugInfo()
     {
-        return array (  145 => 77,  136 => 70,  122 => 62,  118 => 61,  111 => 57,  104 => 53,  95 => 46,  91 => 45,  82 => 38,  73 => 35,  69 => 34,  65 => 33,  61 => 32,  57 => 31,  54 => 30,  50 => 29,  21 => 2,  19 => 1,);
+        return array (  153 => 85,  144 => 78,  127 => 67,  122 => 65,  114 => 60,  107 => 56,  95 => 46,  91 => 45,  82 => 38,  73 => 35,  69 => 34,  65 => 33,  61 => 32,  57 => 31,  54 => 30,  50 => 29,  21 => 2,  19 => 1,);
     }
 }
