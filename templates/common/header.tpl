@@ -85,7 +85,7 @@
 								{% if session.isLogged == true %}
 									<li><a href="/KinguinInternship/myProject/account">Profile</a></li>
 									<li><a href="/KinguinInternship/myProject/article">New Question</a></li>
-									<li><a href="/KinguinInternship/myProject/articleList">Articles</a></li>
+									<li><a href="/KinguinInternship/myProject/categorySelect">Categories</a></li>
 						        	<li class="has-dropdown"><a href="#">Settings</a>
 						        		<ul class="subnav">
 						        			<a href="/KinguinInternship/myProject/changePass">Change Password</a>
@@ -93,6 +93,17 @@
 					        			</ul>
 					        		</li>
 						        	<li></li>
+
+						        	{% if session.isAdmin == 1 %}
+
+						        	<li class="has-dropdown"><a href="#">Category</a>
+						        		<ul class="subnav">
+						        			<a href="/KinguinInternship/myProject/category">Create Category</a>
+						        			<a href="/KinguinInternship/myProject/categoryList">Category List</a>
+					        			</ul>
+					        		</li>
+
+					        		{% endif %}
 
 					        	{% else %}
 

@@ -109,7 +109,7 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
             // line 86
             echo "\t\t\t\t\t\t\t\t\t<li><a href=\"/KinguinInternship/myProject/account\">Profile</a></li>
 \t\t\t\t\t\t\t\t\t<li><a href=\"/KinguinInternship/myProject/article\">New Question</a></li>
-\t\t\t\t\t\t\t\t\t<li><a href=\"/KinguinInternship/myProject/articleList\">Articles</a></li>
+\t\t\t\t\t\t\t\t\t<li><a href=\"/KinguinInternship/myProject/categorySelect\">Categories</a></li>
 \t\t\t\t\t\t        \t<li class=\"has-dropdown\"><a href=\"#\">Settings</a>
 \t\t\t\t\t\t        \t\t<ul class=\"subnav\">
 \t\t\t\t\t\t        \t\t\t<a href=\"/KinguinInternship/myProject/changePass\">Change Password</a>
@@ -118,16 +118,32 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 \t\t\t\t\t        \t\t</li>
 \t\t\t\t\t\t        \t<li></li>
 
+\t\t\t\t\t\t        \t";
+            // line 97
+            if (($this->getAttribute((isset($context["session"]) ? $context["session"] : null), "isAdmin") == 1)) {
+                // line 98
+                echo "
+\t\t\t\t\t\t        \t<li class=\"has-dropdown\"><a href=\"#\">Category</a>
+\t\t\t\t\t\t        \t\t<ul class=\"subnav\">
+\t\t\t\t\t\t        \t\t\t<a href=\"/KinguinInternship/myProject/category\">Create Category</a>
+\t\t\t\t\t\t        \t\t\t<a href=\"/KinguinInternship/myProject/categoryList\">Category List</a>
+\t\t\t\t\t        \t\t\t</ul>
+\t\t\t\t\t        \t\t</li>
+
+\t\t\t\t\t        \t\t";
+            }
+            // line 107
+            echo "
 \t\t\t\t\t        \t";
         } else {
-            // line 98
+            // line 109
             echo "
 \t\t\t\t\t\t        \t<li> <a href=\"/KinguinInternship/myProject/signup\">Sign Up</a></li>
 \t\t\t\t\t\t\t\t\t<li> <a href=\"/KinguinInternship/myProject/login\">Login</a></li>
 
 \t\t\t\t\t\t        ";
         }
-        // line 103
+        // line 114
         echo "\t\t\t\t\t\t\t\t
 
 \t\t\t\t\t\t\t\t<!-- Comment top nav-menu
@@ -240,6 +256,6 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 
     public function getDebugInfo()
     {
-        return array (  131 => 103,  124 => 98,  110 => 86,  108 => 85,  29 => 9,  19 => 1,);
+        return array (  147 => 114,  140 => 109,  136 => 107,  125 => 98,  123 => 97,  110 => 86,  108 => 85,  29 => 9,  19 => 1,);
     }
 }

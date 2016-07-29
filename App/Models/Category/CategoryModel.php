@@ -27,6 +27,20 @@ class CategoryModel {
     }
 
 
+
+    public function isExistCategory($categoryName) {
+
+        $app = \Yee\Yee::getInstance();
+
+        if ($app->db['default']->where('name',$categoryName)->getOne('category')) {
+            return true;
+        }
+        return false;
+
+    }
+
+
+
     public function getCategoryById($id) {
 
         $app = \Yee\Yee::getInstance();
@@ -35,18 +49,20 @@ class CategoryModel {
     }
 
 
+
     public function updateCategoryById($id,$name) {
 
       $app = \Yee\Yee::getInstance();
 
       $data = array(
 
-        'name' => $name,
-
+            'name' => $name,
         );
 
       $app->db['default']->where('id',$id)->update('category',$data);
     }
+
+
 
     public function deleteCategory($id) {
 
@@ -54,4 +70,6 @@ class CategoryModel {
 
       $app->db['default']->where('id',$id)->delete('category');
     }
+
+
 }

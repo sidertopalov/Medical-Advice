@@ -1,7 +1,7 @@
 <?php
 
-/* /pages/categoryList.tpl */
-class __TwigTemplate_a37bf16a43e8732d19421834a664c9c0c326f7d3c7cd6be98ac329c582d2ef57 extends Twig_Template
+/* /pages/categorySelect.tpl */
+class __TwigTemplate_4e7bf9a426affddc9a7b9b6e8388df6599c5724cb67d231c2478b4491d0ed281 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -57,15 +57,10 @@ class __TwigTemplate_a37bf16a43e8732d19421834a664c9c0c326f7d3c7cd6be98ac329c582d
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["category"]) ? $context["category"] : null), "name"), "html", null, true);
             echo "</td>
 \t\t\t\t\t        <td>
-\t\t\t\t\t        \t<a class=\"btn btn-primary btn-filled\" href=\"/KinguinInternship/myProject/categoryUpdate/";
+\t\t\t\t\t        <a class=\"btn btn-primary btn-filled\" href=\"/KinguinInternship/myProject/category/view/";
             // line 30
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["category"]) ? $context["category"] : null), "id"), "html", null, true);
-            echo "\">Update</a>
-\t\t\t\t\t        \t
-\t\t\t\t\t        \t<a class=\"btn btn-primary btn-filled\" href=\"/KinguinInternship/myProject/categoryDelete/";
-            // line 32
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["category"]) ? $context["category"] : null), "id"), "html", null, true);
-            echo "\">Delete</a>
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["category"]) ? $context["category"] : null), "name"), "html", null, true);
+            echo "\">View Category</a>
 \t\t\t\t\t        </td>
 \t\t\t\t      \t</tr>
 \t\t\t        ";
@@ -73,7 +68,7 @@ class __TwigTemplate_a37bf16a43e8732d19421834a664c9c0c326f7d3c7cd6be98ac329c582d
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['category'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 36
+        // line 34
         echo "\t\t      \t</tbody>
 
 \t\t\t</table>
@@ -83,13 +78,13 @@ class __TwigTemplate_a37bf16a43e8732d19421834a664c9c0c326f7d3c7cd6be98ac329c582d
 </section>
 
 ";
-        // line 44
+        // line 42
         $this->env->loadTemplate("./common/footer.tpl")->display($context);
     }
 
     public function getTemplateName()
     {
-        return "/pages/categoryList.tpl";
+        return "/pages/categorySelect.tpl";
     }
 
     public function isTraitable()
@@ -99,6 +94,6 @@ class __TwigTemplate_a37bf16a43e8732d19421834a664c9c0c326f7d3c7cd6be98ac329c582d
 
     public function getDebugInfo()
     {
-        return array (  87 => 44,  77 => 36,  67 => 32,  62 => 30,  57 => 28,  53 => 27,  50 => 26,  46 => 25,  21 => 2,  19 => 1,);
+        return array (  82 => 42,  72 => 34,  62 => 30,  57 => 28,  53 => 27,  50 => 26,  46 => 25,  21 => 2,  19 => 1,);
     }
 }

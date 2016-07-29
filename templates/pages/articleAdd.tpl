@@ -40,12 +40,12 @@
 											 <textarea class="form-control" id="contentArticle" name="contentArticle"></textarea><br>
 											  <!-- <textarea id="myTextarea"></textarea> -->
 						  					
-						  					<select class="form-control">
+						  					<select id="selectId" name="selectId" class="form-control">
 											  	{% for category in categoryDetails %}
 											  		Category: <option value="{{category.id}}">{{ category.name }}</option>
 											  	{% endfor %}
-											</select> 
-
+											</select>
+											<br>
 											<input id="btnEdit" type="submit" class="btn btn-primary btn-filled"  value="Add Comment">
 									
 									</form>

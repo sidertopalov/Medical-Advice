@@ -64,6 +64,7 @@ class AjaxController extends Controller
 
         } else {
             $userProperty = $ajaxModel->userProperty();
+
             $_SESSION['isLogged'] = true;
             $_SESSION['userEmail'] = $loginEmail;
             $_SESSION['isAdmin'] = $userProperty['admin'];
@@ -211,11 +212,10 @@ class AjaxController extends Controller
         //------> POST Variables <-------
         $articleTitle = $app->request()->post('titleArticle');
         $articleContent = $app->request()->post('contentArticle');
+        $categoryId = $app->request()->post('selectId');
 
         $article = new ArticleModel();
 
-        // implement fake category just for DB
-        $categoryId = rand(1,10);
 
         if( 3 > strlen($articleTitle) && strlen($articleTitle) < 64) {
 
@@ -229,7 +229,9 @@ class AjaxController extends Controller
 
         if (isset($error) == false) {
 
-            $article->addComment($articleTitle, $articleContent, $categoryId);
+            if(!$article->addComment($articleTitle, $articleContent, $categoryId)){
+                $error = "Don't try to down my DB sucker!";
+            }
         }
 
         if(isset($error)) {
@@ -268,7 +270,25 @@ class AjaxController extends Controller
 
         $categoryModel = new CategoryModel();
 
-        $categoryModel->addCategory($newCategory);
+        if ($newCategory != "") {
+            if ($categoryModel->isExistCategory($newCategory)) {
+                $error = "Category already exist!";
+            }
+        } else {
+            $error = "Wrong data.Check your field";
+        }
+
+        // var_dump($categoryModel->isExistCategory($newCategory));
+        // die;
+
+        if (isset($error) == false) {
+            
+            //$categoryModel->addCategory($newCategory);
+
+        }
+
+
+
 
 
         if(isset($error)) {

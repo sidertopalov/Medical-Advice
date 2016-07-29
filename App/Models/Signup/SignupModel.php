@@ -142,6 +142,7 @@ class SignupModel {
 				"signupDate" 		=> $dateTimeNow,
 				"ip" 				=> "1.1.1.1",
 				"activationCode" 	=> $this->activationCode,
+				"admin"				=> "0",
 			);
         
 		$db->insert("users", $data );

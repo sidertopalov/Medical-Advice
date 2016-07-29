@@ -4,6 +4,7 @@ use Yee\Managers\Controller\Controller;
 use Yee\Managers\CacheManager;
 use App\Models\Category\CategoryModel;
 
+// Category Controller for Admin...
 
 class CategoryController extends Controller {  
      /**
@@ -23,7 +24,7 @@ class CategoryController extends Controller {
         
         $data = array(
 
-            'title' => 'Add New Category',
+            'title' => 'New Category',
             'javascript' => $javascript,
           );
 
@@ -47,13 +48,18 @@ class CategoryController extends Controller {
           
           $categoryId = $id;
 
-          // if ($_SESSION['isAdmin']) {
-          //   $app->redirect('/KinguinInternship/myProject/account');
-          // }
-
+          if ($_SESSION['isAdmin'] != 1) {
+            $app->redirect('/KinguinInternship/myProject/account');
+          }
 
           $categoryModel = new CategoryModel();
-          $categoryName = $categoryModel->getCategoryById($categoryId);
+          $categoryProperty = $categoryModel->getCategoryById($categoryId);
+
+          if ($categoryProperty == null) {
+              
+              $app->redirect('/KinguinInternship/myProject/categoryList');
+          }
+
 
           $javascript = array(
 
@@ -65,7 +71,7 @@ class CategoryController extends Controller {
             'title' => 'Update Category',
             'javascript' => $javascript,
             'categoryId' => $categoryId,
-            'categoryName' => $categoryName['name'],
+            'categoryName' => $categoryProperty['name'],
             ); 
           $app->render('/pages/categoryUpdate.tpl',$data);
      }
@@ -78,12 +84,17 @@ class CategoryController extends Controller {
 
           $app = $this->getYee();
 
-          if ($_SESSION['isAdmin']) {
+          if ($_SESSION['isAdmin'] != 1) {
             $app->redirect('/KinguinInternship/myProject/account');
           }
 
           $categoryModel = new CategoryModel();
-          $categoryDetail = $categoryModel->getCategoryById($id);
+          $categoryProperty = $categoryModel->getCategoryById($id);
+
+          if ($categoryProperty == null) {
+              
+              $app->redirect('/KinguinInternship/myProject/categoryList');
+          }
 
           $javascript = array(
 
@@ -93,8 +104,8 @@ class CategoryController extends Controller {
           $data = array(
             'title' => 'Delete Category',
             'javascript' => $javascript,
-            'categoryId' => $categoryDetail['id'],      
-            'categoryName' => $categoryDetail['name'],
+            'categoryId' => $categoryProperty['id'],      
+            'categoryName' => $categoryProperty['name'],
             ); 
           $app->render('/pages/categoryDelete.tpl',$data);
      }
@@ -108,15 +119,15 @@ class CategoryController extends Controller {
           $app = $this->getYee();
 
           $categoryModel = new CategoryModel();
-          $categoryDetails = $categoryModel->getCategory();
+          $categoryList = $categoryModel->getCategory();
 
-          // if ($_SESSION['isAdmin']) {
-          //   $app->redirect('/KinguinInternship/myProject/account');
-          // }
+          if ($_SESSION['isAdmin'] != 1) {
+            $app->redirect('/KinguinInternship/myProject/account');
+          }
 
           $data = array(
               'title' => 'List Category',
-              'categoryDetails' => $categoryDetails,
+              'categoryDetails' => $categoryList,
             ); 
 
           $app->render('/pages/categoryList.tpl',$data);

@@ -24,22 +24,24 @@ class __TwigTemplate_17c41388a2318b688fb6b77fb641f53c8b1451c897f87276ffbd3f0aa75
 \t
 \t<div class=\"container\">
 
-\t\t<div class=\"text-center\">
-\t\t\t\t<h2>Add New Category</h2>
+
+\t\t<div class=\"row\">
+\t\t<div>
+\t\t\t<h3>New Category</h3>
+\t\t\t<hr style=\"border-color: #e74c3c;\">
+\t\t\t<br>
 \t\t</div>
-\t\t<hr style=\"border-color: #e74c3c;\">
-\t\t<br>
-\t\t
-\t\t<div style=\"display:none\" class=\"alert alert-danger\" role=\"alert\" id=\"errorMessage\"></div>
-\t\t<div style=\"display:none\" class=\"alert alert-success\" role=\"alert\" id=\"successMessage\"></div>
+\t\t\t<div style=\"display:none\" class=\"alert alert-danger\" role=\"alert\" id=\"errorMessage\"></div>
+\t\t\t<div style=\"display:none\" class=\"alert alert-success\" role=\"alert\" id=\"successMessage\"></div>
 
-\t\t<div class=\"table-responsive\">
+\t\t\t<!-- <div class=\"table-responsive\"> -->
 
-\t\t<form method=\"post\" id=\"categoryAddForm\">
-\t\t\tNew category: <input type=\"text\" name=\"newCategory\" id=\"newCategory\" value=\"\" />
-\t\t\t<input id=\"btnCategory\" type=\"submit\" class=\"btn btn-primary btn-filled\"  value=\"Add Category\" />
-\t\t</form>
+\t\t\t<form method=\"post\" id=\"categoryAddForm\">
+\t\t\t\t<input type=\"text\" name=\"newCategory\" id=\"newCategory\" placeholder=\"New category name..\" value=\"\" /><br><br>
+\t\t\t\t<input id=\"btnCategory\" type=\"submit\" class=\"btn btn-primary btn-filled\"  value=\"Create Category\" />
+\t\t\t</form>
 
+\t\t\t<!-- </div> -->
 \t\t</div>
 
 \t</div>
@@ -49,7 +51,7 @@ class __TwigTemplate_17c41388a2318b688fb6b77fb641f53c8b1451c897f87276ffbd3f0aa75
 
 
 ";
-        // line 32
+        // line 34
         $this->env->loadTemplate("./common/footer.tpl")->display($context);
     }
 
@@ -65,6 +67,6 @@ class __TwigTemplate_17c41388a2318b688fb6b77fb641f53c8b1451c897f87276ffbd3f0aa75
 
     public function getDebugInfo()
     {
-        return array (  53 => 32,  21 => 2,  19 => 1,);
+        return array (  55 => 34,  21 => 2,  19 => 1,);
     }
 }

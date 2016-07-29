@@ -46,8 +46,8 @@ class __TwigTemplate_8285d8bc0c172c6990a87c192293af7c0910a5b518f7346fdf59772a7bb
         // line 23
         echo twig_escape_filter($this->env, (isset($context["categoryName"]) ? $context["categoryName"] : null), "html", null, true);
         echo "\" /><br><br>
-\t\t\t\t<input type=\"submit\" name=\"btnCategorySubmit\" id=\"btnCategorySubmit\" value=\"Delete\" />
-\t\t\t\t<a class=\"btn btn-primary btn-filled\" href=\"/KinguinInternship/myProject/category\">Back to Category</a>
+\t\t\t\t<input class=\"btn btn-primary btn-filled\" type=\"submit\" name=\"btnCategorySubmit\" id=\"btnCategorySubmit\" value=\"Delete\" />
+\t\t\t\t<a class=\"btn btn-primary btn-filled\" href=\"/KinguinInternship/myProject/categoryList\">Back to Category</a>
 
 \t\t\t</form>
 \t\t</div>\t

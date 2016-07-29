@@ -68,7 +68,7 @@ class __TwigTemplate_744ec7b5e8213e5142b520b1986ef5bd19e4b3c98bb0ffdd294d3db2d81
 \t\t\t\t\t\t\t\t\t\t\t <textarea class=\"form-control\" id=\"contentArticle\" name=\"contentArticle\"></textarea><br>
 \t\t\t\t\t\t\t\t\t\t\t  <!-- <textarea id=\"myTextarea\"></textarea> -->
 \t\t\t\t\t\t  \t\t\t\t\t
-\t\t\t\t\t\t  \t\t\t\t\t<select class=\"form-control\">
+\t\t\t\t\t\t  \t\t\t\t\t<select id=\"selectId\" name=\"selectId\" class=\"form-control\">
 \t\t\t\t\t\t\t\t\t\t\t  \t";
         // line 44
         $context['_parent'] = (array) $context;
@@ -86,8 +86,8 @@ class __TwigTemplate_744ec7b5e8213e5142b520b1986ef5bd19e4b3c98bb0ffdd294d3db2d81
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['category'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 47
-        echo "\t\t\t\t\t\t\t\t\t\t\t</select> 
-
+        echo "\t\t\t\t\t\t\t\t\t\t\t</select>
+\t\t\t\t\t\t\t\t\t\t\t<br>
 \t\t\t\t\t\t\t\t\t\t\t<input id=\"btnEdit\" type=\"submit\" class=\"btn btn-primary btn-filled\"  value=\"Add Comment\">
 \t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t\t</form>

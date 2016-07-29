@@ -329,7 +329,7 @@ section:nth-of-type(even) {
   display: inline-block;
   padding: 14px 28px 13px 28px;
   line-height: 1;
-  border: 2px solid #3498db;
+  border: 2px solid #e74c3c;
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 11px;
@@ -338,7 +338,7 @@ section:nth-of-type(even) {
   color: #3498db;
 }
 .btn-primary.btn-filled {
-  background: #3498db;
+  background: #e74c3c;
   color: #fff;
 }
 .btn-white {
@@ -2290,7 +2290,7 @@ input[type="submit"] {
   display: inline-block;
   padding: 14px 28px 13px 28px;
   line-height: 1;
-  border: 2px solid #3498db;
+  border: 2px solid #e74c3c;
   color: #3498db;
   max-width: 155px;
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;

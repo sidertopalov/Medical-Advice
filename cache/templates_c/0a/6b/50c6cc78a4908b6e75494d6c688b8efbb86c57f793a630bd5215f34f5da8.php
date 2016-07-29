@@ -1,7 +1,7 @@
 <?php
 
-/* pages/articleList.tpl */
-class __TwigTemplate_6cd10dc1d3eb0a750abc1f258520a71c3e641e5f1d1e6b2d682ea0cad3c38f16 extends Twig_Template
+/* /pages/categoryUserList.tpl */
+class __TwigTemplate_0a6b50c6cc78a4908b6e75494d6c688b8efbb86c57f793a630bd5215f34f5da8 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -89,7 +89,7 @@ class __TwigTemplate_6cd10dc1d3eb0a750abc1f258520a71c3e641e5f1d1e6b2d682ea0cad3c
 \t\t";
         // line 45
         $context['_parent'] = (array) $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["commentDetails"]) ? $context["commentDetails"] : null));
+        $context['_seq'] = twig_ensure_traversable((isset($context["articleDetails"]) ? $context["articleDetails"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["comments"]) {
             // line 46
             echo "
@@ -102,10 +102,12 @@ class __TwigTemplate_6cd10dc1d3eb0a750abc1f258520a71c3e641e5f1d1e6b2d682ea0cad3c
 \t\t\t\t\t<div class=\"col-md-8 col-sm-8 text-center\">
 \t\t\t\t\t\t<div>
 \t\t\t\t        \t<h4>
-\t\t\t\t\t        \tTitle:<b>";
+\t\t\t\t\t        \tTitle:<a href=\"/KinguinInternship/myProject/read/question/";
             // line 56
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["comments"]) ? $context["comments"] : null), "title"), "html", null, true);
-            echo "</b>
+            echo "\">";
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["comments"]) ? $context["comments"] : null), "title"), "html", null, true);
+            echo "</a>
 \t\t\t\t        \t</h4>
 \t\t\t\t        </div>
 \t\t\t\t\t\t<div class=\"row\">
@@ -115,7 +117,7 @@ class __TwigTemplate_6cd10dc1d3eb0a750abc1f258520a71c3e641e5f1d1e6b2d682ea0cad3c
             echo "</b>
 \t\t\t\t        </div>
 \t\t\t\t        <div class=\"row\">
-\t\t\t\t        \t<p>Category:";
+\t\t\t\t        \t<p style=\"color:green;\">Category:";
             // line 63
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["comments"]) ? $context["comments"] : null), "category_id"), "html", null, true);
             echo "</p>
@@ -161,7 +163,7 @@ class __TwigTemplate_6cd10dc1d3eb0a750abc1f258520a71c3e641e5f1d1e6b2d682ea0cad3c
 
     public function getTemplateName()
     {
-        return "pages/articleList.tpl";
+        return "/pages/categoryUserList.tpl";
     }
 
     public function isTraitable()
@@ -171,6 +173,6 @@ class __TwigTemplate_6cd10dc1d3eb0a750abc1f258520a71c3e641e5f1d1e6b2d682ea0cad3c
 
     public function getDebugInfo()
     {
-        return array (  159 => 88,  150 => 81,  133 => 70,  128 => 68,  120 => 63,  114 => 60,  107 => 56,  95 => 46,  91 => 45,  82 => 38,  73 => 35,  69 => 34,  65 => 33,  61 => 32,  57 => 31,  54 => 30,  50 => 29,  21 => 2,  19 => 1,);
+        return array (  161 => 88,  152 => 81,  135 => 70,  130 => 68,  122 => 63,  116 => 60,  107 => 56,  95 => 46,  91 => 45,  82 => 38,  73 => 35,  69 => 34,  65 => 33,  61 => 32,  57 => 31,  54 => 30,  50 => 29,  21 => 2,  19 => 1,);
     }
 }

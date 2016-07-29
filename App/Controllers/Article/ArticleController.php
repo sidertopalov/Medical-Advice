@@ -63,6 +63,9 @@ class ArticleController extends Controller {
         // order by date DESC
         $commList = array_reverse($commentsList);
 
+        // var_dump();
+        // die;
+
         $data = array(
                 'title' => 'List of Articles',
                 'commentDetails' => $commList,

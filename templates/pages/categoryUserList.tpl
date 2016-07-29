@@ -42,7 +42,7 @@
 
 		</div>
 
-		{% for comments in commentDetails  %}
+		{% for comments in articleDetails  %}
 
 			<section>
 				<div class="container table col-md-12 col-sm-12 text-center" >
@@ -53,7 +53,7 @@
 					<div class="col-md-8 col-sm-8 text-center">
 						<div>
 				        	<h4>
-					        	Title:<b>{{comments.title}}</b>
+					        	Title:<a href="/KinguinInternship/myProject/read/question/{{comments.title}}">{{comments.title}}</a>
 				        	</h4>
 				        </div>
 						<div class="row">
