@@ -55,6 +55,12 @@ class ArticleController extends Controller {
         $app = $this->getYee();
 
 
+        if ($_SESSION['isAdmin'] != 1) {
+        
+            $app->redirect("/KinguinInternship/myProject/account");
+        }
+
+
         $article = new ArticleModel();
 
         // order by date ASC

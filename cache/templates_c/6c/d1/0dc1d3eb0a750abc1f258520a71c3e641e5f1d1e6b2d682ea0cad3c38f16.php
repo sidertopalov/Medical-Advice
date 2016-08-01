@@ -115,7 +115,7 @@ class __TwigTemplate_6cd10dc1d3eb0a750abc1f258520a71c3e641e5f1d1e6b2d682ea0cad3c
             echo "</b>
 \t\t\t\t        </div>
 \t\t\t\t        <div class=\"row\">
-\t\t\t\t        \t<p>Category:";
+\t\t\t\t        \t<p style=\"color:green;\">Category:";
             // line 63
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["comments"]) ? $context["comments"] : null), "category_id"), "html", null, true);
             echo "</p>

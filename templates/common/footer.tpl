@@ -36,7 +36,7 @@
 			</footer>
 		</div>
 				
-		<script src="https://www.youtube.com/iframe_api"></script>
+		<!-- <script src="https://www.youtube.com/iframe_api"></script> -->
 		<script src="/KinguinInternship/myProject/js/jquery.min.js"></script>
         <script src="/KinguinInternship/myProject/js/jquery.plugin.min.js"></script>
         <script src="/KinguinInternship/myProject/js/bootstrap.min.js"></script>
@@ -53,7 +53,6 @@
         <script src="/KinguinInternship/myProject/js/bootstrap-editable.js"></script>
         <script src="/KinguinInternship/myProject/js/passwordStrength.jquery.js"></script>
         <script src="/KinguinInternship/myProject/js/passwordStrength.jquery.min.js"></script>
-        <script src="/KinguinInternship/myProject/js/pStrength.jquery.js"></script>
         <script src="/KinguinInternship/myProject/js/jquery.tinymce.min.js"></script>
         <script type="text/javascript" src='//cdn.tinymce.com/4/tinymce.min.js'></script>
 

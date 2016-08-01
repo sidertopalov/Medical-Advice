@@ -157,7 +157,6 @@ class AjaxController extends Controller
         $model = new MyAccountModel();
         $userProperty = $model->getAccountDetails();
 
-
         $oldPassMatch = $userProperty['password'] == $oldPass;
 
         if (!$oldPassMatch) {
@@ -283,7 +282,7 @@ class AjaxController extends Controller
 
         if (isset($error) == false) {
             
-            //$categoryModel->addCategory($newCategory);
+            $categoryModel->addCategory($newCategory);
 
         }
 
