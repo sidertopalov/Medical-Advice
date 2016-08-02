@@ -123,11 +123,11 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
             if (($this->getAttribute((isset($context["session"]) ? $context["session"] : null), "isAdmin") == 1)) {
                 // line 98
                 echo "
-\t\t\t\t\t\t        \t<li class=\"has-dropdown\"><a href=\"#\">Category</a>
+\t\t\t\t\t\t        \t<li class=\"has-dropdown\"><a href=\"#\">Admin Panel</a>
 \t\t\t\t\t\t        \t\t<ul class=\"subnav\">
 \t\t\t\t\t\t        \t\t\t<a href=\"/category\">Create Category</a>
-\t\t\t\t\t\t        \t\t\t<a href=\"/categoryList\">Category List</a>
-\t\t\t\t\t\t        \t\t\t<a href=\"/articleList\">Article List</a>
+\t\t\t\t\t\t        \t\t\t<a href=\"/categoryList\">Categories List</a>
+\t\t\t\t\t\t        \t\t\t<a href=\"/articleList\">Articles List</a>
 \t\t\t\t\t        \t\t\t</ul>
 \t\t\t\t\t        \t\t</li>
 
@@ -257,6 +257,6 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 
     public function getDebugInfo()
     {
-        return array (  148 => 115,  141 => 110,  137 => 108,  125 => 98,  123 => 97,  110 => 86,  108 => 85,  29 => 9,  62 => 38,  35 => 14,  21 => 2,  19 => 1,);
+        return array (  148 => 115,  141 => 110,  137 => 108,  125 => 98,  123 => 97,  110 => 86,  108 => 85,  29 => 9,  19 => 1,);
     }
 }

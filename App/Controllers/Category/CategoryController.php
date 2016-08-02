@@ -9,7 +9,7 @@ use App\Models\Category\CategoryModel;
 class CategoryController extends Controller {  
      /**
      * @Route('/category')
-     * @Name('category.index')
+     * @Name('categoryAdd.index')
      */
     public function indexAction( )
     {
@@ -27,6 +27,11 @@ class CategoryController extends Controller {
             'title' => 'New Category',
             'javascript' => $javascript,
           );
+
+        if ( !isset($_SESSION['isLogged']) ) {
+
+            $app->redirect('/login');   
+        }
 
         if ($_SESSION['isAdmin']) {
           $app->render('/pages/categoryAdd.tpl',$data);
@@ -116,20 +121,24 @@ class CategoryController extends Controller {
      */
      public function listCategory() {
 
-          $app = $this->getYee();
+            $app = $this->getYee();
 
-          $categoryModel = new CategoryModel();
-          $categoryList = $categoryModel->getCategory();
+            $categoryModel = new CategoryModel();
+            $categoryList = $categoryModel->getCategory();
 
-          if ($_SESSION['isAdmin'] != 1) {
-            $app->redirect('/account');
-          }
+            if (!isset($_SESSION['isLogged']) ) {
+                $app->redirect('/login');
+            }
 
-          $data = array(
-              'title' => 'List Category',
-              'categoryDetails' => $categoryList,
+            if ($_SESSION['isAdmin'] != 1) {
+                $app->redirect('/account');
+            }
+
+            $data = array(
+                'title' => 'List Category',
+                'categoryDetails' => $categoryList,
             ); 
 
-          $app->render('/pages/categoryList.tpl',$data);
+            $app->render('/pages/categoryList.tpl',$data);
      }
 }

@@ -1,0 +1,75 @@
+ERROR - 2016-08-02 15:13:40 - exception 'ErrorException' with message 'Undefined index: isAdmin' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Category\CategoryController.php:31
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Category\CategoryController.php(31): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 31, Array)
+#1 [internal function]: CategoryController->indexAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#4 [internal function]: CategoryController::___indexAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('CategoryControl...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-08-02 15:15:47 - exception 'ErrorException' with message 'Undefined index: isAdmin' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Category\CategoryController.php:36
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Category\CategoryController.php(36): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 36, Array)
+#1 [internal function]: CategoryController->indexAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#4 [internal function]: CategoryController::___indexAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('CategoryControl...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-08-02 15:17:43 - exception 'ErrorException' with message 'Undefined index: isAdmin' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Category\CategoryController.php:35
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Category\CategoryController.php(35): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 [internal function]: CategoryController->indexAction()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#4 [internal function]: CategoryController::___indexAction()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('CategoryControl...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-08-02 15:19:31 - exception 'ErrorException' with message 'Undefined index: isAdmin' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Category\CategoryController.php:129
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Category\CategoryController.php(129): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 129, Array)
+#1 [internal function]: CategoryController->listCategory()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___listCategory', Array)
+#4 [internal function]: CategoryController::___listCategory()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('CategoryControl...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-08-02 15:21:10 - exception 'ErrorException' with message 'Undefined index: isAdmin' in C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Category\CategoryController.php:133
+Stack trace:
+#0 C:\xampp\htdocs\KinguinInternship\myProject\App\Controllers\Category\CategoryController.php(133): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 133, Array)
+#1 [internal function]: CategoryController->listCategory()
+#2 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___listCategory', Array)
+#4 [internal function]: CategoryController::___listCategory()
+#5 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Route.php(462): call_user_func_array('CategoryControl...', Array)
+#6 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\KinguinInternship\myProject\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\KinguinInternship\myProject\index.php(49): Yee\Yee->execute()
+#12 {main}

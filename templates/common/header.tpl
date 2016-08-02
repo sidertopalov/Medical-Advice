@@ -96,11 +96,11 @@
 
 						        	{% if session.isAdmin == 1 %}
 
-						        	<li class="has-dropdown"><a href="#">Category</a>
+						        	<li class="has-dropdown"><a href="#">Admin Panel</a>
 						        		<ul class="subnav">
 						        			<a href="/category">Create Category</a>
-						        			<a href="/categoryList">Category List</a>
-						        			<a href="/articleList">Article List</a>
+						        			<a href="/categoryList">Categories List</a>
+						        			<a href="/articleList">Articles List</a>
 					        			</ul>
 					        		</li>
 

@@ -47,6 +47,10 @@ class CategoryUsersController extends Controller {
         // take id from category name
         $categoryId = $categoryUserModel->getCategoryIdByName($categoryName);
 
+        if (is_null($categoryId)) {
+            $app->redirect('/categorySelect');
+        }
+
         // take all articles by category id
         $articleListByCategoryId = array_reverse($categoryUserModel->getArticlesByCategoryId($categoryId));
 
@@ -71,14 +75,19 @@ class CategoryUsersController extends Controller {
 
         $categoryUserModel = new CategoryUserModel();
 
-        // take all articles by category id
-        $readArticle = array_reverse($categoryUserModel->getArticleDetailsByName($categoryName));
+        // take article by name
+        $articleDetails = $categoryUserModel->getArticleDetailsByName($categoryName);
+
+        // if article doesn't exist redirect to categorySelect.
+        if (is_null($articleDetails)) {
+            $app->redirect('/categorySelect');
+        }
 
         
 
         $data = array(
             'title' => $categoryName,
-            'articleDetails' => $readArticle,
+            'articleDetails' => $articleDetails,
         ); 
 
         $app->render('/pages/articleRead.tpl',$data);
