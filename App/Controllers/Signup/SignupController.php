@@ -25,7 +25,7 @@ class SignupController extends Controller
         } 
         else {
 
-            $app->redirect('/KinguinInternship/myProject/');
+            $app->redirect('/');
         }
     }
 
@@ -41,9 +41,6 @@ class SignupController extends Controller
         $app = $this->getYee();
 
         // \Yee\Yee::getDefaultSettings() return array(); 
-
-        // В случай че искаш да ползваш $baseUrl отиди в \Yee\Yee::getDefaultSettings() метода и задай "baseHomePage" => "your_path".
-        $baseUrl = \Yee\Yee::getDefaultSettings();
 
         // --------------> POST variables <-------------
 
@@ -70,7 +67,6 @@ class SignupController extends Controller
 
             $dataMailer = array(
                     'activationCode' => $signupModel->activationCode,
-                    'homePageUrl' => $baseUrl['baseHomePageUrl'],
                 );    
 
             // Create instance of App\Libraries\Mailer\Mailer
@@ -88,22 +84,18 @@ class SignupController extends Controller
 
                 'title'         => "SignupController",
                 'error'         => $error,
-                'homePageUrl'   => $baseUrl['baseHomePageUrl'], // $baseUrl['baseHomePageUrl'] => '/KinguinInternship/myProject/' home page
-
                 );
             
-            $app->render('pages/signupErr.tpl', $data);
+            $app->render('/pages/signupErr.tpl', $data);
 
         } else {
 
            $data = array(
                 'title'         => "SignupControllerSucc",
                 'succ'          => 'Your registration is successful! Please check your email address for Activation Code link!',
-                'homePageUrl'   => $baseUrl['baseHomePageUrl'], // $baseUrl['baseHomePageUrl'] => '/KinguinInternship/myProject/' home page
-
                 );
             
-            $app->render('pages/signupSucc.tpl', $data);
+            $app->render('/pages/signupSucc.tpl', $data);
         }
     }
 }

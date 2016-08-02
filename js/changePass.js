@@ -1,5 +1,6 @@
+
 $("#changePass").submit(function(e){
-	var url = "/KinguinInternship/myProject/ajax/changePassword";
+	var url = "/ajax/changePassword";
 
 	$.ajax({
 		type: "POST",
@@ -30,26 +31,3 @@ $("#newPass").passwordStrength({
     },
     minimumChars: 4,
 });
-
-// pStrength.js
-// $('#userPass').pStrength({
-//         'changeBackground'          : false,
-//         'onPasswordStrengthChanged' : function(passwordStrength, strengthPercentage) {
-//             if ($(this).val()) {
-//                 $.fn.pStrength('changeBackground', $(this), passwordStrength);
-//             } else {
-//                 $.fn.pStrength('resetStyle', $(this));
-//             }
-//             $('#' + $(this).data('display'))
-//                 .html('Your password strength is ' + strengthPercentage + '%');
-//         },
-//         'onValidatePassword': function(strengthPercentage) {
-//             $('#' + $(this).data('display')).html(
-//                 $('#' + $(this).data('display')).html() + ' Great, now you can continue to register!'
-//             );
-
-//             $('#myForm').submit(function(){
-//                 return true;
-//             });
-//         }
-// });

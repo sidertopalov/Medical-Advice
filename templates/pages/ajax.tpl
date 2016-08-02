@@ -19,7 +19,7 @@
 					<span style="display:none" class="alert alert-success" role="alert" id="errorLoginPass"></span>
 				</div><br>
 				<div class="photo-form-wrapper clearfix">
-					<form method="post" action="/KinguinInternship/myProject/ajax/login">
+					<form method="post" action="/ajax/login">
 						<input class="form-email" id="loginEmail" name="loginEmail" type="text" placeholder="Email Address">
 						<input class="form-password" id="loginPass" name="loginPass" type="password" placeholder="Password"> 
 

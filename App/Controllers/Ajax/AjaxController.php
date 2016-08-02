@@ -54,11 +54,9 @@ class AjaxController extends Controller
 
             $data = array(
                 "title"         => "AjaxControllerFail",
-                'redirectTo'    => "/KinguinInternship/myProject/account",
+                'redirectTo'    => "/account",
                 'message'       => $error,
                 'error'         => false,
-                'homePageUrl'   => $baseUrl['baseHomePageUrl'], // $baseUrl['baseHomePageUrl'] => '/KinguinInternship/myProject/' home page
-
                 );
 
 
@@ -71,11 +69,11 @@ class AjaxController extends Controller
 
             $data = array(
                 "title"         => "AjaxControllerSucc",
-                'redirectTo'    => "/KinguinInternship/myProject/account",
+                'redirectTo'    => "/account",
                 'message'       => "Hello, $loginEmail",
                 'success'       => true,
                 'error'         => true,
-                'homePageUrl'   => $baseUrl['baseHomePageUrl'], // $baseUrl['baseHomePageUrl'] => '/KinguinInternship/myProject/' home page
+                
 
                 );
         }

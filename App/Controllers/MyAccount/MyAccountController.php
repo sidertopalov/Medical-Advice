@@ -24,7 +24,7 @@ class MyAccountController extends Controller {
 
             $javascript = array(
 
-                '/KinguinInternship/myProject/js/updateAccount.js',
+                '/js/updateAccount.js',
                 
                 );
 
@@ -34,11 +34,11 @@ class MyAccountController extends Controller {
                 'javascript' => $javascript,
                 );
 
-            $app->render('pages/myAccount.tpl', $data);
+            $app->render('/pages/myAccount.tpl', $data);
 
         } else {
 
-            $app->redirect('http://localhost/KinguinInternship/myProject/login');
+            $app->redirect('/login');
         }
     }
 
@@ -59,7 +59,7 @@ class MyAccountController extends Controller {
 
             $javascript = array(
 
-                '/KinguinInternship/myProject/js/changePass.js',
+                '/js/changePass.js',
                 
                 );
 
@@ -69,11 +69,11 @@ class MyAccountController extends Controller {
                 'javascript' => $javascript,
                 );
 
-            $app->render('pages/changePass.tpl', $data);
+            $app->render('/pages/changePass.tpl', $data);
 
         } else {
 
-            $app->redirect('http://localhost/KinguinInternship/myProject/login');
+            $app->redirect('/login');
         }
     }
 }

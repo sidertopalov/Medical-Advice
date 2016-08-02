@@ -25,9 +25,9 @@
               <div class="body-text" style="font-family:Helvetica, Arial, sans-serif;font-size:14px;line-height:20px;text-align:left;color:#333333">
 
               Please click the following link to activate your account!<br>
-              <a href="localhost{{homePageUrl}}/activation/{{activationCode}}">Click me</a> 
+              <a href="medicaladvice.dev/activation/{{activationCode}}">Click me</a> 
               <br><br> 
-              <p>//localhost{{homePageUrl}}/activation/{{activationCode}}</p>
+              <p>medicaladvice.dev/activation/{{activationCode}}</p>
 
             <br><br>
 

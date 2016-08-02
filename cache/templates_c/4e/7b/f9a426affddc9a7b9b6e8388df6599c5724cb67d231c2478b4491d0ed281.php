@@ -57,7 +57,7 @@ class __TwigTemplate_4e7bf9a426affddc9a7b9b6e8388df6599c5724cb67d231c2478b4491d0
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["category"]) ? $context["category"] : null), "name"), "html", null, true);
             echo "</td>
 \t\t\t\t\t        <td>
-\t\t\t\t\t        <a class=\"btn btn-primary btn-filled\" href=\"/KinguinInternship/myProject/category/view/";
+\t\t\t\t\t        <a class=\"btn btn-primary btn-filled\" href=\"/category/view/";
             // line 30
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["category"]) ? $context["category"] : null), "name"), "html", null, true);
             echo "\">View Category</a>

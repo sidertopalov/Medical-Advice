@@ -24,7 +24,7 @@ class ArticleController extends Controller {
             $categorys = $categoryModel->getCategory();
 
             $javascript = array(
-                '/KinguinInternship/myProject/js/addArticle.js',
+                '/js/addArticle.js',
                 );
 
 
@@ -39,7 +39,7 @@ class ArticleController extends Controller {
      
         } else {
 
-            $app->redirect('http://localhost/KinguinInternship/myProject/login');
+            $app->redirect('/login');
         }
     }
 
@@ -57,7 +57,7 @@ class ArticleController extends Controller {
 
         if ($_SESSION['isAdmin'] != 1) {
         
-            $app->redirect("/KinguinInternship/myProject/account");
+            $app->redirect("/account");
         }
 
 

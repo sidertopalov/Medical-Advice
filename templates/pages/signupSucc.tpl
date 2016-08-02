@@ -10,7 +10,7 @@
 				<br><br>
 				<input type="submit" value="Submit">
 			</form> -->
-			<a href="{{homePageUrl}}" class="btn btn-default">Go Home</a>
+			<a href="/" class="btn btn-default">Go Home</a>
 			
 		</div>
 	</div>

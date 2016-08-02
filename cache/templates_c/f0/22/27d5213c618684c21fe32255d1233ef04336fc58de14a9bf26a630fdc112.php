@@ -23,7 +23,7 @@ class __TwigTemplate_f02227d5213c618684c21fe32255d1233ef04336fc58de14a9bf26a630f
 <section class=\"no-pad login-page fullscreen-element\">
 \t\t
 \t<div class=\"background-image-holder\">
-\t\t<img class=\"background-image\" alt=\"Poster Image For Mobiles\" src=\"/KinguinInternship/myProject/img/hero6.jpg\">
+\t\t<img class=\"background-image\" alt=\"Poster Image For Mobiles\" src=\"/img/hero6.jpg\">
 \t</div>
 
 \t<div class=\"container align-vertical\">
@@ -48,7 +48,7 @@ class __TwigTemplate_f02227d5213c618684c21fe32255d1233ef04336fc58de14a9bf26a630f
 \t\t\t\t\t\t<input class=\"login-btn btn-filled\" id=\"loginSubmit\" type=\"submit\" value=\"Login\">
 \t\t\t\t\t</form>
 \t\t\t\t</div>
-\t\t\t\t<a href=\"/KinguinInternship/myProject/signup\" class=\"text-white\">Create an account ➞</a><br>
+\t\t\t\t<a href=\"/signup\" class=\"text-white\">Create an account ➞</a><br>
 \t\t\t\t<a href=\"#\" class=\"text-white\">I've forgotten my password</a>
 \t\t\t</div>
 \t\t</div>

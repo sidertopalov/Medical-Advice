@@ -1,5 +1,5 @@
 $("#updateAccount").submit(function(e){
-	var url = "/KinguinInternship/myProject/ajax/updateMyAccount";
+	var url = "/ajax/updateMyAccount";
 
 	$.ajax({
 		type: "POST",

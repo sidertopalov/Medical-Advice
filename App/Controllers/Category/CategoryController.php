@@ -19,7 +19,7 @@ class CategoryController extends Controller {
 
         $javascript = array(
 
-            '/KinguinInternship/myProject/js/categoryAdd.js',
+            '/js/categoryAdd.js',
           );
         
         $data = array(
@@ -33,7 +33,7 @@ class CategoryController extends Controller {
 
         } else {
 
-          $app->redirect('/KinguinInternship/myProject/account'); 
+          $app->redirect('/account'); 
 
         }
 
@@ -49,7 +49,7 @@ class CategoryController extends Controller {
           $categoryId = $id;
 
           if ($_SESSION['isAdmin'] != 1) {
-            $app->redirect('/KinguinInternship/myProject/account');
+            $app->redirect('/account');
           }
 
           $categoryModel = new CategoryModel();
@@ -57,13 +57,13 @@ class CategoryController extends Controller {
 
           if ($categoryProperty == null) {
               
-              $app->redirect('/KinguinInternship/myProject/categoryList');
+              $app->redirect('/categoryList');
           }
 
 
           $javascript = array(
 
-            '/KinguinInternship/myProject/js/categoryUpdate.js',
+            '/js/categoryUpdate.js',
             );
 
 
@@ -85,7 +85,7 @@ class CategoryController extends Controller {
           $app = $this->getYee();
 
           if ($_SESSION['isAdmin'] != 1) {
-            $app->redirect('/KinguinInternship/myProject/account');
+            $app->redirect('/myProject/account');
           }
 
           $categoryModel = new CategoryModel();
@@ -93,12 +93,12 @@ class CategoryController extends Controller {
 
           if ($categoryProperty == null) {
               
-              $app->redirect('/KinguinInternship/myProject/categoryList');
+              $app->redirect('/categoryList');
           }
 
           $javascript = array(
 
-            '/KinguinInternship/myProject/js/categoryDelete.js',
+            '/js/categoryDelete.js',
             );
 
           $data = array(
@@ -122,7 +122,7 @@ class CategoryController extends Controller {
           $categoryList = $categoryModel->getCategory();
 
           if ($_SESSION['isAdmin'] != 1) {
-            $app->redirect('/KinguinInternship/myProject/account');
+            $app->redirect('/account');
           }
 
           $data = array(

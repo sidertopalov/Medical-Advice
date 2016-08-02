@@ -22,7 +22,7 @@
 				<h2><div class="text-center text-danger">Are you sure you want to delete?</div></h2><br>
 				<input disabled type="text" name="categoryId" id="categoryId" value="{{categoryName}}" /><br><br>
 				<input class="btn btn-primary btn-filled" type="submit" name="btnCategorySubmit" id="btnCategorySubmit" value="Delete" />
-				<a class="btn btn-primary btn-filled" href="/KinguinInternship/myProject/categoryList">Back to Category</a>
+				<a class="btn btn-primary btn-filled" href="/categoryList">Back to Category</a>
 
 			</form>
 		</div>	

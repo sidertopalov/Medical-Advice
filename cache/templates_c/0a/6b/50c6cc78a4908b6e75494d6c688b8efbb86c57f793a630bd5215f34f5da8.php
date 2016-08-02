@@ -102,7 +102,7 @@ class __TwigTemplate_0a6b50c6cc78a4908b6e75494d6c688b8efbb86c57f793a630bd5215f34
 \t\t\t\t\t<div class=\"col-md-8 col-sm-8 text-center\">
 \t\t\t\t\t\t<div>
 \t\t\t\t        \t<h4>
-\t\t\t\t\t        \tTitle:<a href=\"/KinguinInternship/myProject/read/question/";
+\t\t\t\t\t        \tTitle:<a href=\"/read/question/";
             // line 56
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["comments"]) ? $context["comments"] : null), "title"), "html", null, true);
             echo "\">";

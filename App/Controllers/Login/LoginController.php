@@ -18,7 +18,7 @@ class LoginController extends Controller
         
             $javascript = array(
 
-                '/KinguinInternship/myProject/js/login.js',
+                '/js/login.js',
                 
                 );
 
@@ -32,7 +32,7 @@ class LoginController extends Controller
             $app->render('pages/login.tpl', $data);
         } else {
 
-            $app->redirect('/KinguinInternship/myProject/');
+            $app->redirect('/');
         }
     }
 
@@ -46,6 +46,6 @@ class LoginController extends Controller
 
         session_destroy();
 
-        $app->redirect('http://localhost/KinguinInternship/myProject/');
+        $app->redirect('/');
     }
 }

@@ -57,12 +57,12 @@ class __TwigTemplate_a37bf16a43e8732d19421834a664c9c0c326f7d3c7cd6be98ac329c582d
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["category"]) ? $context["category"] : null), "name"), "html", null, true);
             echo "</td>
 \t\t\t\t\t        <td>
-\t\t\t\t\t        \t<a class=\"btn btn-primary btn-filled\" href=\"/KinguinInternship/myProject/categoryUpdate/";
+\t\t\t\t\t        \t<a class=\"btn btn-primary btn-filled\" href=\"/categoryUpdate/";
             // line 30
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["category"]) ? $context["category"] : null), "id"), "html", null, true);
             echo "\">Update</a>
 \t\t\t\t\t        \t
-\t\t\t\t\t        \t<a class=\"btn btn-primary btn-filled\" href=\"/KinguinInternship/myProject/categoryDelete/";
+\t\t\t\t\t        \t<a class=\"btn btn-primary btn-filled\" href=\"/categoryDelete/";
             // line 32
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["category"]) ? $context["category"] : null), "id"), "html", null, true);
             echo "\">Delete</a>

@@ -10,21 +10,21 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link href="/KinguinInternship/myProject/css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="/KinguinInternship/myProject/css/line-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="/KinguinInternship/myProject/css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="/KinguinInternship/myProject/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="/KinguinInternship/myProject/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="/KinguinInternship/myProject/css/theme.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="/KinguinInternship/myProject/css/custom.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="/KinguinInternship/myProject/css/bootstrap-editable.css" type="text/css" rel="stylesheet" media="all"/>
-        <link href="/KinguinInternship/myProject/css/passwordStrength.css" type="text/css" rel="stylesheet" media="all"/>
+        <link href="/../css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/../css/line-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/../css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/../css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/../css/theme.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/../css/custom.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/../css/bootstrap-editable.css" type="text/css" rel="stylesheet" media="all"/>
+        <link href="/../css/passwordStrength.css" type="text/css" rel="stylesheet" media="all"/>
 
         <!--[if gte IE 9]>
         	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
 		<![endif]-->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
-        <script src="/KinguinInternship/myProject/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="/../js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
     	<div class="loader">
@@ -80,16 +80,16 @@
 					
 						<div class="col-sm-12 columns text-center">
 							<ul class="menu">
-								<li> <a href="/KinguinInternship/myProject/">Home</a></li>								
+								<li> <a href="/">Home</a></li>								
 
 								{% if session.isLogged == true %}
-									<li><a href="/KinguinInternship/myProject/account">Profile</a></li>
-									<li><a href="/KinguinInternship/myProject/article">New Question</a></li>
-									<li><a href="/KinguinInternship/myProject/categorySelect">Categories</a></li>
+									<li><a href="/account">Profile</a></li>
+									<li><a href="/article">New Question</a></li>
+									<li><a href="/categorySelect">Categories</a></li>
 						        	<li class="has-dropdown"><a href="#">Settings</a>
 						        		<ul class="subnav">
-						        			<a href="/KinguinInternship/myProject/changePass">Change Password</a>
-						        			<a href="/KinguinInternship/myProject/logout">Logout</a>
+						        			<a href="/changePass">Change Password</a>
+						        			<a href="/logout">Logout</a>
 					        			</ul>
 					        		</li>
 						        	<li></li>
@@ -98,8 +98,9 @@
 
 						        	<li class="has-dropdown"><a href="#">Category</a>
 						        		<ul class="subnav">
-						        			<a href="/KinguinInternship/myProject/category">Create Category</a>
-						        			<a href="/KinguinInternship/myProject/categoryList">Category List</a>
+						        			<a href="/category">Create Category</a>
+						        			<a href="/categoryList">Category List</a>
+						        			<a href="/articleList">Article List</a>
 					        			</ul>
 					        		</li>
 
@@ -107,8 +108,8 @@
 
 					        	{% else %}
 
-						        	<li> <a href="/KinguinInternship/myProject/signup">Sign Up</a></li>
-									<li> <a href="/KinguinInternship/myProject/login">Login</a></li>
+						        	<li> <a href="/signup">Sign Up</a></li>
+									<li> <a href="/login">Login</a></li>
 
 						        {% endif %}
 								

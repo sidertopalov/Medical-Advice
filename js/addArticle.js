@@ -1,5 +1,5 @@
 $("#addArticle").submit(function(e){
-	var url = "/KinguinInternship/myProject/ajax/article";
+	var url = "/ajax/article";
 
 	$.ajax({
 		type: "POST",

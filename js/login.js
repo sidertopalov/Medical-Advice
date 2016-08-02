@@ -1,6 +1,6 @@
 $("#loginForm").submit(function(e){
 
-	var url = "/KinguinInternship/myProject/ajax/login";
+	var url = "/ajax/login";
 	$.ajax({
 		type: "POST",
 		url: url,

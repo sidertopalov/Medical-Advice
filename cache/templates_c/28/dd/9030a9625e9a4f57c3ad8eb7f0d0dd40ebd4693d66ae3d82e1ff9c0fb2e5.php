@@ -31,21 +31,21 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
         <meta name=\"description\" content=\"\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
         <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
-        <link href=\"/KinguinInternship/myProject/css/flexslider.min.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\"/>
-        <link href=\"/KinguinInternship/myProject/css/line-icons.min.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\"/>
-        <link href=\"/KinguinInternship/myProject/css/elegant-icons.min.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\"/>
-        <link href=\"/KinguinInternship/myProject/css/lightbox.min.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\"/>
-        <link href=\"/KinguinInternship/myProject/css/bootstrap.min.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\"/>
-        <link href=\"/KinguinInternship/myProject/css/theme.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\"/>
-        <link href=\"/KinguinInternship/myProject/css/custom.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\"/>
-        <link href=\"/KinguinInternship/myProject/css/bootstrap-editable.css\" type=\"text/css\" rel=\"stylesheet\" media=\"all\"/>
-        <link href=\"/KinguinInternship/myProject/css/passwordStrength.css\" type=\"text/css\" rel=\"stylesheet\" media=\"all\"/>
+        <link href=\"/../css/flexslider.min.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\"/>
+        <link href=\"/../css/line-icons.min.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\"/>
+        <link href=\"/../css/elegant-icons.min.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\"/>
+        <link href=\"/../css/lightbox.min.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\"/>
+        <link href=\"/../css/bootstrap.min.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\"/>
+        <link href=\"/../css/theme.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\"/>
+        <link href=\"/../css/custom.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\"/>
+        <link href=\"/../css/bootstrap-editable.css\" type=\"text/css\" rel=\"stylesheet\" media=\"all\"/>
+        <link href=\"/../css/passwordStrength.css\" type=\"text/css\" rel=\"stylesheet\" media=\"all\"/>
 
         <!--[if gte IE 9]>
         \t<link rel=\"stylesheet\" type=\"text/css\" href=\"css/ie9.css\" />
 \t\t<![endif]-->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
-        <script src=\"/KinguinInternship/myProject/js/modernizr-2.6.2-respond-1.1.0.min.js\"></script>
+        <script src=\"/../js/modernizr-2.6.2-respond-1.1.0.min.js\"></script>
     </head>
     <body>
     \t<div class=\"loader\">
@@ -101,19 +101,19 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 \t\t\t\t\t
 \t\t\t\t\t\t<div class=\"col-sm-12 columns text-center\">
 \t\t\t\t\t\t\t<ul class=\"menu\">
-\t\t\t\t\t\t\t\t<li> <a href=\"/KinguinInternship/myProject/\">Home</a></li>\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<li> <a href=\"/\">Home</a></li>\t\t\t\t\t\t\t\t
 
 \t\t\t\t\t\t\t\t";
         // line 85
         if (($this->getAttribute((isset($context["session"]) ? $context["session"] : null), "isLogged") == true)) {
             // line 86
-            echo "\t\t\t\t\t\t\t\t\t<li><a href=\"/KinguinInternship/myProject/account\">Profile</a></li>
-\t\t\t\t\t\t\t\t\t<li><a href=\"/KinguinInternship/myProject/article\">New Question</a></li>
-\t\t\t\t\t\t\t\t\t<li><a href=\"/KinguinInternship/myProject/categorySelect\">Categories</a></li>
+            echo "\t\t\t\t\t\t\t\t\t<li><a href=\"/account\">Profile</a></li>
+\t\t\t\t\t\t\t\t\t<li><a href=\"/article\">New Question</a></li>
+\t\t\t\t\t\t\t\t\t<li><a href=\"/categorySelect\">Categories</a></li>
 \t\t\t\t\t\t        \t<li class=\"has-dropdown\"><a href=\"#\">Settings</a>
 \t\t\t\t\t\t        \t\t<ul class=\"subnav\">
-\t\t\t\t\t\t        \t\t\t<a href=\"/KinguinInternship/myProject/changePass\">Change Password</a>
-\t\t\t\t\t\t        \t\t\t<a href=\"/KinguinInternship/myProject/logout\">Logout</a>
+\t\t\t\t\t\t        \t\t\t<a href=\"/changePass\">Change Password</a>
+\t\t\t\t\t\t        \t\t\t<a href=\"/logout\">Logout</a>
 \t\t\t\t\t        \t\t\t</ul>
 \t\t\t\t\t        \t\t</li>
 \t\t\t\t\t\t        \t<li></li>
@@ -125,9 +125,9 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
                 echo "
 \t\t\t\t\t\t        \t<li class=\"has-dropdown\"><a href=\"#\">Category</a>
 \t\t\t\t\t\t        \t\t<ul class=\"subnav\">
-\t\t\t\t\t\t        \t\t\t<a href=\"/KinguinInternship/myProject/category\">Create Category</a>
-\t\t\t\t\t\t        \t\t\t<a href=\"/KinguinInternship/myProject/categoryList\">Category List</a>
-\t\t\t\t\t\t        \t\t\t<a href=\"/KinguinInternship/myProject/articleList\">Article List</a>
+\t\t\t\t\t\t        \t\t\t<a href=\"/category\">Create Category</a>
+\t\t\t\t\t\t        \t\t\t<a href=\"/categoryList\">Category List</a>
+\t\t\t\t\t\t        \t\t\t<a href=\"/articleList\">Article List</a>
 \t\t\t\t\t        \t\t\t</ul>
 \t\t\t\t\t        \t\t</li>
 
@@ -139,8 +139,8 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
         } else {
             // line 110
             echo "
-\t\t\t\t\t\t        \t<li> <a href=\"/KinguinInternship/myProject/signup\">Sign Up</a></li>
-\t\t\t\t\t\t\t\t\t<li> <a href=\"/KinguinInternship/myProject/login\">Login</a></li>
+\t\t\t\t\t\t        \t<li> <a href=\"/signup\">Sign Up</a></li>
+\t\t\t\t\t\t\t\t\t<li> <a href=\"/login\">Login</a></li>
 
 \t\t\t\t\t\t        ";
         }
@@ -257,6 +257,6 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 
     public function getDebugInfo()
     {
-        return array (  148 => 115,  141 => 110,  137 => 108,  125 => 98,  123 => 97,  110 => 86,  108 => 85,  29 => 9,  19 => 1,);
+        return array (  148 => 115,  141 => 110,  137 => 108,  125 => 98,  123 => 97,  110 => 86,  108 => 85,  29 => 9,  62 => 38,  35 => 14,  21 => 2,  19 => 1,);
     }
 }

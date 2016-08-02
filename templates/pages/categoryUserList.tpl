@@ -53,7 +53,7 @@
 					<div class="col-md-8 col-sm-8 text-center">
 						<div>
 				        	<h4>
-					        	Title:<a href="/KinguinInternship/myProject/read/question/{{comments.title}}">{{comments.title}}</a>
+					        	Title:<a href="/read/question/{{comments.title}}">{{comments.title}}</a>
 				        	</h4>
 				        </div>
 						<div class="row">

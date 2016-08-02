@@ -22,7 +22,7 @@
 							<div class="col-sm-12 text-center">
 								<div class="photo-form-wrapper clearfix">
 									<div class="row">
-										<form method="post" action="/KinguinInternship/myProject/signuptwo">
+										<form method="post" action="/signuptwo">
 											<div class="col-md-3 col-sm-4">
 												<input id="emailSignup" name="emailSignup" class="form-email" type="text" placeholder="Email Address">
 											</div>

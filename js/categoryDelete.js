@@ -1,5 +1,5 @@
 $("#categoryDelete").submit(function(e){
-	var url = "/KinguinInternship/myProject/ajax/categoryDelete";
+	var url = "/ajax/categoryDelete";
 
 	$.ajax({
 		type: "POST",

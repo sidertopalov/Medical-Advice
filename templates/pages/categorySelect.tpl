@@ -27,7 +27,7 @@
 					        <td>{{category.id}}</td>
 					        <td>{{category.name}}</td>
 					        <td>
-					        <a class="btn btn-primary btn-filled" href="/KinguinInternship/myProject/category/view/{{category.name}}">View Category</a>
+					        <a class="btn btn-primary btn-filled" href="/category/view/{{category.name}}">View Category</a>
 					        </td>
 				      	</tr>
 			        {% endfor %}

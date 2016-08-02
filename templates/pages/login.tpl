@@ -4,7 +4,7 @@
 <section class="no-pad login-page fullscreen-element">
 		
 	<div class="background-image-holder">
-		<img class="background-image" alt="Poster Image For Mobiles" src="/KinguinInternship/myProject/img/hero6.jpg">
+		<img class="background-image" alt="Poster Image For Mobiles" src="/img/hero6.jpg">
 	</div>
 
 	<div class="container align-vertical">
@@ -26,7 +26,7 @@
 						<input class="login-btn btn-filled" id="loginSubmit" type="submit" value="Login">
 					</form>
 				</div>
-				<a href="/KinguinInternship/myProject/signup" class="text-white">Create an account ➞</a><br>
+				<a href="/signup" class="text-white">Create an account ➞</a><br>
 				<a href="#" class="text-white">I've forgotten my password</a>
 			</div>
 		</div>

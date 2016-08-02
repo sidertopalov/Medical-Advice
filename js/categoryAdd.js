@@ -1,5 +1,5 @@
 $("#categoryAddForm").submit(function(e){
-	var url = "/KinguinInternship/myProject/ajax/category";
+	var url = "/ajax/category";
 
 	$.ajax({
 		type: "POST",

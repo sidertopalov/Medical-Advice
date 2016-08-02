@@ -21,7 +21,7 @@
 				<input hidden type="text" name="categoryId" id="categoryId" value="{{categoryId}}" /><br>
 				<input type="text" name="categoryName" id="categoryName" value="{{categoryName}}" /><br><br>
 				<input class="btn btn-primary btn-filled" type="submit" name="btnCategorySubmit" id="btnCategorySubmit" value="Update" />
-				<a class="btn btn-primary btn-filled" href="/KinguinInternship/myProject/categoryList">Back to Category</a>
+				<a class="btn btn-primary btn-filled" href="/categoryList">Back to Category</a>
 
 			</form>
 
