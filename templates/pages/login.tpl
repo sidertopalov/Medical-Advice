@@ -27,7 +27,7 @@
 					</form>
 				</div>
 				<a href="/signup" class="text-white">Create an account ➞</a><br>
-				<a href="#" class="text-white">I've forgotten my password</a>
+				<a href="/enter-email" class="text-white">I've forgotten my password</a>
 			</div>
 		</div>
 	</div>

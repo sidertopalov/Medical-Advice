@@ -1,7 +1,7 @@
 <?php
 
-/* pages/login.tpl */
-class __TwigTemplate_f02227d5213c618684c21fe32255d1233ef04336fc58de14a9bf26a630fdc112 extends Twig_Template
+/* /pages/enterEmail.tpl */
+class __TwigTemplate_9258e09ff0915f096db686ce33936f865ba225bfd87669d191b4ef279f460b5d extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -35,21 +35,18 @@ class __TwigTemplate_f02227d5213c618684c21fe32255d1233ef04336fc58de14a9bf26a630f
         echo twig_escape_filter($this->env, (isset($context["error"]) ? $context["error"] : null), "html", null, true);
         echo "</h4><br>
 \t\t\t\t</div>
-\t\t\t\t<h1 class=\"text-white\">Login to continue</h1>
+\t\t\t\t<h1 class=\"text-white\">Enter your  email!</h1>
 \t\t\t\t<div >
-\t\t\t\t\t<span style=\"display:none\" class=\"alert alert-success\" role=\"alert\" id=\"errorLoginEmail\"></span>
-\t\t\t\t\t<span style=\"display:none\" class=\"alert alert-success\" role=\"alert\" id=\"errorLoginPass\"></span>
+\t\t\t\t\t<span style=\"display:none\" class=\"alert alert-danger\" role=\"alert\" id=\"errorMessage\"></span>
+\t\t\t\t\t<span style=\"display:none\" class=\"alert alert-success\" role=\"alert\" id=\"successMessage\"></span>
 \t\t\t\t</div><br>
 \t\t\t\t<div class=\"photo-form-wrapper clearfix\">
-\t\t\t\t\t<form method=\"post\" id=\"loginForm\" >
-\t\t\t\t\t\t<input class=\"form-email\" id=\"loginEmail\" name=\"loginEmail\" type=\"text\" placeholder=\"Email Address\">
-\t\t\t\t\t\t<input class=\"form-password\" id=\"loginPass\" name=\"loginPass\" type=\"password\" placeholder=\"Password\"> 
-
-\t\t\t\t\t\t<input class=\"login-btn btn-filled\" id=\"loginSubmit\" type=\"submit\" value=\"Login\">
+\t\t\t\t\t<form method=\"post\" id=\"enterEmailForm\" >
+\t\t\t\t\t\t<input class=\"form-email\" id=\"enterEmail\" name=\"enterEmail\" type=\"text\" placeholder=\"Email Address\">
+\t\t\t\t\t
+\t\t\t\t\t\t<input class=\"login-btn btn-filled\" id=\"enterEmailSubmit\" type=\"submit\" value=\"Send Email\">
 \t\t\t\t\t</form>
 \t\t\t\t</div>
-\t\t\t\t<a href=\"/signup\" class=\"text-white\">Create an account ➞</a><br>
-\t\t\t\t<a href=\"/enter-email\" class=\"text-white\">I've forgotten my password</a>
 \t\t\t</div>
 \t\t</div>
 \t</div>
@@ -58,13 +55,13 @@ class __TwigTemplate_f02227d5213c618684c21fe32255d1233ef04336fc58de14a9bf26a630f
 
 
 ";
-        // line 38
+        // line 35
         $this->env->loadTemplate("./common/footer.tpl")->display($context);
     }
 
     public function getTemplateName()
     {
-        return "pages/login.tpl";
+        return "/pages/enterEmail.tpl";
     }
 
     public function isTraitable()
@@ -74,6 +71,6 @@ class __TwigTemplate_f02227d5213c618684c21fe32255d1233ef04336fc58de14a9bf26a630f
 
     public function getDebugInfo()
     {
-        return array (  62 => 38,  35 => 14,  21 => 2,  19 => 1,);
+        return array (  59 => 35,  35 => 14,  21 => 2,  19 => 1,);
     }
 }

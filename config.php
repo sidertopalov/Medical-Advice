@@ -25,7 +25,7 @@ if( __DEBUG__ )
                     'default' => array(
                         "database.host" => "localhost",
                         "database.user" => "root",
-                        "database.pass" => "",
+                        "database.pass" => "root+",
                         "database.name" => "medicaladvice",
                         "database.port" => 3306, 
                     )

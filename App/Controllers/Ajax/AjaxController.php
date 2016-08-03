@@ -6,6 +6,8 @@ use App\Models\Ajax\AjaxModel;
 use App\Models\MyAccount\MyAccountModel;
 use App\Models\Article\ArticleModel;
 use App\Models\Category\CategoryModel;
+use App\Models\ForgottenPassword\ForgottenPasswordModel;
+use App\Libraries\Mailer\Mailer;
 
 class AjaxController extends Controller
 {
@@ -381,6 +383,75 @@ class AjaxController extends Controller
 
             $data = array(
                 'message'       => "Succesfully updated!",
+                'success'       => true,
+                'error'         => true,
+                );
+        }
+        
+        echo json_encode( $data );
+    }
+    
+    /**
+     * @Route('/ajax/sendCode')
+     * @Name('sendCode.index')
+     * @Method('post')
+     */
+    public function sendCodeAction() {
+
+        /** @var Yee\Yee $yee */
+        $app = $this->app;
+
+       
+        //------> POST Variables <-------
+        $enterEmail = $app->request()->post('enterEmail');
+        
+        
+        $model = new ForgottenPasswordModel();
+        
+
+        if ($enterEmail != "") {
+            if ($model->isEmailExist($enterEmail) == FALSE) {
+                $error = "This email doesn't exist!";
+            }
+            
+        } else {
+            $error = "Wrong data.Check your field";
+        }
+        
+        
+      //  $model->insertEmailAndCode($enterEmail);
+
+        if (isset($error) == false) {
+            
+            $model->insertEmailAndCode($enterEmail);
+            
+//            $dataMailer = array(
+//                    'secretCode' => $model->generateSecretCode(),
+//                );    
+//
+//            // Create instance of App\Libraries\Mailer\Mailer
+//            $mailer = new Mailer( "sidertopalov@gmail.com", $enterEmail, "signup", $dataMailer, "Change Password!" );
+//
+//            // Send email 
+//            $mailer->buildEmail()->sendEmail();
+            
+            
+
+        }
+
+
+        if(isset($error)) {
+
+            $data = array(
+                'message'       => $error,
+                'error'         => false,
+                );
+
+
+        } else {
+
+            $data = array(
+                'message'       => "Check your email address!",
                 'success'       => true,
                 'error'         => true,
                 );
