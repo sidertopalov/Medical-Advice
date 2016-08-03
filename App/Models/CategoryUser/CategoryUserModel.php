@@ -47,4 +47,13 @@ class CategoryUserModel extends CategoryModel
 
 	}
 
+	public function printArticle($categoryId,$num)
+	{
+		$app = $this->app;
+
+		$params = array($categoryId,$num);
+
+		return $app->db['default']->rawQuery('SELECT * FROM  article WHERE category_id=? LIMIT ?,5', $params);
+	}
+
 }

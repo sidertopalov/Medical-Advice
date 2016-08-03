@@ -1,4 +1,5 @@
-<?php namespace App\Models\Activation;
+<?php 
+namespace App\Models\Activation;
 
 
 

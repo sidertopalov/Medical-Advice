@@ -24,11 +24,11 @@ class ActivationController extends Controller {
       	{
           $acmodel->activateUser($userExists);
 
-          $redirect = 'http://localhost/KinguinInternship/myProject/login';
+          $redirect = '/login';
 
       	} else {
           
-          $redirect = 'http://localhost/KinguinInternship/myProject/signup';
+          $redirect = '/signup';
 
         }
 

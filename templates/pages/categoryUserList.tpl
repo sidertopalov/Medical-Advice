@@ -41,6 +41,15 @@
 			</table> -->
 
 		</div>
+		<div class="text-center">
+		{% for i in 1..pagination %}
+			{% if i == currentPage %}
+				{{i}}
+			{% else %}
+				<a href="/category/view/{{title}}?page={{i}}">{{i}}</a>
+			{% endif %}
+		{% endfor %}
+		</div>
 
 		{% for comments in articleDetails  %}
 

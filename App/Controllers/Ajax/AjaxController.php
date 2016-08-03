@@ -6,6 +6,10 @@ use App\Models\Ajax\AjaxModel;
 use App\Models\MyAccount\MyAccountModel;
 use App\Models\Article\ArticleModel;
 use App\Models\Category\CategoryModel;
+use App\Models\ForgottenPassword\ForgotPassModel;
+use App\Libraries\Mailer\Mailer;
+
+
 
 class AjaxController extends Controller
 {
@@ -388,4 +392,125 @@ class AjaxController extends Controller
         
         echo json_encode( $data );
     }
+
+
+    /**
+     * @Route('/ajax/sendCode')
+     * @Name('forgottenPass.index')
+     * @Method('post')
+     */
+    public function sendCodeAction() {
+
+        /** @var Yee\Yee $yee */
+        $app = $this->app;
+
+
+        //------> POST Variables <-------
+        $email = $app->request()->post('enterEmail');
+
+        $model = new ForgotPassModel();
+
+        $emailExist = $model->isEmailExist($email);
+
+        if (is_null($emailExist)) 
+        {
+            $error = "Email address didn't exist.";
+        }
+        else {
+
+            $_SESSION['email'] = $email;
+
+            $forgotPassModel = new ForgotPassModel();
+
+            $secretCode = $model->insertEmailAndCode($email);
+
+            $dataMailer = array(
+                    'secretCode' => $model->secretCode,
+                );    
+
+            // Create instance of App\Libraries\Mailer\Mailer
+            $mailer = new Mailer( "sidertopalov@gmail.com", $email, "forgottenPassword", $dataMailer, "Secret Code" );
+
+            // Send email 
+            $mailer->buildEmail()->sendEmail();
+        }
+
+
+        if(isset($error)) {
+
+            $data = array(
+                'message'       => $error,
+                'error'         => false,
+                );
+
+
+        } else {
+
+            $data = array(
+                'message'       => "Succesfully! Check your email for secret code!",
+                'success'       => true,
+                'error'         => true,
+                );
+        }
+        
+        echo json_encode( $data );
+    }
+
+    /**
+     * @Route('/ajax/reset-password')
+     * @Name('resetPass.index')
+     * @Method('post')
+     */
+    public function resetPassAction() {
+
+        /** @var Yee\Yee $yee */
+        $app = $this->app;
+
+
+        //------> POST Variables <-------
+        $newPass = $app->request()->post('newPass');
+        $passConf = $app->request()->post('passConf');
+
+        $accModel = new MyAccountModel();
+
+        if (!$accModel->validatePassword($newPass,$passConf)) {
+
+            $error = "Passwords do not match";
+        }
+        else {
+
+            $forgotPassModel = new ForgotPassModel();
+
+            if($forgotPassModel->updateNewPassword($newPass))
+            {
+                $forgotPassModel->deleteSecretCode();
+            }
+            else
+            {
+                $error = "Something is wrong try again later.";
+            }
+
+        }
+       
+
+        if(isset($error)) {
+
+            $data = array(
+                'message'       => $error,
+                'error'         => false,
+                );
+
+
+        } else {
+
+            $data = array(
+                'message'       => "Your new password update succesfully!",
+                'success'       => true,
+                'error'         => true,
+                );
+        }
+        
+        echo json_encode( $data );
+    }
+
 }

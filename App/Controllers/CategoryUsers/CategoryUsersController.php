@@ -13,7 +13,7 @@ class CategoryUsersController extends Controller {
      */
     public function indexAction( )
     {
-      
+        
         /** @var Yee\Yee $yee */
         $app = $this->getYee();
         
@@ -42,6 +42,7 @@ class CategoryUsersController extends Controller {
         
         $categoryName = $name;
 
+
         $categoryUserModel = new CategoryUserModel();
 
         // take id from category name
@@ -54,9 +55,30 @@ class CategoryUsersController extends Controller {
         // take all articles by category id
         $articleListByCategoryId = array_reverse($categoryUserModel->getArticlesByCategoryId($categoryId));
 
+
+        // Pagination part
+        //$page = "1";
+
+        $page = $app->request()->get("page", 1);
+
+        /*if ($_GET['page'])
+        {
+            $page = $_GET['page'];
+        }*/
+
+
+        // Number of pagination / 5
+        $countArticle = ceil(count($articleListByCategoryId)/5);
+
+        $articlePage = $categoryUserModel->printArticle($categoryId,$page);
+
+        // var_dump($articlePage);
+        // die;
         $data = array(
             'title' => $categoryName,
-            'articleDetails' => $articleListByCategoryId,
+            'articleDetails' => $articlePage,
+            'pagination' => $countArticle,
+            'currentPage' => $page
         ); 
 
         $app->render('/pages/categoryUserList.tpl',$data);
@@ -91,6 +113,6 @@ class CategoryUsersController extends Controller {
         ); 
 
         $app->render('/pages/articleRead.tpl',$data);
-    } 
+    }
 
 }
