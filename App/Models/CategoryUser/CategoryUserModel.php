@@ -47,13 +47,13 @@ class CategoryUserModel extends CategoryModel
 
 	}
 
-	public function printArticle($categoryId,$num)
+	public function printArticle($categoryId,$startRow,$count)
 	{
 		$app = $this->app;
 
-		$params = array($categoryId,$num);
+		$params = array($categoryId,$startRow,$count);
 
-		return $app->db['default']->rawQuery('SELECT * FROM  article WHERE category_id=? LIMIT ?,5', $params);
+		return $app->db['default']->rawQuery('SELECT * FROM  article WHERE category_id=? LIMIT ?,?', $params);
 	}
 
 }

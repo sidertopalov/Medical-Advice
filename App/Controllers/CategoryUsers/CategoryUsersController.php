@@ -57,27 +57,34 @@ class CategoryUsersController extends Controller {
 
 
         // Pagination part
-        //$page = "1";
-
         $page = $app->request()->get("page", 1);
 
-        /*if ($_GET['page'])
-        {
-            $page = $_GET['page'];
-        }*/
+
+        // count for sql where LIMIT  ?,$count
+        $count = 3;
 
 
-        // Number of pagination / 5
-        $countArticle = ceil(count($articleListByCategoryId)/5);
+        if ($page == 1 || $page == 0) {
 
-        $articlePage = $categoryUserModel->printArticle($categoryId,$page);
+            // wich "start" calculating wich articles we need to print
+            // diff on page
+            $start = 0;
+        } else {
+            $start = ($page * $count) - $count;
+        }
 
-        // var_dump($articlePage);
-        // die;
+
+        // Calculating how many pages we need to print 
+        $countArticle = count($articleListByCategoryId)/$count;
+
+
+        // Calculate wich articles we need to print for user 1 / 6
+        $articlePage = $categoryUserModel->printArticle($categoryId,$start,$count);
+
         $data = array(
             'title' => $categoryName,
             'articleDetails' => $articlePage,
-            'pagination' => $countArticle,
+            'pagination' => ceil($countArticle),
             'currentPage' => $page
         ); 
 
