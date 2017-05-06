@@ -54,9 +54,9 @@ class activationModel {
 		$app = \Yee\Yee::getInstance();
 
 		$data = array(
-				'activationCode' =>'',
-				'active' => 1	
-			);	
+			'activationCode' =>'',
+			'active' => 1	
+		);
 		
 		$app->db['default']->where('email', $userData['email'] );
 

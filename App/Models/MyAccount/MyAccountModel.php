@@ -23,18 +23,15 @@ class MyAccountModel {
 		return $app->db['default']->where("email", $_SESSION['userEmail'])->getOne('users');
 	}
 
-
 	
 	public function updateAccount() {
 
 		$app = $this->app;
 
-		// $accDetails = $this->getAccountDetails();
-
 		$data = array(
 			'first_name' => $this->firstName,
 			'last_name'=> $this->lastName,
-			);
+		);
 
 		$app->db['default']->where('email',$_SESSION['userEmail'])->update('users',$data);
 

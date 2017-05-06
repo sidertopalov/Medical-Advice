@@ -39,7 +39,6 @@ class AjaxController extends Controller
         $loginEmail   = $app->request->post('loginEmail');
         $loginPass    = $app->request->post('loginPass');
 
-
         // Create instance of App\Models\Ajax\AjaxModel;
         $ajaxModel = new AjaxModel($loginEmail, $loginPass);
 
@@ -49,7 +48,6 @@ class AjaxController extends Controller
             $error = "Fail to join! Check your email/password.";
         }
 
-
         if(isset($error)) {
 
             $data = array(
@@ -58,7 +56,6 @@ class AjaxController extends Controller
                 'message'       => $error,
                 'error'         => false,
                 );
-
 
         } else {
             $userProperty = $ajaxModel->userProperty();
@@ -73,9 +70,7 @@ class AjaxController extends Controller
                 'message'       => "Hello, $loginEmail",
                 'success'       => true,
                 'error'         => true,
-                
-
-                );
+            );
         }
 
         echo json_encode( $data );
@@ -223,7 +218,7 @@ class AjaxController extends Controller
             
             $error = "Content text cant be empty.";
         }
-
+        
         if (isset($error) == false) {
 
             if(!$article->addComment($articleTitle, $articleContent, $categoryId)){
@@ -275,18 +270,11 @@ class AjaxController extends Controller
             $error = "Wrong data.Check your field";
         }
 
-        // var_dump($categoryModel->isExistCategory($newCategory));
-        // die;
-
         if (isset($error) == false) {
             
             $categoryModel->addCategory($newCategory);
 
         }
-
-
-
-
 
         if(isset($error)) {
 
@@ -365,9 +353,6 @@ class AjaxController extends Controller
         $categoryModel = new CategoryModel();
 
         $categoryModel->deleteCategory($categoryId);
-
-        // var_dump($_POST);
-        // die;
 
         if(isset($error)) {
 

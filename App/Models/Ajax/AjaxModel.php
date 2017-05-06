@@ -23,8 +23,6 @@ class AjaxModel {
 	private $app;
 
 
-
-
 	public function __construct($email,$pass) {
 
 		$this->app 		 	= \Yee\Yee::getInstance();

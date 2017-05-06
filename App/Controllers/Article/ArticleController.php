@@ -25,9 +25,7 @@ class ArticleController extends Controller {
 
             $javascript = array(
                 '/js/addArticle.js',
-                );
-
-
+            );
 
             $data = array(
                 'title'             => 'Add Article',
@@ -76,7 +74,7 @@ class ArticleController extends Controller {
                 'title' => 'List of Articles',
                 'commentDetails' => $commList,
                 );
-
+        
         $app->render('pages/articleList.tpl',$data);
     }
 }

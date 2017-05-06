@@ -17,18 +17,13 @@ class LoginController extends Controller
         if (isset($_SESSION['isLogged']) === false) {
         
             $javascript = array(
-
                 '/js/login.js',
-                
-                );
+            );
 
             $data = array(
-
                 "title"         => "Login Controller",
                 "javascript"    => $javascript,
-
-                );
-            
+            );
             $app->render('pages/login.tpl', $data);
         } else {
 

@@ -18,13 +18,9 @@ class SignupController extends Controller
         if (isset($_SESSION['isLogged']) === false) {
             $data = array(
                 "title" => "Singup Controller",
-                );
-            
+            );
             $app->render('pages/signup.tpl', $data);
-
-        } 
-        else {
-
+        } else {
             $app->redirect('/');
         }
     }
@@ -43,7 +39,6 @@ class SignupController extends Controller
         // \Yee\Yee::getDefaultSettings() return array(); 
 
         // --------------> POST variables <-------------
-
         $emailSignup    = $app->request->post('emailSignup');
         $passSignup     = $app->request->post('passSignup');
         $passConfSignup = $app->request->post('passConfSignup');
@@ -56,7 +51,6 @@ class SignupController extends Controller
             $error = "Invalid Email/Password";
         } 
         else if (!$signupModel->checkUserDb()){
-
             $error = "Email is already exists";
         }
 
@@ -65,36 +59,29 @@ class SignupController extends Controller
             // Registration new account
             $signupModel->register();
 
-            $dataMailer = array(
-                    'activationCode' => $signupModel->activationCode,
-                );    
-
+            // $dataMailer = array(
+            //         'activationCode' => $signupModel->activationCode,
+            // );
             // Create instance of App\Libraries\Mailer\Mailer
-            $mailer = new Mailer( "sidertopalov@gmail.com", $emailSignup, "signup", $dataMailer, "Activate Account" );
+            // $mailer = new Mailer( "sidertopalov@gmail.com", $emailSignup, "signup", $dataMailer, "Activate Account" );
 
             // Send email 
-            $mailer->buildEmail()->sendEmail();
-           
-
+            // $mailer->buildEmail()->sendEmail();
         }
 
         if(isset($error)) {
 
             $data = array(
-
                 'title'         => "SignupController",
                 'error'         => $error,
                 );
-            
             $app->render('/pages/signupErr.tpl', $data);
 
         } else {
-
            $data = array(
                 'title'         => "SignupControllerSucc",
                 'succ'          => 'Your registration is successful! Please check your email address for Activation Code link!',
-                );
-            
+                ); 
             $app->render('/pages/signupSucc.tpl', $data);
         }
     }

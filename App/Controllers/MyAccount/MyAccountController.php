@@ -23,21 +23,18 @@ class MyAccountController extends Controller {
             $accDetail = $myAccount->getAccountDetails();
 
             $javascript = array(
-
                 '/js/updateAccount.js',
-                
-                );
+            );
 
             $data = array(
                 'title' => 'My Account Controller',
                 'userDetail' => $accDetail,
                 'javascript' => $javascript,
-                );
+            );
 
             $app->render('/pages/myAccount.tpl', $data);
 
         } else {
-
             $app->redirect('/login');
         }
     }
@@ -58,9 +55,7 @@ class MyAccountController extends Controller {
             $accDetail = $myAccount->getAccountDetails();
 
             $javascript = array(
-
                 '/js/changePass.js',
-                
                 );
 
             $data = array(

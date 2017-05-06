@@ -1,4 +1,4 @@
-/nbproject/
-/cache/routing/
-/logs/
-./config.php
+nbproject/
+cache/
+logs/
+.config.php

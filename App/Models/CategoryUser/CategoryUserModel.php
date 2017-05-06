@@ -13,21 +13,18 @@ class CategoryUserModel extends CategoryModel
 		$this->app = \Yee\Yee::getInstance();
 	}
 
-	
-
 	public function getCategoryIdByName($categoryName) {
 
 		$app = $this->app;
 
 		$data = array(
 			'name' => $categoryName,
-			);
+		);
 
 		$result = $app->db['default']->where('name',$categoryName)->getOne('category');
 
-		return $result['id'];
+		return $result['name'];
 	}
-
 
 
 	public function getArticlesByCategoryId($categoryId){
@@ -36,7 +33,6 @@ class CategoryUserModel extends CategoryModel
 
 		return $app->db['default']->where('category_id',$categoryId)->get('article');
 	}
-
 
 
 	public function getArticleDetailsByName($titleArticle) {

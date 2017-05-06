@@ -11,13 +11,11 @@ class CategoryModel {
         $app = \Yee\Yee::getInstance();
 
         $data = array(
-            
             'name' => $category,
-          );
+        );
 
         $app->db['default']->insert('category',$data);
     }
-
 
     public function getCategory() {
     
@@ -25,8 +23,6 @@ class CategoryModel {
 
       return $app->db['default']->get('category');
     }
-
-
 
     public function isExistCategory($categoryName) {
 
@@ -39,8 +35,6 @@ class CategoryModel {
 
     }
 
-
-
     public function getCategoryById($id) {
 
         $app = \Yee\Yee::getInstance();
@@ -48,14 +42,11 @@ class CategoryModel {
         return $app->db['default']->where('id',$id)->getOne('category');
     }
 
-
-
     public function updateCategoryById($id,$name) {
 
       $app = \Yee\Yee::getInstance();
 
       $data = array(
-
             'name' => $name,
         );
 

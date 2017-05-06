@@ -20,13 +20,10 @@ class CategoryUsersController extends Controller {
         $categoryUserModel = new CategoryUserModel();
         $categoryProperty = $categoryUserModel->getCategory();
 
-        // var_dump($categoryProperty);
-        // die;
         $data = array(
-
             'title' => 'List of Category',
             'categoryDetails' => $categoryProperty,
-          );
+        );
 
         $app->render('/pages/categorySelect.tpl',$data);
 
@@ -57,8 +54,8 @@ class CategoryUsersController extends Controller {
         $data = array(
             'title' => $categoryName,
             'articleDetails' => $articleListByCategoryId,
-        ); 
-
+        );
+        
         $app->render('/pages/categoryUserList.tpl',$data);
     }
 
@@ -82,9 +79,7 @@ class CategoryUsersController extends Controller {
         if (is_null($articleDetails)) {
             $app->redirect('/categorySelect');
         }
-
         
-
         $data = array(
             'title' => $categoryName,
             'articleDetails' => $articleDetails,

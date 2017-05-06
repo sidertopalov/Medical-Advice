@@ -43,7 +43,7 @@
 		</div>
 
 		{% for comments in commentDetails  %}
-
+			
 			<section>
 				<div class="container table col-md-12 col-sm-12 text-center" >
 

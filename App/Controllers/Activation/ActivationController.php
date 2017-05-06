@@ -7,7 +7,7 @@ use App\Models\Activation\ActivationModel;
 
 class ActivationController extends Controller {
 
-	   /**
+	/**
      * @Route('/activation/:accode')
      * @Name('activation.index')
      */

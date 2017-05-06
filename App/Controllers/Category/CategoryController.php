@@ -18,12 +18,10 @@ class CategoryController extends Controller {
         $app = $this->getYee();
 
         $javascript = array(
-
             '/js/categoryAdd.js',
           );
         
         $data = array(
-
             'title' => 'New Category',
             'javascript' => $javascript,
           );
@@ -34,12 +32,10 @@ class CategoryController extends Controller {
         }
 
         if ($_SESSION['isAdmin']) {
-          $app->render('/pages/categoryAdd.tpl',$data);
+            $app->render('/pages/categoryAdd.tpl',$data);
 
         } else {
-
-          $app->redirect('/account'); 
-
+            $app->redirect('/account'); 
         }
 
     }
@@ -49,34 +45,33 @@ class CategoryController extends Controller {
      */
      public function updateCategory($id) {
 
-          $app = $this->getYee();
+            $app = $this->getYee();
           
-          $categoryId = $id;
+            $categoryId = $id;
 
-          if ($_SESSION['isAdmin'] != 1) {
-            $app->redirect('/account');
-          }
+            if ($_SESSION['isAdmin'] != 1) {
+                $app->redirect('/account');
+            }
 
-          $categoryModel = new CategoryModel();
-          $categoryProperty = $categoryModel->getCategoryById($categoryId);
+            $categoryModel = new CategoryModel();
+            $categoryProperty = $categoryModel->getCategoryById($categoryId);
 
-          if ($categoryProperty == null) {
+            if ($categoryProperty == null) {
               
-              $app->redirect('/categoryList');
-          }
+                $app->redirect('/categoryList');
+            }
 
-
-          $javascript = array(
+            $javascript = array(
 
             '/js/categoryUpdate.js',
             );
 
 
-          $data = array(
-            'title' => 'Update Category',
-            'javascript' => $javascript,
-            'categoryId' => $categoryId,
-            'categoryName' => $categoryProperty['name'],
+            $data = array(
+                'title' => 'Update Category',
+                'javascript' => $javascript,
+                'categoryId' => $categoryId,
+                'categoryName' => $categoryProperty['name'],
             ); 
           $app->render('/pages/categoryUpdate.tpl',$data);
      }
@@ -87,30 +82,29 @@ class CategoryController extends Controller {
      */
      public function deleteCategory($id) {
 
-          $app = $this->getYee();
+            $app = $this->getYee();
 
-          if ($_SESSION['isAdmin'] != 1) {
-            $app->redirect('/myProject/account');
-          }
+            if ($_SESSION['isAdmin'] != 1) {
+                $app->redirect('/myProject/account');
+            }
 
-          $categoryModel = new CategoryModel();
-          $categoryProperty = $categoryModel->getCategoryById($id);
+            $categoryModel = new CategoryModel();
+            $categoryProperty = $categoryModel->getCategoryById($id);
 
-          if ($categoryProperty == null) {
-              
-              $app->redirect('/categoryList');
-          }
+            if ($categoryProperty == null) {
+                $app->redirect('/categoryList');
+            }
 
-          $javascript = array(
+            $javascript = array(
 
-            '/js/categoryDelete.js',
+                '/js/categoryDelete.js',
             );
 
-          $data = array(
-            'title' => 'Delete Category',
-            'javascript' => $javascript,
-            'categoryId' => $categoryProperty['id'],      
-            'categoryName' => $categoryProperty['name'],
+            $data = array(
+                'title' => 'Delete Category',
+                'javascript' => $javascript,
+                'categoryId' => $categoryProperty['id'],      
+                'categoryName' => $categoryProperty['name'],
             ); 
           $app->render('/pages/categoryDelete.tpl',$data);
      }
